@@ -1,0 +1,2013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <poi id="school_442033041" type="school" color="50,150,255" layer="10" x="2429.7130953719607" y="998.4798864014447" width="15" height="15">
+        <param key="name" value="Học Viện Không Quân"/>
+    </poi>
+    <poi id="bank_444227294" type="bank" color="0,255,255" layer="10" x="2785.4322336320765" y="1631.1259296513163" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="bank_446044132" type="bank" color="0,255,255" layer="10" x="3177.923515248229" y="2439.330865786411" width="15" height="15">
+        <param key="name" value="LPBank"/>
+    </poi>
+    <poi id="bank_1001774355" type="bank" color="0,255,255" layer="10" x="3530.5034739036346" y="3052.510385316331" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="cafe_1279138536" type="cafe" color="139,69,19" layer="10" x="2889.1735982053215" y="2187.7335742875002" width="15" height="15">
+        <param key="name" value="Cà Phê Newlife"/>
+    </poi>
+    <poi id="bank_1494035964" type="bank" color="0,255,255" layer="10" x="1943.6881059471052" y="1169.248637876939" width="15" height="15">
+        <param key="name" value="ACB"/>
+    </poi>
+    <poi id="bank_2182514715" type="bank" color="0,255,255" layer="10" x="2050.5096672939835" y="1547.6857575634494" width="15" height="15">
+        <param key="name" value="PG Bank"/>
+    </poi>
+    <poi id="cafe_3036397234" type="cafe" color="139,69,19" layer="10" x="2201.411163998535" y="3009.6644175602123" width="15" height="15">
+        <param key="name" value="Highlands Coffee"/>
+    </poi>
+    <poi id="clothes_3327079260" type="clothes" color="200,200,200" layer="10" x="2294.1086605058517" y="1808.242902496364" width="15" height="15">
+        <param key="name" value="Tink Shop"/>
+    </poi>
+    <poi id="restaurant_3684980414" type="restaurant" color="255,200,50" layer="10" x="1998.8375559756532" y="2977.384255096782" width="15" height="15">
+        <param key="name" value="Quán Thị Mẹt"/>
+    </poi>
+    <poi id="clothes_3733115426" type="clothes" color="200,200,200" layer="10" x="1387.9386435444467" y="2629.4331311150454" width="15" height="15">
+        <param key="name" value="Cửa Hàng Thời Trang Dan Gun"/>
+    </poi>
+    <poi id="cafe_3747365124" type="cafe" color="139,69,19" layer="10" x="1445.5865942356177" y="2343.3657910614274" width="15" height="15">
+        <param key="name" value="Cà Phê Grazio&apos;s"/>
+    </poi>
+    <poi id="kindergarten_4066099003" type="kindergarten" color="100,200,255" layer="10" x="2601.3701811087085" y="2535.436970205512" width="15" height="15">
+        <param key="name" value="Trường Mầm Non Magic Star"/>
+    </poi>
+    <poi id="restaurant_4090277644" type="restaurant" color="255,200,50" layer="10" x="1346.242494934122" y="1264.8494439078495" width="15" height="15">
+        <param key="name" value="Pizza Hut"/>
+    </poi>
+    <poi id="clothes_4153385729" type="clothes" color="200,200,200" layer="10" x="2093.969531795592" y="2935.5710839307867" width="15" height="15">
+        <param key="name" value="FoTo Sỉ Lẻ Abercrombie &amp; Fitch and Hollister"/>
+    </poi>
+    <poi id="language_school_4165073290" type="language_school" color="200,200,200" layer="10" x="1327.8834594830405" y="3075.6928046778776" width="15" height="15">
+        <param key="name" value="Trung Tâm Tiếng Anh Apax"/>
+    </poi>
+    <poi id="mall_4171931890" type="mall" color="150,50,200" layer="10" x="1282.81850923202" y="1171.4845084985718" width="15" height="15">
+        <param key="name" value="Vincom Mega Mall Royal City"/>
+    </poi>
+    <poi id="restaurant_4286225207" type="restaurant" color="255,200,50" layer="10" x="2254.272541559185" y="2133.847724538762" width="15" height="15">
+        <param key="name" value="OiShi Ngon"/>
+    </poi>
+    <poi id="fast_food_4382109792" type="fast_food" color="255,170,0" layer="10" x="3600.192409753916" y="2811.7711558621377" width="15" height="15">
+        <param key="name" value="Bánh Mỳ Doner Kebab Hùng Jock"/>
+    </poi>
+    <poi id="cafe_4511484589" type="cafe" color="139,69,19" layer="10" x="2345.593823170988" y="3201.4844815572724" width="15" height="15">
+        <param key="name" value="Trà Sữa Chachago"/>
+    </poi>
+    <poi id="school_4531553592" type="school" color="50,150,255" layer="10" x="2785.0835294295102" y="3557.3243783134967" width="15" height="15">
+        <param key="name" value="Trung Tâm Fablab Hanoi"/>
+    </poi>
+    <poi id="cafe_4709222689" type="cafe" color="139,69,19" layer="10" x="2252.1215693410486" y="2353.0582151478156" width="15" height="15">
+        <param key="name" value="Cà Phê Bestea House"/>
+    </poi>
+    <poi id="cafe_4738001522" type="cafe" color="139,69,19" layer="10" x="1543.1166378152557" y="1078.8666920005344" width="15" height="15">
+        <param key="name" value="Cà Phê Aroi"/>
+    </poi>
+    <poi id="clothes_4880374322" type="clothes" color="200,200,200" layer="10" x="2880.283632588922" y="1435.3311652438715" width="15" height="15">
+        <param key="name" value="Vintage Clothes Market"/>
+    </poi>
+    <poi id="cafe_5355786321" type="cafe" color="139,69,19" layer="10" x="2273.558538893936" y="2661.5137935136445" width="15" height="15">
+        <param key="name" value="Phòng Trà Phố Nghèo"/>
+    </poi>
+    <poi id="clothes_5397904122" type="clothes" color="200,200,200" layer="10" x="1524.5202002852457" y="3359.9183788802475" width="15" height="15">
+        <param key="name" value="Cửa Hàng Thời Trang Chicland"/>
+    </poi>
+    <poi id="school_5398016422" type="school" color="50,150,255" layer="10" x="1553.2420894383686" y="2328.3438045005314" width="15" height="15">
+        <param key="name" value="Tiếng Trung Cầm Xu - cs2"/>
+    </poi>
+    <poi id="restaurant_5474690735" type="restaurant" color="255,200,50" layer="10" x="3044.973142898758" y="2429.8598126992583" width="15" height="15">
+        <param key="name" value="Cửa Hàng Bánh Mì Cười - Nam Đồng"/>
+    </poi>
+    <poi id="restaurant_5474800534" type="restaurant" color="255,200,50" layer="10" x="3119.5200572786853" y="1908.4700976787135" width="15" height="15">
+        <param key="name" value="Bánh Đúc Nóng - Trung Tự"/>
+    </poi>
+    <poi id="clothes_5485647877" type="clothes" color="200,200,200" layer="10" x="2099.9673573486507" y="2097.0346313258633" width="15" height="15">
+        <param key="name" value="Shop Áo Phông Trắng Trơn Authentic"/>
+    </poi>
+    <poi id="cafe_5485649434" type="cafe" color="139,69,19" layer="10" x="2425.2794396320824" y="2821.0091897379607" width="15" height="15">
+        <param key="name" value="Cà Phê Moonlight"/>
+    </poi>
+    <poi id="marketplace_5485651759" type="marketplace" color="150,50,200" layer="10" x="2413.903115568566" y="2812.250483730808" width="15" height="15">
+        <param key="name" value="Chợ Sáng Trần Quang Diệu"/>
+    </poi>
+    <poi id="restaurant_5485663514" type="restaurant" color="255,200,50" layer="10" x="1779.686110343784" y="3608.441765957512" width="15" height="15">
+        <param key="name" value="Nhà Hàng Cơm Niêu Kombo"/>
+    </poi>
+    <poi id="restaurant_5485665297" type="restaurant" color="255,200,50" layer="10" x="1676.1879984098487" y="3568.2517884471454" width="15" height="15">
+        <param key="name" value="T+ Beer Club"/>
+    </poi>
+    <poi id="restaurant_5485670670" type="restaurant" color="255,200,50" layer="10" x="1750.7514210916124" y="3576.5930125582963" width="15" height="15">
+        <param key="name" value="Nhà Hàng Bít Tết Ngon"/>
+    </poi>
+    <poi id="fast_food_5485670930" type="fast_food" color="255,170,0" layer="10" x="3424.8862037074286" y="2162.8700388167053" width="15" height="15">
+        <param key="name" value="Lotteria"/>
+    </poi>
+    <poi id="cafe_5485674588" type="cafe" color="139,69,19" layer="10" x="1579.1155716191279" y="3652.9695937796496" width="15" height="15">
+        <param key="name" value="Highlands Coffee"/>
+    </poi>
+    <poi id="cafe_5485700946" type="cafe" color="139,69,19" layer="10" x="3444.178540194989" y="2229.8578703771345" width="15" height="15">
+        <param key="name" value="Taste Tea"/>
+    </poi>
+    <poi id="restaurant_5485795813" type="restaurant" color="255,200,50" layer="10" x="1378.280081189936" y="3119.8147150455043" width="15" height="15">
+        <param key="name" value="Nhà Hàng Hàng Bánh Poeme"/>
+    </poi>
+    <poi id="supermarket_5485816793" type="supermarket" color="150,50,200" layer="10" x="1999.1105577349663" y="2387.7808014727198" width="15" height="15">
+        <param key="name" value="Siêu thị Minh Hoa"/>
+    </poi>
+    <poi id="bank_5485831311" type="bank" color="0,255,255" layer="10" x="1334.429130661767" y="3078.0506395651028" width="15" height="15">
+        <param key="name" value="BIDV"/>
+    </poi>
+    <poi id="cafe_5485871780" type="cafe" color="139,69,19" layer="10" x="1489.4235602013068" y="1044.036271469202" width="15" height="15">
+        <param key="name" value="Cà Phê Firefly"/>
+    </poi>
+    <poi id="restaurant_5485874465" type="restaurant" color="255,200,50" layer="10" x="2774.0054638277506" y="933.6990726185031" width="15" height="15">
+        <param key="name" value="Nhà hàng Cảnh Hồ"/>
+    </poi>
+    <poi id="fast_food_5485879965" type="fast_food" color="255,170,0" layer="10" x="1993.0399776659906" y="1683.6421345542185" width="15" height="15">
+        <param key="name" value="KFC"/>
+    </poi>
+    <poi id="restaurant_5486075337" type="restaurant" color="255,200,50" layer="10" x="1659.2988382877083" y="3424.8398113898" width="15" height="15">
+        <param key="name" value="Nhà Hàng Bia Lan Chín"/>
+    </poi>
+    <poi id="convenience_5530044723" type="convenience" color="180,100,220" layer="10" x="3231.54927510384" y="2493.48125431221" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="bank_5568364586" type="bank" color="0,255,255" layer="10" x="3416.162575495662" y="2064.3260114109144" width="15" height="15">
+        <param key="name" value="NCB Bank"/>
+    </poi>
+    <poi id="supermarket_5595959521" type="supermarket" color="150,50,200" layer="10" x="2957.067138209357" y="1601.9568030540831" width="15" height="15">
+        <param key="name" value="WinMart"/>
+    </poi>
+    <poi id="supermarket_5603479821" type="supermarket" color="150,50,200" layer="10" x="1657.6539414922008" y="2398.6434578434564" width="15" height="15">
+        <param key="name" value="Siêu thị Minh Hoa Thái Hà"/>
+    </poi>
+    <poi id="supermarket_5603611822" type="supermarket" color="150,50,200" layer="10" x="2290.76834507531" y="2874.7700503235683" width="15" height="15">
+        <param key="name" value="Siêu thị Hoàng Cầu"/>
+    </poi>
+    <poi id="supermarket_5608461621" type="supermarket" color="150,50,200" layer="10" x="3267.6304919809336" y="1629.1117021837272" width="15" height="15">
+        <param key="name" value="BRG Mart"/>
+    </poi>
+    <poi id="convenience_5609997886" type="convenience" color="180,100,220" layer="10" x="1906.9147481096443" y="946.9273534300737" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_5609999114" type="convenience" color="180,100,220" layer="10" x="2790.3495084870374" y="2156.8255859646015" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="convenience_5609999993" type="convenience" color="180,100,220" layer="10" x="3529.8194537867093" y="2174.1451945062727" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="supermarket_5619165232" type="supermarket" color="150,50,200" layer="10" x="1238.2743439401966" y="3426.5025978437625" width="15" height="15">
+        <param key="name" value="Siêu Thị Hapro"/>
+    </poi>
+    <poi id="convenience_5694009529" type="convenience" color="180,100,220" layer="10" x="3325.165742452489" y="1637.7248750817962" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="hospital_5808582515" type="hospital" color="255,50,50" layer="10" x="3588.0929057912435" y="2051.568558308296" width="15" height="15">
+        <param key="name" value="Phòng khám Đa khoa Quốc tế Hà Nội"/>
+    </poi>
+    <poi id="cafe_6149560185" type="cafe" color="139,69,19" layer="10" x="3013.6736709133256" y="2911.4960564207286" width="15" height="15">
+        <param key="name" value="Quán Cầm"/>
+    </poi>
+    <poi id="restaurant_6174044986" type="restaurant" color="255,200,50" layer="10" x="3521.812743030023" y="2250.23221111577" width="15" height="15">
+        <param key="name" value="Nhà Hàng Chay Tâm An"/>
+    </poi>
+    <poi id="restaurant_6207082656" type="restaurant" color="255,200,50" layer="10" x="1815.7471708897501" y="2783.8510419037193" width="15" height="15">
+        <param key="name" value="Nhà hàng MAISON"/>
+    </poi>
+    <poi id="restaurant_6413826385" type="restaurant" color="255,200,50" layer="10" x="2211.347646576469" y="2731.775882956572" width="15" height="15">
+        <param key="name" value="Nhà Hàng Chay Tuệ Giác"/>
+    </poi>
+    <poi id="restaurant_6419220950" type="restaurant" color="255,200,50" layer="10" x="3149.257579452358" y="1282.6706272996962" width="15" height="15">
+        <param key="name" value="Cơm Chay An Nhiên"/>
+    </poi>
+    <poi id="restaurant_6483119385" type="restaurant" color="255,200,50" layer="10" x="2564.9933012833353" y="3024.6955460938625" width="15" height="15">
+        <param key="name" value="Cơm Nấm Việt Hà Thành"/>
+    </poi>
+    <poi id="fast_food_6491366585" type="fast_food" color="255,170,0" layer="10" x="2170.518669920275" y="3067.0940459505655" width="15" height="15">
+        <param key="name" value="Lotteria"/>
+    </poi>
+    <poi id="cafe_6495167985" type="cafe" color="139,69,19" layer="10" x="3314.4648914989084" y="3288.0782096977346" width="15" height="15">
+        <param key="name" value="Tiệm cà phê LẠ LÙNG"/>
+    </poi>
+    <poi id="restaurant_6496942485" type="restaurant" color="255,200,50" layer="10" x="2584.9413925240515" y="3015.8003630056046" width="15" height="15">
+        <param key="name" value="Nhà Hàng Dim Sum Đại Hùng"/>
+    </poi>
+    <poi id="convenience_6505293886" type="convenience" color="180,100,220" layer="10" x="2319.459127852344" y="3367.7524839364924" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="cafe_6531739087" type="cafe" color="139,69,19" layer="10" x="1534.6417449729051" y="1398.3241052418016" width="15" height="15">
+        <param key="name" value="Cộng Cà Phê"/>
+    </poi>
+    <poi id="restaurant_6561157585" type="restaurant" color="255,200,50" layer="10" x="2222.3228969038464" y="3061.639203755185" width="15" height="15">
+        <param key="name" value="Le Monde Steak"/>
+    </poi>
+    <poi id="restaurant_6562291992" type="restaurant" color="255,200,50" layer="10" x="2031.9665696646553" y="2564.5581198893487" width="15" height="15">
+        <param key="name" value="Nhà Hàng Cà Phê Hub"/>
+    </poi>
+    <poi id="restaurant_6581613985" type="restaurant" color="255,200,50" layer="10" x="1828.4867787964176" y="2270.7617096547037" width="15" height="15">
+        <param key="name" value="Cửa Hàng Doner Kebab"/>
+    </poi>
+    <poi id="restaurant_6609648488" type="restaurant" color="255,200,50" layer="10" x="1727.4031786849955" y="2317.3607053617015" width="15" height="15">
+        <param key="name" value="Nhà Hàng Good Sun"/>
+    </poi>
+    <poi id="cafe_6609660791" type="cafe" color="139,69,19" layer="10" x="1984.9400001514005" y="2711.5703825009987" width="15" height="15">
+        <param key="name" value="Cà Phê Aha"/>
+    </poi>
+    <poi id="bank_6617292916" type="bank" color="0,255,255" layer="10" x="2532.325919147348" y="961.5886980430223" width="15" height="15">
+        <param key="name" value="BIDV"/>
+    </poi>
+    <poi id="bank_6617292921" type="bank" color="0,255,255" layer="10" x="2537.6275912042474" y="987.5273700463586" width="15" height="15">
+        <param key="name" value="Saigon Comercial Bank"/>
+    </poi>
+    <poi id="bank_6617292923" type="bank" color="0,255,255" layer="10" x="2528.9061645681504" y="947.5694133904763" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="bank_6661539806" type="bank" color="0,255,255" layer="10" x="3450.302555343136" y="1320.4269033400342" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="clinic_6661539807" type="clinic" color="255,100,100" layer="10" x="3440.9822599528125" y="1317.8877018806525" width="15" height="15">
+        <param key="name" value="Vina Medical"/>
+    </poi>
+    <poi id="bank_6661539809" type="bank" color="0,255,255" layer="10" x="3427.2073118728586" y="1312.547003003303" width="15" height="15">
+        <param key="name" value="SCB"/>
+    </poi>
+    <poi id="bank_6661539810" type="bank" color="0,255,255" layer="10" x="3419.59029797744" y="1308.2679122560658" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="bank_6661539811" type="bank" color="0,255,255" layer="10" x="3409.246185357799" y="1308.7118558599614" width="15" height="15">
+        <param key="name" value="Ocean Bank"/>
+    </poi>
+    <poi id="bank_6661539812" type="bank" color="0,255,255" layer="10" x="3400.4745312682353" y="1306.596150526777" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="convenience_6661635851" type="convenience" color="180,100,220" layer="10" x="3718.7609085446456" y="1401.9372139051557" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="bank_6661635856" type="bank" color="0,255,255" layer="10" x="3591.930439944612" y="1385.3329643611796" width="15" height="15">
+        <param key="name" value="TPBank"/>
+    </poi>
+    <poi id="bank_6668082611" type="bank" color="0,255,255" layer="10" x="3645.552973951213" y="1876.2022678586654" width="15" height="15">
+        <param key="name" value="BacA Bank"/>
+    </poi>
+    <poi id="bank_6677449288" type="bank" color="0,255,255" layer="10" x="2556.4328461815603" y="3114.272484707646" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="bank_6677803295" type="bank" color="0,255,255" layer="10" x="3342.1035417612875" y="3058.784236100968" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="bank_6677803296" type="bank" color="0,255,255" layer="10" x="3152.5031223228434" y="3054.1847041691653" width="15" height="15">
+        <param key="name" value="BacA Bank"/>
+    </poi>
+    <poi id="convenience_6677854926" type="convenience" color="180,100,220" layer="10" x="2397.9060060000047" y="3475.2236869279295" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="cafe_6679611341" type="cafe" color="139,69,19" layer="10" x="2833.0169551612344" y="2126.210707207676" width="15" height="15">
+        <param key="name" value="Cà Phê Chợ - Trung Tự"/>
+    </poi>
+    <poi id="restaurant_6679645374" type="restaurant" color="255,200,50" layer="10" x="3024.1311375407968" y="2364.8235270325094" width="15" height="15">
+        <param key="name" value="SUSHI GARDEN - NHÀ HÀNG NHẬT BẢN"/>
+    </poi>
+    <poi id="cafe_6679685131" type="cafe" color="139,69,19" layer="10" x="2839.2609125981107" y="2136.6586004104465" width="15" height="15">
+        <param key="name" value="Cà Phê Gemax"/>
+    </poi>
+    <poi id="restaurant_6679712288" type="restaurant" color="255,200,50" layer="10" x="2842.956601191894" y="2141.4815333266743" width="15" height="15">
+        <param key="name" value="Phở Lý Quốc Sư"/>
+    </poi>
+    <poi id="restaurant_6682554071" type="restaurant" color="255,200,50" layer="10" x="2930.674422068172" y="2642.642118865624" width="15" height="15">
+        <param key="name" value="Cube Beefsteak &amp; Drinks"/>
+    </poi>
+    <poi id="convenience_6684445894" type="convenience" color="180,100,220" layer="10" x="2809.295903132297" y="3024.259923304897" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_6684446287" type="convenience" color="180,100,220" layer="10" x="2772.8575550391106" y="2026.8684724634513" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_6684446387" type="convenience" color="180,100,220" layer="10" x="3245.13574433513" y="3266.3423494943418" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_6684446587" type="convenience" color="180,100,220" layer="10" x="2254.552674496197" y="1512.1570855765603" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_6684446687" type="convenience" color="180,100,220" layer="10" x="3195.28463095217" y="1258.1174965398386" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_6684446692" type="convenience" color="180,100,220" layer="10" x="1924.240555673954" y="2446.05802765768" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="bank_6684761129" type="bank" color="0,255,255" layer="10" x="3520.357945942902" y="3047.0004113535397" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="bank_6685031195" type="bank" color="0,255,255" layer="10" x="3219.4643370606937" y="3069.842228982132" width="15" height="15">
+        <param key="name" value="PG Bank"/>
+    </poi>
+    <poi id="bank_6685187348" type="bank" color="0,255,255" layer="10" x="2944.1345741548575" y="3480.2413905565627" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="bank_6685424462" type="bank" color="0,255,255" layer="10" x="2799.2596937605413" y="3213.4896148242988" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="convenience_6687492085" type="convenience" color="180,100,220" layer="10" x="2542.7570452012587" y="1415.8361378777772" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="bank_6689615839" type="bank" color="0,255,255" layer="10" x="2943.1458603700157" y="3083.5753008550964" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="bank_6689615841" type="bank" color="0,255,255" layer="10" x="2968.602199431509" y="3080.6641080589034" width="15" height="15">
+        <param key="name" value="GP Bank"/>
+    </poi>
+    <poi id="bank_6689704242" type="bank" color="0,255,255" layer="10" x="3073.6635079345433" y="3058.344458965119" width="15" height="15">
+        <param key="name" value="PVcomBank"/>
+    </poi>
+    <poi id="convenience_6689704243" type="convenience" color="180,100,220" layer="10" x="3002.365972411819" y="3061.0939325885847" width="15" height="15">
+        <param key="name" value="Cửa Hàng Tiện Lợi Mimart"/>
+    </poi>
+    <poi id="restaurant_6690139595" type="restaurant" color="255,200,50" layer="10" x="3147.310351092601" y="2474.2580787469633" width="15" height="15">
+        <param key="name" value="Pizza Hut"/>
+    </poi>
+    <poi id="convenience_6696644285" type="convenience" color="180,100,220" layer="10" x="2068.159482502262" y="2692.6516132904217" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="restaurant_6705528525" type="restaurant" color="255,200,50" layer="10" x="3042.857013796107" y="2389.216435513459" width="15" height="15">
+        <param key="name" value="Chợ Cô Dần - Cơm Sườn &amp; Phá Lấu"/>
+    </poi>
+    <poi id="convenience_6715369161" type="convenience" color="180,100,220" layer="10" x="2999.1488479486434" y="2330.4032140085474" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="restaurant_6728910455" type="restaurant" color="255,200,50" layer="10" x="1220.160451226402" y="2691.6990273916163" width="15" height="15">
+        <param key="name" value="Nhà hàng Wen Xing HongKong"/>
+    </poi>
+    <poi id="restaurant_6776001092" type="restaurant" color="255,200,50" layer="10" x="1269.1319384288508" y="2465.743758358527" width="15" height="15">
+        <param key="name" value="Roma Pizza"/>
+    </poi>
+    <poi id="cafe_6807367429" type="cafe" color="139,69,19" layer="10" x="1805.0803306470625" y="2695.6360992202535" width="15" height="15">
+        <param key="name" value="Cà Phê La Ka"/>
+    </poi>
+    <poi id="restaurant_6807375326" type="restaurant" color="255,200,50" layer="10" x="2096.5570274163038" y="2776.4533666064963" width="15" height="15">
+        <param key="name" value="Nhà Hàng Sio Sushi"/>
+    </poi>
+    <poi id="clothes_6813546261" type="clothes" color="200,200,200" layer="10" x="2776.521577338339" y="983.5754770622589" width="15" height="15">
+        <param key="name" value="Cửa Hàng Thời Trang An Phước"/>
+    </poi>
+    <poi id="clothes_6813546284" type="clothes" color="200,200,200" layer="10" x="1817.4123102369485" y="2253.692604091484" width="15" height="15">
+        <param key="name" value="Cửa Hàng Thời Trang An Phước"/>
+    </poi>
+    <poi id="restaurant_6822174389" type="restaurant" color="255,200,50" layer="10" x="2902.695786459022" y="2812.4970248667523" width="15" height="15">
+        <param key="name" value="Cơm 123"/>
+    </poi>
+    <poi id="fast_food_6880982195" type="fast_food" color="255,170,0" layer="10" x="2069.555200501345" y="1960.2269232394174" width="15" height="15">
+        <param key="name" value="McDonald&apos;s"/>
+    </poi>
+    <poi id="convenience_6986697627" type="convenience" color="180,100,220" layer="10" x="1262.5936650073854" y="2394.728590571787" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="clothes_7034967985" type="clothes" color="200,200,200" layer="10" x="3091.880423804163" y="1185.6773347207345" width="15" height="15">
+        <param key="name" value="The Uranus"/>
+    </poi>
+    <poi id="bank_7056041787" type="bank" color="0,255,255" layer="10" x="1594.2380152354017" y="2442.791167516727" width="15" height="15">
+        <param key="name" value="Ngân hàng SCB"/>
+    </poi>
+    <poi id="cafe_7056055193" type="cafe" color="139,69,19" layer="10" x="1958.1610510756727" y="1049.142171036452" width="15" height="15">
+        <param key="name" value="The Coffee House"/>
+    </poi>
+    <poi id="cafe_7056055200" type="cafe" color="139,69,19" layer="10" x="1818.1292241660412" y="2698.536697357893" width="15" height="15">
+        <param key="name" value="The Coffee House"/>
+    </poi>
+    <poi id="cafe_7056055201" type="cafe" color="139,69,19" layer="10" x="2084.4632243039086" y="1923.1580989342183" width="15" height="15">
+        <param key="name" value="The Coffee House"/>
+    </poi>
+    <poi id="cafe_7056055202" type="cafe" color="139,69,19" layer="10" x="2341.012366971816" y="3317.6685236105695" width="15" height="15">
+        <param key="name" value="The Coffee House"/>
+    </poi>
+    <poi id="bank_7056059313" type="bank" color="0,255,255" layer="10" x="1498.410659285495" y="2484.1498753367923" width="15" height="15">
+        <param key="name" value="Ngân hàng Vietinbank"/>
+    </poi>
+    <poi id="bank_7056059368" type="bank" color="0,255,255" layer="10" x="1564.3832373996265" y="3378.6070111109875" width="15" height="15">
+        <param key="name" value="VIB"/>
+    </poi>
+    <poi id="bank_7056087660" type="bank" color="0,255,255" layer="10" x="1649.1832191445865" y="3460.007672741078" width="15" height="15">
+        <param key="name" value="PVcomBank"/>
+    </poi>
+    <poi id="restaurant_7168595490" type="restaurant" color="255,200,50" layer="10" x="2050.0791632197797" y="2569.034575710073" width="15" height="15">
+        <param key="name" value="Thuc Duong Tinh Tam"/>
+    </poi>
+    <poi id="restaurant_7516955870" type="restaurant" color="255,200,50" layer="10" x="1635.7108181279618" y="2504.677136080805" width="15" height="15">
+        <param key="name" value="Bún Chả Sinh Từ"/>
+    </poi>
+    <poi id="restaurant_7516955871" type="restaurant" color="255,200,50" layer="10" x="2850.2610267396085" y="2147.861754254438" width="15" height="15">
+        <param key="name" value="Bún Chả Sinh Từ"/>
+    </poi>
+    <poi id="restaurant_7612528482" type="restaurant" color="255,200,50" layer="10" x="3256.7432197134476" y="1626.1327389134094" width="15" height="15">
+        <param key="name" value="Nhà hàng San Hô Đỏ"/>
+    </poi>
+    <poi id="bank_7843948143" type="bank" color="0,255,255" layer="10" x="3086.0621842943365" y="2524.4660140275955" width="15" height="15">
+        <param key="name" value="MB"/>
+    </poi>
+    <poi id="bank_7858056541" type="bank" color="0,255,255" layer="10" x="2043.1031508661108" y="1976.5715032429434" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="bank_7994215086" type="bank" color="0,255,255" layer="10" x="3550.106222690316" y="1978.0738758142106" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="clothes_8120992988" type="clothes" color="200,200,200" layer="10" x="2926.803713457659" y="1637.3954048515297" width="15" height="15">
+        <param key="name" value="Uniqlo"/>
+    </poi>
+    <poi id="restaurant_8132877478" type="restaurant" color="255,200,50" layer="10" x="2348.0159552238183" y="2042.0435578264296" width="15" height="15">
+        <param key="name" value="Bún Ngan Cô Tuyết"/>
+    </poi>
+    <poi id="cafe_8163615939" type="cafe" color="139,69,19" layer="10" x="3528.5968728649896" y="1023.250251180958" width="15" height="15">
+        <param key="name" value="Cà Phê Tùng"/>
+    </poi>
+    <poi id="cafe_8171527817" type="cafe" color="139,69,19" layer="10" x="1696.146842964692" y="2696.825337588787" width="15" height="15">
+        <param key="name" value="Xưởng cafe"/>
+    </poi>
+    <poi id="cafe_8171527917" type="cafe" color="139,69,19" layer="10" x="2408.2433912581764" y="1578.3438473138958" width="15" height="15">
+        <param key="name" value="Cà Phê Sách"/>
+    </poi>
+    <poi id="cafe_8171537017" type="cafe" color="139,69,19" layer="10" x="3431.733349480666" y="2907.349679898005" width="15" height="15">
+        <param key="name" value="Cà Phê Mèo Lizzi"/>
+    </poi>
+    <poi id="restaurant_8563466265" type="restaurant" color="255,200,50" layer="10" x="2300.5699540310306" y="3045.37453065766" width="15" height="15">
+        <param key="name" value="Nhà Hàng Củi"/>
+    </poi>
+    <poi id="cafe_8563466266" type="cafe" color="139,69,19" layer="10" x="2222.1080595006933" y="3040.8626079726964" width="15" height="15">
+        <param key="name" value="Cà Phê KoPee"/>
+    </poi>
+    <poi id="restaurant_8563466267" type="restaurant" color="255,200,50" layer="10" x="2870.471267737448" y="2504.2717439550906" width="15" height="15">
+        <param key="name" value="Time Coffee"/>
+    </poi>
+    <poi id="cafe_8563466268" type="cafe" color="139,69,19" layer="10" x="2793.529687057715" y="2194.8401328939945" width="15" height="15">
+        <param key="name" value="Cafe Ông Bầu"/>
+    </poi>
+    <poi id="cafe_8602235218" type="cafe" color="139,69,19" layer="10" x="1611.256208623061" y="3142.9789739828557" width="15" height="15">
+        <param key="name" value="Tâm chay"/>
+    </poi>
+    <poi id="clinic_8855590422" type="clinic" color="255,100,100" layer="10" x="1791.6486113037681" y="1355.235644094646" width="15" height="15">
+        <param key="name" value="Trạm Y tế phường Ngã Tư Sở"/>
+    </poi>
+    <poi id="pharmacy_8934731542" type="pharmacy" color="255,150,150" layer="10" x="3336.913957340759" y="2785.409860359505" width="15" height="15">
+        <param key="name" value="Nhà Thuốc Anh Quốc"/>
+    </poi>
+    <poi id="bank_8937618773" type="bank" color="0,255,255" layer="10" x="2589.3006199537776" y="958.5301706348546" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="supermarket_8943684244" type="supermarket" color="150,50,200" layer="10" x="2503.66510526184" y="3239.448840770405" width="15" height="15">
+        <param key="name" value="WinMart"/>
+    </poi>
+    <poi id="convenience_8984048766" type="convenience" color="180,100,220" layer="10" x="1912.6223726758035" y="944.6434034705162" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="fuel_9369325891" type="fuel" color="255,150,0" layer="10" x="1204.6115943416953" y="3546.954450319521" width="15" height="15">
+        <param key="name" value="Petrolimex"/>
+    </poi>
+    <poi id="school_9593574430" type="school" color="50,150,255" layer="10" x="2462.3410365650197" y="2949.229973454494" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Tô Hiến Thành"/>
+    </poi>
+    <poi id="cafe_9624104359" type="cafe" color="139,69,19" layer="10" x="3223.2373226039344" y="1912.1107221608981" width="15" height="15">
+        <param key="name" value="Cộng Cà Phê"/>
+    </poi>
+    <poi id="fast_food_9757683708" type="fast_food" color="255,170,0" layer="10" x="1596.1457816136535" y="3527.883931702003" width="15" height="15">
+        <param key="name" value="Xôi Hiệp Hoà"/>
+    </poi>
+    <poi id="cafe_9805222030" type="cafe" color="139,69,19" layer="10" x="3437.0739993421594" y="2955.1935102250427" width="15" height="15">
+        <param key="name" value="Auden Coffee"/>
+    </poi>
+    <poi id="cafe_9805222032" type="cafe" color="139,69,19" layer="10" x="3166.123205042677" y="1765.254948336631" width="15" height="15">
+        <param key="name" value="Lane 8 Coffee"/>
+    </poi>
+    <poi id="cafe_9805222036" type="cafe" color="139,69,19" layer="10" x="3026.396377695957" y="2923.073602255434" width="15" height="15">
+        <param key="name" value="Kofi Coffee"/>
+    </poi>
+    <poi id="cafe_9805222037" type="cafe" color="139,69,19" layer="10" x="1708.8225238232408" y="1824.8973876917735" width="15" height="15">
+        <param key="name" value="Coffee Cây"/>
+    </poi>
+    <poi id="clothes_9805222046" type="clothes" color="200,200,200" layer="10" x="3070.454927728977" y="2151.2444339911453" width="15" height="15">
+        <param key="name" value="Hypebeast Here"/>
+    </poi>
+    <poi id="cafe_9805222049" type="cafe" color="139,69,19" layer="10" x="3386.721011872869" y="1916.8726722081192" width="15" height="15">
+        <param key="name" value="Basket Coffee"/>
+    </poi>
+    <poi id="cafe_9805222054" type="cafe" color="139,69,19" layer="10" x="2295.8641293202527" y="1939.16949148383" width="15" height="15">
+        <param key="name" value="The Shelter Tây Sơn"/>
+    </poi>
+    <poi id="clothes_9805222055" type="clothes" color="200,200,200" layer="10" x="3086.3284176951274" y="2164.6093804212287" width="15" height="15">
+        <param key="name" value="Bụi store"/>
+    </poi>
+    <poi id="clothes_9942330789" type="clothes" color="200,200,200" layer="10" x="1625.702495455509" y="2383.0723076350987" width="15" height="15">
+        <param key="name" value="Eva de Eva"/>
+    </poi>
+    <poi id="cafe_9951113018" type="cafe" color="139,69,19" layer="10" x="2947.4112574955216" y="1596.0181112661958" width="15" height="15">
+        <param key="name" value="Highlands Coffee"/>
+    </poi>
+    <poi id="cafe_9951113019" type="cafe" color="139,69,19" layer="10" x="2904.6104317854624" y="1612.0216890592128" width="15" height="15">
+        <param key="name" value="Starbucks"/>
+    </poi>
+    <poi id="police_9974294432" type="police" color="0,0,200" layer="10" x="1388.6679056505673" y="2698.171786199324" width="15" height="15">
+        <param key="name" value="Cơ sở đăng ký xe số 1 - Đội quản lý xe"/>
+    </poi>
+    <poi id="kindergarten_9976440313" type="kindergarten" color="100,200,255" layer="10" x="3024.944573802175" y="2119.0414371164516" width="15" height="15">
+        <param key="name" value="Trường Mẫu giáo Thủy Tiên"/>
+    </poi>
+    <poi id="convenience_9976457521" type="convenience" color="180,100,220" layer="10" x="2962.716995053808" y="2163.5666202129796" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="marketplace_9976457533" type="marketplace" color="150,50,200" layer="10" x="3047.777610887657" y="1881.9743779273704" width="15" height="15">
+        <param key="name" value="Chợ Trung Tự"/>
+    </poi>
+    <poi id="marketplace_9976457534" type="marketplace" color="150,50,200" layer="10" x="2560.9366978353355" y="2227.679201384075" width="15" height="15">
+        <param key="name" value="Chợ Nam Đồng"/>
+    </poi>
+    <poi id="fast_food_10098130619" type="fast_food" color="255,170,0" layer="10" x="2546.0546893784776" y="3043.3473015283234" width="15" height="15">
+        <param key="name" value="Youone Hotdog"/>
+    </poi>
+    <poi id="cafe_10114776452" type="cafe" color="139,69,19" layer="10" x="1809.8920358476462" y="2772.4979292023927" width="15" height="15">
+        <param key="name" value="Skyline Coffee"/>
+    </poi>
+    <poi id="pharmacy_10114776476" type="pharmacy" color="255,150,150" layer="10" x="2425.0046964971116" y="2396.3112258301117" width="15" height="15">
+        <param key="name" value="Nhà thuốc Long Châu"/>
+    </poi>
+    <poi id="fast_food_10293406415" type="fast_food" color="255,170,0" layer="10" x="2943.7806503442116" y="1622.5967075475492" width="15" height="15">
+        <param key="name" value="Jollibee"/>
+    </poi>
+    <poi id="electronics_10648115262" type="electronics" color="200,200,200" layer="10" x="3139.3082897362765" y="2474.149895724375" width="15" height="15">
+        <param key="name" value="ShopDunk Care"/>
+    </poi>
+    <poi id="fast_food_10656829305" type="fast_food" color="255,170,0" layer="10" x="1562.9540280180518" y="2069.824094508309" width="15" height="15">
+        <param key="name" value="Đặc sản Bánh cuốn Cao Bằng"/>
+    </poi>
+    <poi id="mall_10749951833" type="mall" color="150,50,200" layer="10" x="2396.854292542208" y="2106.249664424453" width="15" height="15">
+        <param key="name" value="COMPLEX 01"/>
+    </poi>
+    <poi id="cafe_10749951834" type="cafe" color="139,69,19" layer="10" x="2401.427402703557" y="2122.3004383472726" width="15" height="15">
+        <param key="name" value="Sii Coffee"/>
+    </poi>
+    <poi id="convenience_11198957537" type="convenience" color="180,100,220" layer="10" x="1933.9491246721009" y="1058.1158520877361" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="electronics_11200046224" type="electronics" color="200,200,200" layer="10" x="3631.7642441513017" y="1883.4904344896786" width="15" height="15">
+        <param key="name" value="Samsung"/>
+    </poi>
+    <poi id="cafe_11210560972" type="cafe" color="139,69,19" layer="10" x="2607.5634844740853" y="2950.2374833812937" width="15" height="15">
+        <param key="name" value="Cha Tra Thai"/>
+    </poi>
+    <poi id="convenience_11211417537" type="convenience" color="180,100,220" layer="10" x="1180.8753281134414" y="1646.5737853785977" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="clothes_11211915126" type="clothes" color="200,200,200" layer="10" x="2895.077025884646" y="2425.3377680545673" width="15" height="15">
+        <param key="name" value="nana21"/>
+    </poi>
+    <poi id="convenience_11211915127" type="convenience" color="180,100,220" layer="10" x="2969.740239534527" y="2341.628368986305" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="pharmacy_11211915128" type="pharmacy" color="255,150,150" layer="10" x="2974.8928308048053" y="2334.106518833898" width="15" height="15">
+        <param key="name" value="Nhà thuốc Anh Đức"/>
+    </poi>
+    <poi id="language_school_11211915130" type="language_school" color="200,200,200" layer="10" x="2915.5096241567517" y="2399.411107477732" width="15" height="15">
+        <param key="name" value="Trung tâm Anh ngữ Ms Lan"/>
+    </poi>
+    <poi id="cafe_11211915136" type="cafe" color="139,69,19" layer="10" x="2890.1986110809958" y="2406.152866189368" width="15" height="15">
+        <param key="name" value="Cine Cafe"/>
+    </poi>
+    <poi id="cafe_11211935137" type="cafe" color="139,69,19" layer="10" x="2909.6874449354364" y="2385.832997284364" width="15" height="15">
+        <param key="name" value="Moon Cafe"/>
+    </poi>
+    <poi id="cafe_11211935138" type="cafe" color="139,69,19" layer="10" x="2915.295261516352" y="2378.7008960228413" width="15" height="15">
+        <param key="name" value="Bro&apos;s Coffee"/>
+    </poi>
+    <poi id="cafe_11211935139" type="cafe" color="139,69,19" layer="10" x="2921.3421358378837" y="2373.0763935353607" width="15" height="15">
+        <param key="name" value="Cafe Kỳ Ngộ"/>
+    </poi>
+    <poi id="cafe_11212149481" type="cafe" color="139,69,19" layer="10" x="3405.9301912719384" y="2071.3119907826185" width="15" height="15">
+        <param key="name" value="Ding Tea"/>
+    </poi>
+    <poi id="cafe_11212149482" type="cafe" color="139,69,19" layer="10" x="3402.2778606426436" y="2068.1604933561757" width="15" height="15">
+        <param key="name" value="Cafe Muối"/>
+    </poi>
+    <poi id="cafe_11212149484" type="cafe" color="139,69,19" layer="10" x="3393.9683763262583" y="2061.221338634379" width="15" height="15">
+        <param key="name" value="Mixue"/>
+    </poi>
+    <poi id="cafe_11212149486" type="cafe" color="139,69,19" layer="10" x="3386.9645805504406" y="2055.0195412714966" width="15" height="15">
+        <param key="name" value="Smuzi"/>
+    </poi>
+    <poi id="clothes_11212149492" type="clothes" color="200,200,200" layer="10" x="3360.806479939609" y="2032.8231911817566" width="15" height="15">
+        <param key="name" value="MIAH Bigsize"/>
+    </poi>
+    <poi id="fast_food_11212149493" type="fast_food" color="255,170,0" layer="10" x="3359.0099695739336" y="2026.571173733566" width="15" height="15">
+        <param key="name" value="Bánh mì Phố"/>
+    </poi>
+    <poi id="restaurant_11212149494" type="restaurant" color="255,200,50" layer="10" x="3361.792466087616" y="2023.1545060398057" width="15" height="15">
+        <param key="name" value="Chim Xinh Quán"/>
+    </poi>
+    <poi id="pharmacy_11212149495" type="pharmacy" color="255,150,150" layer="10" x="3364.772141681984" y="2019.7942128530703" width="15" height="15">
+        <param key="name" value="Nhà thuốc Nam Cường"/>
+    </poi>
+    <poi id="cafe_11212149496" type="cafe" color="139,69,19" layer="10" x="3367.1233139830874" y="2017.3714515622705" width="15" height="15">
+        <param key="name" value="Of Him Coffee"/>
+    </poi>
+    <poi id="clothes_11212149499" type="clothes" color="200,200,200" layer="10" x="3334.90119086334" y="2015.9300053967163" width="15" height="15">
+        <param key="name" value="TokyoLife"/>
+    </poi>
+    <poi id="clothes_11212149501" type="clothes" color="200,200,200" layer="10" x="3328.739826584584" y="2009.6108878110535" width="15" height="15">
+        <param key="name" value="H.I.U"/>
+    </poi>
+    <poi id="clothes_11212149502" type="clothes" color="200,200,200" layer="10" x="3324.923379016109" y="2006.037948522251" width="15" height="15">
+        <param key="name" value="Key"/>
+    </poi>
+    <poi id="clothes_11212149503" type="clothes" color="200,200,200" layer="10" x="3320.507085700636" y="2001.8973812027834" width="15" height="15">
+        <param key="name" value="Hanosimex"/>
+    </poi>
+    <poi id="clothes_11212149505" type="clothes" color="200,200,200" layer="10" x="3310.94512746064" y="1993.9666274720803" width="15" height="15">
+        <param key="name" value="Viettien"/>
+    </poi>
+    <poi id="clothes_11212149508" type="clothes" color="200,200,200" layer="10" x="3298.498024943634" y="1983.2426091968082" width="15" height="15">
+        <param key="name" value="Feelsy"/>
+    </poi>
+    <poi id="fast_food_11212149509" type="fast_food" color="255,170,0" layer="10" x="3295.6110949361464" y="1980.7924524629489" width="15" height="15">
+        <param key="name" value="Pate Cột Đèn"/>
+    </poi>
+    <poi id="clothes_11212149512" type="clothes" color="200,200,200" layer="10" x="3287.709918554174" y="1973.2688609873876" width="15" height="15">
+        <param key="name" value="ACE Kid fashion"/>
+    </poi>
+    <poi id="cafe_11212149513" type="cafe" color="139,69,19" layer="10" x="3276.95401975431" y="1963.0960563370027" width="15" height="15">
+        <param key="name" value="The Cha"/>
+    </poi>
+    <poi id="clothes_11212149514" type="clothes" color="200,200,200" layer="10" x="3273.484955905238" y="1960.6649979269132" width="15" height="15">
+        <param key="name" value="Ngọc Vân Kids"/>
+    </poi>
+    <poi id="clothes_11212149515" type="clothes" color="200,200,200" layer="10" x="3269.0846803684253" y="1957.4321435978636" width="15" height="15">
+        <param key="name" value="H.Ladies"/>
+    </poi>
+    <poi id="clothes_11212149516" type="clothes" color="200,200,200" layer="10" x="3265.0903111554217" y="1954.090727191884" width="15" height="15">
+        <param key="name" value="ChicMom"/>
+    </poi>
+    <poi id="clothes_11212149517" type="clothes" color="200,200,200" layer="10" x="3261.829567819019" y="1951.5722123752348" width="15" height="15">
+        <param key="name" value="Joamom"/>
+    </poi>
+    <poi id="clothes_11212149518" type="clothes" color="200,200,200" layer="10" x="3258.9194693390746" y="1949.5757486424409" width="15" height="15">
+        <param key="name" value="Ciara"/>
+    </poi>
+    <poi id="clothes_11212149519" type="clothes" color="200,200,200" layer="10" x="3256.2510713577503" y="1947.07139899116" width="15" height="15">
+        <param key="name" value="Ly Anh"/>
+    </poi>
+    <poi id="clothes_11212149522" type="clothes" color="200,200,200" layer="10" x="3245.3290206914535" y="1936.8645429257303" width="15" height="15">
+        <param key="name" value="Nữ Hoàng Đầm Bầu"/>
+    </poi>
+    <poi id="cafe_11212149523" type="cafe" color="139,69,19" layer="10" x="3241.8221912176814" y="1933.7027754569426" width="15" height="15">
+        <param key="name" value="Oh! Ze"/>
+    </poi>
+    <poi id="clothes_11212195502" type="clothes" color="200,200,200" layer="10" x="3234.515787260607" y="1927.7097675399855" width="15" height="15">
+        <param key="name" value="Đầm bầu Mom Baby"/>
+    </poi>
+    <poi id="cafe_11212195503" type="cafe" color="139,69,19" layer="10" x="3231.259486423456" y="1924.339010471478" width="15" height="15">
+        <param key="name" value="Đô Đô"/>
+    </poi>
+    <poi id="clothes_11212195504" type="clothes" color="200,200,200" layer="10" x="3228.081992500811" y="1921.798800779041" width="15" height="15">
+        <param key="name" value="Medyla"/>
+    </poi>
+    <poi id="clothes_11212195505" type="clothes" color="200,200,200" layer="10" x="3224.1916530496674" y="1918.4358015307225" width="15" height="15">
+        <param key="name" value="Soleil Room"/>
+    </poi>
+    <poi id="cafe_11212195506" type="cafe" color="139,69,19" layer="10" x="3209.6244568447582" y="1901.6906038462184" width="15" height="15">
+        <param key="name" value="Phê La"/>
+    </poi>
+    <poi id="clothes_11212195507" type="clothes" color="200,200,200" layer="10" x="3206.6837421952514" y="1899.5833054240793" width="15" height="15">
+        <param key="name" value="For Me"/>
+    </poi>
+    <poi id="clothes_11212195509" type="clothes" color="200,200,200" layer="10" x="3200.6494775812607" y="1894.781283439137" width="15" height="15">
+        <param key="name" value="HanoiBra"/>
+    </poi>
+    <poi id="clothes_11212195510" type="clothes" color="200,200,200" layer="10" x="3197.2019838639535" y="1892.195396302268" width="15" height="15">
+        <param key="name" value="tingoan"/>
+    </poi>
+    <poi id="clothes_11212195511" type="clothes" color="200,200,200" layer="10" x="3193.7876334469765" y="1889.2333551798947" width="15" height="15">
+        <param key="name" value="Joamom"/>
+    </poi>
+    <poi id="clothes_11212195512" type="clothes" color="200,200,200" layer="10" x="3190.754474744783" y="1886.915276219137" width="15" height="15">
+        <param key="name" value="Kate by Linh Nguyen"/>
+    </poi>
+    <poi id="clothes_11212195513" type="clothes" color="200,200,200" layer="10" x="3187.4125271129888" y="1884.0200253622606" width="15" height="15">
+        <param key="name" value="Đầm bầu Mom Baby"/>
+    </poi>
+    <poi id="fast_food_11212195515" type="fast_food" color="255,170,0" layer="10" x="3186.002075316035" y="1869.5019034720026" width="15" height="15">
+        <param key="name" value="KFC"/>
+    </poi>
+    <poi id="cafe_11212195517" type="cafe" color="139,69,19" layer="10" x="3176.620465778862" y="1862.8339804983698" width="15" height="15">
+        <param key="name" value="Mixue"/>
+    </poi>
+    <poi id="cafe_11212195520" type="cafe" color="139,69,19" layer="10" x="3165.5943727573613" y="1854.618962383829" width="15" height="15">
+        <param key="name" value="Tmore - Tiệm Trà Chanh"/>
+    </poi>
+    <poi id="cafe_11212195521" type="cafe" color="139,69,19" layer="10" x="3161.9232427239185" y="1851.068959502969" width="15" height="15">
+        <param key="name" value="Cing Hu Tang"/>
+    </poi>
+    <poi id="bank_11212195522" type="bank" color="0,255,255" layer="10" x="3163.302433777484" y="1843.7045616614632" width="15" height="15">
+        <param key="name" value="BIDV"/>
+    </poi>
+    <poi id="cafe_11212195523" type="cafe" color="139,69,19" layer="10" x="3362.7030451007886" y="2083.5156469591893" width="15" height="15">
+        <param key="name" value="Cafe&apos;CITO"/>
+    </poi>
+    <poi id="cafe_11212195524" type="cafe" color="139,69,19" layer="10" x="3360.234062406351" y="2080.647062578704" width="15" height="15">
+        <param key="name" value="AHA Cafe"/>
+    </poi>
+    <poi id="cafe_11212195525" type="cafe" color="139,69,19" layer="10" x="3357.474017206696" y="2077.7880242094398" width="15" height="15">
+        <param key="name" value="Café Cỏ"/>
+    </poi>
+    <poi id="clothes_11212195527" type="clothes" color="200,200,200" layer="10" x="3351.8388482297305" y="2072.2132370593026" width="15" height="15">
+        <param key="name" value="Loire"/>
+    </poi>
+    <poi id="clothes_11212195528" type="clothes" color="200,200,200" layer="10" x="3348.4364610619377" y="2068.963443275541" width="15" height="15">
+        <param key="name" value="Her Studios"/>
+    </poi>
+    <poi id="clothes_11212195529" type="clothes" color="200,200,200" layer="10" x="3344.803457975504" y="2066.0887718582526" width="15" height="15">
+        <param key="name" value="Medyla"/>
+    </poi>
+    <poi id="restaurant_11212195530" type="restaurant" color="255,200,50" layer="10" x="3341.5659666036954" y="2063.105485541746" width="15" height="15">
+        <param key="name" value="Cơm niêu Singapore KOMBO"/>
+    </poi>
+    <poi id="restaurant_11212195531" type="restaurant" color="255,200,50" layer="10" x="3334.658728417591" y="2054.336330807768" width="15" height="15">
+        <param key="name" value="Bánh tráng Bé My"/>
+    </poi>
+    <poi id="clothes_11212195532" type="clothes" color="200,200,200" layer="10" x="3329.825688499026" y="2050.3928127936088" width="15" height="15">
+        <param key="name" value="Đầm bầu Mom Baby"/>
+    </poi>
+    <poi id="clothes_11212195533" type="clothes" color="200,200,200" layer="10" x="3327.6634490544675" y="2048.4887951253913" width="15" height="15">
+        <param key="name" value="Đầm bầu Minh Huệ"/>
+    </poi>
+    <poi id="clothes_11212195534" type="clothes" color="200,200,200" layer="10" x="3324.4760638350854" y="2045.8599655879661" width="15" height="15">
+        <param key="name" value="Moonchic"/>
+    </poi>
+    <poi id="clothes_11212195535" type="clothes" color="200,200,200" layer="10" x="3321.5684206454316" y="2043.3986267764121" width="15" height="15">
+        <param key="name" value="Flane"/>
+    </poi>
+    <poi id="clothes_11212195536" type="clothes" color="200,200,200" layer="10" x="3318.578269205871" y="2040.8151038498618" width="15" height="15">
+        <param key="name" value="Yame"/>
+    </poi>
+    <poi id="clothes_11212216786" type="clothes" color="200,200,200" layer="10" x="3266.9662485704757" y="1996.8580241883174" width="15" height="15">
+        <param key="name" value="TokyoLife"/>
+    </poi>
+    <poi id="clothes_11212216789" type="clothes" color="200,200,200" layer="10" x="3255.9855637217406" y="1987.9347948171198" width="15" height="15">
+        <param key="name" value="New Day"/>
+    </poi>
+    <poi id="clothes_11212216790" type="clothes" color="200,200,200" layer="10" x="3251.373226967058" y="1983.5165106817149" width="15" height="15">
+        <param key="name" value="Calie"/>
+    </poi>
+    <poi id="clothes_11212216791" type="clothes" color="200,200,200" layer="10" x="3246.2849472797243" y="1978.6862077564" width="15" height="15">
+        <param key="name" value="Liin"/>
+    </poi>
+    <poi id="clothes_11212216792" type="clothes" color="200,200,200" layer="10" x="3242.1858388704713" y="1975.499208027497" width="15" height="15">
+        <param key="name" value="D.Chic"/>
+    </poi>
+    <poi id="clothes_11212216793" type="clothes" color="200,200,200" layer="10" x="3239.1767273475416" y="1972.5614105602726" width="15" height="15">
+        <param key="name" value="Oyster"/>
+    </poi>
+    <poi id="fast_food_11212216794" type="fast_food" color="255,170,0" layer="10" x="3234.9628876898205" y="1969.4512925865129" width="15" height="15">
+        <param key="name" value="Quạc Mía Mix"/>
+    </poi>
+    <poi id="restaurant_11212216796" type="restaurant" color="255,200,50" layer="10" x="3228.723166630836" y="1964.1943781310692" width="15" height="15">
+        <param key="name" value="Kichi-Kichi"/>
+    </poi>
+    <poi id="clothes_11212242438" type="clothes" color="200,200,200" layer="10" x="3312.2985339579172" y="2035.2701659426093" width="15" height="15">
+        <param key="name" value="JM Dress Design"/>
+    </poi>
+    <poi id="clothes_11212242439" type="clothes" color="200,200,200" layer="10" x="3307.457057976513" y="2030.9502828675322" width="15" height="15">
+        <param key="name" value="Bestmum Materinity"/>
+    </poi>
+    <poi id="clothes_11212242440" type="clothes" color="200,200,200" layer="10" x="3304.2793647669023" y="2028.4543298399076" width="15" height="15">
+        <param key="name" value="Tiin"/>
+    </poi>
+    <poi id="clothes_11212242441" type="clothes" color="200,200,200" layer="10" x="3300.7197908484377" y="2025.4472311693244" width="15" height="15">
+        <param key="name" value="Charme"/>
+    </poi>
+    <poi id="clothes_11212242442" type="clothes" color="200,200,200" layer="10" x="3294.676479464164" y="2020.4016177779995" width="15" height="15">
+        <param key="name" value="ilaby Kids"/>
+    </poi>
+    <poi id="clothes_11212242443" type="clothes" color="200,200,200" layer="10" x="3287.535900916555" y="2014.5090668383054" width="15" height="15">
+        <param key="name" value="Thế Giới Áo Da"/>
+    </poi>
+    <poi id="clothes_11212500521" type="clothes" color="200,200,200" layer="10" x="3207.073389850091" y="1944.379422198981" width="15" height="15">
+        <param key="name" value="seo"/>
+    </poi>
+    <poi id="clothes_11212500522" type="clothes" color="200,200,200" layer="10" x="3202.9857568732696" y="1940.9821919887327" width="15" height="15">
+        <param key="name" value="Leika"/>
+    </poi>
+    <poi id="clothes_11212500523" type="clothes" color="200,200,200" layer="10" x="3199.0324230007827" y="1937.7406227267347" width="15" height="15">
+        <param key="name" value="Triumph"/>
+    </poi>
+    <poi id="clothes_11212500526" type="clothes" color="200,200,200" layer="10" x="3186.713334538741" y="1926.364322566893" width="15" height="15">
+        <param key="name" value="Twenty.Five"/>
+    </poi>
+    <poi id="clothes_11212500527" type="clothes" color="200,200,200" layer="10" x="3183.662400821573" y="1923.4705915623344" width="15" height="15">
+        <param key="name" value="Lemia Design"/>
+    </poi>
+    <poi id="clothes_11212500528" type="clothes" color="200,200,200" layer="10" x="3179.1493926761905" y="1919.9272566670552" width="15" height="15">
+        <param key="name" value="May Boutique"/>
+    </poi>
+    <poi id="clothes_11212500530" type="clothes" color="200,200,200" layer="10" x="3173.087589201401" y="1914.4277875386178" width="15" height="15">
+        <param key="name" value="Friday"/>
+    </poi>
+    <poi id="clothes_11212500531" type="clothes" color="200,200,200" layer="10" x="3169.6000255647814" y="1911.5539168082178" width="15" height="15">
+        <param key="name" value="Mialala"/>
+    </poi>
+    <poi id="clothes_11212500532" type="clothes" color="200,200,200" layer="10" x="3164.097189677763" y="1906.4890394085087" width="15" height="15">
+        <param key="name" value="LEP&apos;"/>
+    </poi>
+    <poi id="clothes_11212500533" type="clothes" color="200,200,200" layer="10" x="3159.6184140564874" y="1902.3592603197321" width="15" height="15">
+        <param key="name" value="Rechic"/>
+    </poi>
+    <poi id="convenience_11212544437" type="convenience" color="180,100,220" layer="10" x="3136.046327128657" y="1882.4236864834093" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="clothes_11212544439" type="clothes" color="200,200,200" layer="10" x="3133.0401832469506" y="1878.9103653719649" width="15" height="15">
+        <param key="name" value="Madelen"/>
+    </poi>
+    <poi id="clothes_11212544440" type="clothes" color="200,200,200" layer="10" x="3128.5388737182366" y="1875.1125317164697" width="15" height="15">
+        <param key="name" value="blink"/>
+    </poi>
+    <poi id="clothes_11212544441" type="clothes" color="200,200,200" layer="10" x="3123.625013710931" y="1870.703781416174" width="15" height="15">
+        <param key="name" value="Cosmo Design"/>
+    </poi>
+    <poi id="clothes_11212544445" type="clothes" color="200,200,200" layer="10" x="3102.982373928651" y="1853.0304411472753" width="15" height="15">
+        <param key="name" value="Phan Nguyen Men Wear"/>
+    </poi>
+    <poi id="clothes_11212544447" type="clothes" color="200,200,200" layer="10" x="3095.667686118977" y="1846.6168535309844" width="15" height="15">
+        <param key="name" value="Genviet Jeans"/>
+    </poi>
+    <poi id="clothes_11212544448" type="clothes" color="200,200,200" layer="10" x="3091.6824369282695" y="1843.507966990117" width="15" height="15">
+        <param key="name" value="Owen"/>
+    </poi>
+    <poi id="clothes_11212544449" type="clothes" color="200,200,200" layer="10" x="3088.4018412480364" y="1840.801221076399" width="15" height="15">
+        <param key="name" value="Winny"/>
+    </poi>
+    <poi id="clothes_11212544450" type="clothes" color="200,200,200" layer="10" x="3084.067436373909" y="1836.8825178435072" width="15" height="15">
+        <param key="name" value="Onetone"/>
+    </poi>
+    <poi id="clothes_11212544451" type="clothes" color="200,200,200" layer="10" x="3081.211398357176" y="1834.4768360247836" width="15" height="15">
+        <param key="name" value="Lalin"/>
+    </poi>
+    <poi id="restaurant_11212544453" type="restaurant" color="255,200,50" layer="10" x="3075.3345879263943" y="1829.365766516421" width="15" height="15">
+        <param key="name" value="Cơm niêu Tố Uyên"/>
+    </poi>
+    <poi id="clothes_11212544454" type="clothes" color="200,200,200" layer="10" x="3071.98897318542" y="1827.1678342800587" width="15" height="15">
+        <param key="name" value="Anchy"/>
+    </poi>
+    <poi id="clothes_11212544455" type="clothes" color="200,200,200" layer="10" x="3063.9053307579597" y="1816.7324009556323" width="15" height="15">
+        <param key="name" value="JM Dress Design"/>
+    </poi>
+    <poi id="clothes_11212544456" type="clothes" color="200,200,200" layer="10" x="3061.671086427872" y="1814.6730869961902" width="15" height="15">
+        <param key="name" value="Linstore"/>
+    </poi>
+    <poi id="clothes_11212544457" type="clothes" color="200,200,200" layer="10" x="3058.495969680487" y="1811.668048995547" width="15" height="15">
+        <param key="name" value="Venus Charm"/>
+    </poi>
+    <poi id="clothes_11212544460" type="clothes" color="200,200,200" layer="10" x="3043.674825485912" y="1799.7253970862366" width="15" height="15">
+        <param key="name" value="Daisy"/>
+    </poi>
+    <poi id="clothes_11212544461" type="clothes" color="200,200,200" layer="10" x="3039.0676965453895" y="1796.2812288324349" width="15" height="15">
+        <param key="name" value="Potato Fashion"/>
+    </poi>
+    <poi id="clothes_11212544462" type="clothes" color="200,200,200" layer="10" x="3035.2290828123223" y="1792.9517520265654" width="15" height="15">
+        <param key="name" value="Germe"/>
+    </poi>
+    <poi id="clothes_11212544464" type="clothes" color="200,200,200" layer="10" x="3023.6340669358615" y="1782.1991910804063" width="15" height="15">
+        <param key="name" value="Triumph"/>
+    </poi>
+    <poi id="clothes_11212544465" type="clothes" color="200,200,200" layer="10" x="3027.910525135696" y="1785.2763722431846" width="15" height="15">
+        <param key="name" value="Thai Trinh"/>
+    </poi>
+    <poi id="restaurant_11212544466" type="restaurant" color="255,200,50" layer="10" x="3010.8790341676213" y="1788.618842992466" width="15" height="15">
+        <param key="name" value="Ốc Lan Béo Hải Phòng"/>
+    </poi>
+    <poi id="clothes_11212544467" type="clothes" color="200,200,200" layer="10" x="3016.6154487034073" y="1782.7824503295124" width="15" height="15">
+        <param key="name" value="DZ Collections"/>
+    </poi>
+    <poi id="fast_food_11217641978" type="fast_food" color="255,170,0" layer="10" x="2970.432954988326" y="2338.3335752054118" width="15" height="15">
+        <param key="name" value="Bánh mì Anh Tuấn"/>
+    </poi>
+    <poi id="language_school_11217641979" type="language_school" color="200,200,200" layer="10" x="2938.7810791023076" y="2367.212366031017" width="15" height="15">
+        <param key="name" value="Tiếng Trung Anlaoshi"/>
+    </poi>
+    <poi id="language_school_11217641980" type="language_school" color="200,200,200" layer="10" x="2933.312273988966" y="2373.5925281676464" width="15" height="15">
+        <param key="name" value="Deutsch Liebe"/>
+    </poi>
+    <poi id="restaurant_11217641981" type="restaurant" color="255,200,50" layer="10" x="3383.4637692158576" y="2050.7177202347666" width="15" height="15">
+        <param key="name" value="Gogi House"/>
+    </poi>
+    <poi id="restaurant_11263842269" type="restaurant" color="255,200,50" layer="10" x="2995.7609526637243" y="2639.472498658579" width="15" height="15">
+        <param key="name" value="Bún Cá Rô Đồng Hương Quỳnh"/>
+    </poi>
+    <poi id="restaurant_11263842272" type="restaurant" color="255,200,50" layer="10" x="3005.147937067435" y="2629.0838572219945" width="15" height="15">
+        <param key="name" value="Phở Thìn Béo"/>
+    </poi>
+    <poi id="restaurant_11263842279" type="restaurant" color="255,200,50" layer="10" x="3027.580494408263" y="2606.266927692108" width="15" height="15">
+        <param key="name" value="Bún Sườn Chua 63"/>
+    </poi>
+    <poi id="clothes_11263842284" type="clothes" color="200,200,200" layer="10" x="3042.0099642762216" y="2589.5402257535607" width="15" height="15">
+        <param key="name" value="KT Atlantic"/>
+    </poi>
+    <poi id="clothes_11263842286" type="clothes" color="200,200,200" layer="10" x="3050.2812990898965" y="2581.8464972935617" width="15" height="15">
+        <param key="name" value="Tuyết Lê"/>
+    </poi>
+    <poi id="music_school_11277700912" type="music_school" color="200,200,200" layer="10" x="2910.8290836138185" y="2603.7327376627363" width="15" height="15">
+        <param key="name" value="Seedlink"/>
+    </poi>
+    <poi id="language_school_11277792308" type="language_school" color="200,200,200" layer="10" x="2891.4665961072315" y="2521.957734732423" width="15" height="15">
+        <param key="name" value="TH Education"/>
+    </poi>
+    <poi id="pharmacy_11281683476" type="pharmacy" color="255,150,150" layer="10" x="2895.0912906593876" y="2622.256897246465" width="15" height="15">
+        <param key="name" value="Nhà thuốc Hằng Anh"/>
+    </poi>
+    <poi id="language_school_11281683486" type="language_school" color="200,200,200" layer="10" x="2917.252162240213" y="2635.6212269682437" width="15" height="15">
+        <param key="name" value="Eikoh Vietnam"/>
+    </poi>
+    <poi id="restaurant_11281683527" type="restaurant" color="255,200,50" layer="10" x="2889.6003791586263" y="2740.716247456614" width="15" height="15">
+        <param key="name" value="Susu Bánh Bao Thượng Hải"/>
+    </poi>
+    <poi id="clothes_11281683531" type="clothes" color="200,200,200" layer="10" x="2876.8643606037367" y="2751.6188049307093" width="15" height="15">
+        <param key="name" value="Tuấn Vinh"/>
+    </poi>
+    <poi id="bank_11283340462" type="bank" color="0,255,255" layer="10" x="1184.4930240573594" y="2705.806318952702" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="restaurant_11286510032" type="restaurant" color="255,200,50" layer="10" x="2885.429497776553" y="2851.1689117737114" width="15" height="15">
+        <param key="name" value="Phở Bò 149"/>
+    </poi>
+    <poi id="pharmacy_11286510046" type="pharmacy" color="255,150,150" layer="10" x="2890.202953310916" y="2846.567141239997" width="15" height="15">
+        <param key="name" value="Nhà thuốc số 9"/>
+    </poi>
+    <poi id="clothes_11290667666" type="clothes" color="200,200,200" layer="10" x="2941.7298423671164" y="2661.1065582009032" width="15" height="15">
+        <param key="name" value="Kaylin Clothing"/>
+    </poi>
+    <poi id="bank_11295778635" type="bank" color="0,255,255" layer="10" x="2911.2758055476006" y="2795.385573033709" width="15" height="15">
+        <param key="name" value="PVcomBank"/>
+    </poi>
+    <poi id="electronics_11295778636" type="electronics" color="200,200,200" layer="10" x="2900.6770796250785" y="2804.9931615791284" width="15" height="15">
+        <param key="name" value="SKG by KATA"/>
+    </poi>
+    <poi id="pharmacy_11295778637" type="pharmacy" color="255,150,150" layer="10" x="2918.101341925445" y="2815.8313711350784" width="15" height="15">
+        <param key="name" value="Nhà thuốc Bảo Phúc II"/>
+    </poi>
+    <poi id="restaurant_11295820778" type="restaurant" color="255,200,50" layer="10" x="2937.4996482406277" y="2768.913541912567" width="15" height="15">
+        <param key="name" value="Hi, Linh - Bữa Ăn Hoàn Hảo"/>
+    </poi>
+    <poi id="electronics_11299136721" type="electronics" color="200,200,200" layer="10" x="3014.146416881238" y="2697.212918092031" width="15" height="15">
+        <param key="name" value="Samsung"/>
+    </poi>
+    <poi id="bank_11299136725" type="bank" color="0,255,255" layer="10" x="3020.5108334938996" y="2694.456842219457" width="15" height="15">
+        <param key="name" value="SeABank"/>
+    </poi>
+    <poi id="bank_11299136730" type="bank" color="0,255,255" layer="10" x="3027.0579279311933" y="2690.550600233022" width="15" height="15">
+        <param key="name" value="SHB"/>
+    </poi>
+    <poi id="bank_11299136734" type="bank" color="0,255,255" layer="10" x="3030.2454975820147" y="2685.15473763505" width="15" height="15">
+        <param key="name" value="Nam A Bank"/>
+    </poi>
+    <poi id="restaurant_11301609147" type="restaurant" color="255,200,50" layer="10" x="3084.199309666059" y="2630.536516390741" width="15" height="15">
+        <param key="name" value="MasterChef"/>
+    </poi>
+    <poi id="clothes_11301609162" type="clothes" color="200,200,200" layer="10" x="3096.8483160613105" y="2622.41184232058" width="15" height="15">
+        <param key="name" value="Tuyết Nhung Bridal"/>
+    </poi>
+    <poi id="clothes_11301620078" type="clothes" color="200,200,200" layer="10" x="3096.1446313096676" y="2611.870986081194" width="15" height="15">
+        <param key="name" value="May Wedding"/>
+    </poi>
+    <poi id="restaurant_11301620093" type="restaurant" color="255,200,50" layer="10" x="3127.768020627089" y="2594.39287260687" width="15" height="15">
+        <param key="name" value="Bún Chả Kim Oanh"/>
+    </poi>
+    <poi id="fast_food_11301620121" type="fast_food" color="255,170,0" layer="10" x="3142.250908252434" y="2559.4921014043503" width="15" height="15">
+        <param key="name" value="Hà Thành Cháo Sườn Sụn"/>
+    </poi>
+    <poi id="language_school_11301620131" type="language_school" color="200,200,200" layer="10" x="3156.7945203830022" y="2552.7830567369238" width="15" height="15">
+        <param key="name" value="IELTS Fighter"/>
+    </poi>
+    <poi id="clothes_11301620132" type="clothes" color="200,200,200" layer="10" x="3151.1517440205207" y="2554.657372895628" width="15" height="15">
+        <param key="name" value="Aristino"/>
+    </poi>
+    <poi id="pharmacy_11301620141" type="pharmacy" color="255,150,150" layer="10" x="3168.0737666563364" y="2552.2331856167875" width="15" height="15">
+        <param key="name" value="Nhà thuốc Hải Anh"/>
+    </poi>
+    <poi id="convenience_11302498663" type="convenience" color="180,100,220" layer="10" x="2804.4513997384347" y="2708.8166418457404" width="15" height="15">
+        <param key="name" value="H-Mart"/>
+    </poi>
+    <poi id="bank_11335544611" type="bank" color="0,255,255" layer="10" x="3075.852230885066" y="2638.8053933805786" width="15" height="15">
+        <param key="name" value="Public Bank Vietnam"/>
+    </poi>
+    <poi id="bank_11403532576" type="bank" color="0,255,255" layer="10" x="2817.663788474165" y="1658.887105459813" width="15" height="15">
+        <param key="name" value="TPBank"/>
+    </poi>
+    <poi id="convenience_11416873270" type="convenience" color="180,100,220" layer="10" x="3696.2515943271574" y="3001.967401946429" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_11425024852" type="convenience" color="180,100,220" layer="10" x="1380.0929630055325" y="2295.956751337275" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="cafe_11586914777" type="cafe" color="139,69,19" layer="10" x="2956.6415691847214" y="2338.283872526139" width="15" height="15">
+        <param key="name" value="Co:coffee"/>
+    </poi>
+    <poi id="bank_11745319464" type="bank" color="0,255,255" layer="10" x="2624.214739189716" y="2853.707292945124" width="15" height="15">
+        <param key="name" value="ABBank"/>
+    </poi>
+    <poi id="clothes_11865682871" type="clothes" color="200,200,200" layer="10" x="1273.1435019355267" y="1175.2426517279819" width="15" height="15">
+        <param key="name" value="Uniqlo"/>
+    </poi>
+    <poi id="hospital_11949875397" type="hospital" color="255,50,50" layer="10" x="1791.1394048148068" y="2425.4392804089002" width="15" height="15">
+        <param key="name" value="Bệnh viện đa khoa Nông nghiệp 2"/>
+    </poi>
+    <poi id="pharmacy_12129452073" type="pharmacy" color="255,150,150" layer="10" x="2704.0870430620853" y="1151.6278628814034" width="15" height="15">
+        <param key="name" value="Nhà thuốc số 3 Bệnh viện Đại học Y Hà Nội"/>
+    </poi>
+    <poi id="pharmacy_12129452074" type="pharmacy" color="255,150,150" layer="10" x="2727.4266001982614" y="1212.647603132762" width="15" height="15">
+        <param key="name" value="Nhà thuốc số 5 Bệnh viện Đại học Y Hà Nội"/>
+    </poi>
+    <poi id="convenience_12142320550" type="convenience" color="180,100,220" layer="10" x="2653.147321810364" y="2177.1319496077485" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_12163138631" type="convenience" color="180,100,220" layer="10" x="3319.084677541745" y="1629.9340834892355" width="15" height="15">
+        <param key="name" value="Circle K"/>
+    </poi>
+    <poi id="cafe_12178416219" type="cafe" color="139,69,19" layer="10" x="3011.1118795560906" y="1624.2423850079067" width="15" height="15">
+        <param key="name" value="Toninni Caffe"/>
+    </poi>
+    <poi id="clothes_12178416220" type="clothes" color="200,200,200" layer="10" x="3008.657552343211" y="1630.505412989296" width="15" height="15">
+        <param key="name" value="Be Beautiful"/>
+    </poi>
+    <poi id="supermarket_12213546992" type="supermarket" color="150,50,200" layer="10" x="1848.5099548505386" y="1782.3816025732085" width="15" height="15">
+        <param key="name" value="WinMart"/>
+    </poi>
+    <poi id="supermarket_12228968664" type="supermarket" color="150,50,200" layer="10" x="3263.253456147155" y="1764.622181977611" width="15" height="15">
+        <param key="name" value="Siêu thị B11 Kim Liên"/>
+    </poi>
+    <poi id="restaurant_12313923069" type="restaurant" color="255,200,50" layer="10" x="1422.2245203144848" y="2225.2457989240065" width="15" height="15">
+        <param key="name" value="Phở bò"/>
+    </poi>
+    <poi id="convenience_12337468821" type="convenience" color="180,100,220" layer="10" x="1239.7456397670321" y="1275.5733245760202" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="cafe_12460426420" type="cafe" color="139,69,19" layer="10" x="3013.804465031717" y="1612.1475218613632" width="15" height="15">
+        <param key="name" value="San Coffee"/>
+    </poi>
+    <poi id="cafe_12495717721" type="cafe" color="139,69,19" layer="10" x="1694.3038979241392" y="2695.465527806431" width="15" height="15">
+        <param key="name" value="Xưởng Cafe Hoàng Cầu"/>
+    </poi>
+    <poi id="convenience_12496055428" type="convenience" color="180,100,220" layer="10" x="2693.617459945148" y="3299.894361366052" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="supermarket_12511798979" type="supermarket" color="150,50,200" layer="10" x="1963.1891854687128" y="3084.619880650658" width="15" height="15">
+        <param key="name" value="WinMart"/>
+    </poi>
+    <poi id="supermarket_12549262758" type="supermarket" color="150,50,200" layer="10" x="1896.216014498379" y="1537.8043567524292" width="15" height="15">
+        <param key="name" value="FujiMart"/>
+    </poi>
+    <poi id="bank_12549262759" type="bank" color="0,255,255" layer="10" x="1908.5725400038064" y="1525.958281856496" width="15" height="15">
+        <param key="name" value="SeABank"/>
+    </poi>
+    <poi id="cafe_12549262760" type="cafe" color="139,69,19" layer="10" x="2669.424267809256" y="2861.5238818349317" width="15" height="15">
+        <param key="name" value="Highlands Coffee"/>
+    </poi>
+    <poi id="school_12552981505" type="school" color="50,150,255" layer="10" x="1990.070110883098" y="1739.6441705836914" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Anhxtanh Hà Nội"/>
+    </poi>
+    <poi id="convenience_12568555423" type="convenience" color="180,100,220" layer="10" x="1353.3568328957772" y="3209.596104884986" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_12606257716" type="convenience" color="180,100,220" layer="10" x="3504.616946751252" y="3222.6522599486634" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="restaurant_12628841472" type="restaurant" color="255,200,50" layer="10" x="1378.6441429107217" y="2182.951836651191" width="15" height="15">
+        <param key="name" value="Quán Nhau Tu Do"/>
+    </poi>
+    <poi id="bank_12644828218" type="bank" color="0,255,255" layer="10" x="2808.6262865680037" y="975.9943634048104" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="bank_12645065895" type="bank" color="0,255,255" layer="10" x="2387.6074904116103" y="3593.5918527157046" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="bank_12645065896" type="bank" color="0,255,255" layer="10" x="2386.0401259398786" y="3587.2083028815687" width="15" height="15">
+        <param key="name" value="HDBank"/>
+    </poi>
+    <poi id="bank_12645065897" type="bank" color="0,255,255" layer="10" x="2373.916804552893" y="3548.195620046463" width="15" height="15">
+        <param key="name" value="MSB"/>
+    </poi>
+    <poi id="bank_12645065900" type="bank" color="0,255,255" layer="10" x="3198.334704031935" y="3014.411555804778" width="15" height="15">
+        <param key="name" value="Vietcombank"/>
+    </poi>
+    <poi id="restaurant_12651100308" type="restaurant" color="255,200,50" layer="10" x="1595.134938544128" y="2103.614895551931" width="15" height="15">
+        <param key="name" value="Ăn Vặt Mẹ Sữa"/>
+    </poi>
+    <poi id="cafe_12651108933" type="cafe" color="139,69,19" layer="10" x="1548.698240500642" y="2803.333222032059" width="15" height="15">
+        <param key="name" value="Clover Coffee &amp; Tea"/>
+    </poi>
+    <poi id="cafe_12651116208" type="cafe" color="139,69,19" layer="10" x="1214.3922239664244" y="2577.720188539475" width="15" height="15">
+        <param key="name" value="Hub de Tana"/>
+    </poi>
+    <poi id="convenience_12652598277" type="convenience" color="180,100,220" layer="10" x="2794.468730307999" y="3575.1270286515355" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_12652598278" type="convenience" color="180,100,220" layer="10" x="2994.378203293658" y="3313.479939620476" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="convenience_12672907317" type="convenience" color="180,100,220" layer="10" x="3569.4094413447892" y="1892.3280027536675" width="15" height="15">
+        <param key="name" value="GS25"/>
+    </poi>
+    <poi id="marketplace_12694077466" type="marketplace" color="150,50,200" layer="10" x="1194.9029393701348" y="3441.5444893906824" width="15" height="15">
+        <param key="name" value="Chợ Thành Công"/>
+    </poi>
+    <poi id="convenience_12694230826" type="convenience" color="180,100,220" layer="10" x="1168.28105171083" y="3455.144522456918" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="bank_12833589502" type="bank" color="0,255,255" layer="10" x="3359.994502495276" y="2237.663166401442" width="15" height="15">
+        <param key="name" value="HDBank"/>
+    </poi>
+    <poi id="bank_12833589503" type="bank" color="0,255,255" layer="10" x="3353.8855585349957" y="2245.1799006881192" width="15" height="15">
+        <param key="name" value="VPBank"/>
+    </poi>
+    <poi id="bank_12876429166" type="bank" color="0,255,255" layer="10" x="1188.651173521881" y="2705.606169140432" width="15" height="15">
+        <param key="name" value="VPBank NEO Express"/>
+    </poi>
+    <poi id="bank_12901218642" type="bank" color="0,255,255" layer="10" x="2539.5922733579064" y="2553.8887005732395" width="15" height="15">
+        <param key="name" value="Ngân Hàng Techcombank"/>
+    </poi>
+    <poi id="convenience_12948680154" type="convenience" color="180,100,220" layer="10" x="2094.109443435096" y="3021.2748023392633" width="15" height="15">
+        <param key="name" value="GS25"/>
+    </poi>
+    <poi id="cafe_12969157885" type="cafe" color="139,69,19" layer="10" x="3681.4820052641444" y="1761.588645952288" width="15" height="15">
+        <param key="name" value="Tak Coffee"/>
+    </poi>
+    <poi id="restaurant_13039561898" type="restaurant" color="255,200,50" layer="10" x="3631.740152802784" y="3236.247353508137" width="15" height="15">
+        <param key="name" value="Thưc Đơn"/>
+    </poi>
+    <poi id="cafe_13240113920" type="cafe" color="139,69,19" layer="10" x="2971.3689875872806" y="2328.2329433723353" width="15" height="15">
+        <param key="name" value="Cafe Phương Việt"/>
+    </poi>
+    <poi id="restaurant_13408172097" type="restaurant" color="255,200,50" layer="10" x="3078.844319767086" y="1734.3170583159663" width="15" height="15">
+        <param key="name" value="Bánh mì Dân Tổ"/>
+    </poi>
+    <poi id="restaurant_13513730201" type="restaurant" color="255,200,50" layer="10" x="3372.5628468263894" y="3636.6523079895414" width="15" height="15">
+        <param key="name" value="Bún Ziu Gánh"/>
+    </poi>
+    <poi id="sports_centre_13563510001" type="sports_centre" color="0,180,0" layer="10" x="1217.5945987033192" y="1245.409591242671" width="15" height="15">
+        <param key="name" value="Vincom Ice rink (B2)"/>
+    </poi>
+    <poi id="park_29133247" type="park" color="50,200,50" layer="10" x="2145.4588343258947" y="2260.1413674601354" width="15" height="15">
+        <param key="name" value="Gò Đống Đa"/>
+    </poi>
+    <poi id="park_38137267" type="park" color="50,200,50" layer="10" x="1070.9657230330631" y="2998.706552396994" width="15" height="15">
+        <param key="name" value="Công viên Indira Gandhi"/>
+    </poi>
+    <poi id="mall_136161117" type="mall" color="150,50,200" layer="10" x="2936.8258267533965" y="1622.8925553159788" width="15" height="15">
+        <param key="name" value="Vincom Phạm Ngọc Thạch"/>
+    </poi>
+    <poi id="hospital_136258986" type="hospital" color="255,50,50" layer="10" x="3656.466715920018" y="1167.1578053073026" width="15" height="15">
+        <param key="name" value="Bệnh viện Bệnh Nhiệt đới Trung ương"/>
+    </poi>
+    <poi id="hospital_136259226" type="hospital" color="255,50,50" layer="10" x="1169.8075210968964" y="2290.289381956216" width="15" height="15">
+        <param key="name" value="Bệnh viện Nội tiết Trung ương"/>
+    </poi>
+    <poi id="hospital_163711327" type="hospital" color="255,50,50" layer="10" x="2392.376162424218" y="2646.25613767514" width="15" height="15">
+        <param key="name" value="Bệnh viện Đa khoa Đống Đa"/>
+    </poi>
+    <poi id="school_179996741" type="school" color="50,150,255" layer="10" x="2904.3509342048783" y="2137.185427802615" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Kim Liên"/>
+    </poi>
+    <poi id="school_179998403" type="school" color="50,150,255" layer="10" x="2091.985760910902" y="2437.5915121492" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Quang Trung - Đống Đa"/>
+    </poi>
+    <poi id="sports_centre_180002219" type="sports_centre" color="0,180,0" layer="10" x="1453.6619741219329" y="1872.2022987734526" width="15" height="15">
+        <param key="name" value="Sân bóng rổ Zone Six7"/>
+    </poi>
+    <poi id="school_180082695" type="school" color="50,150,255" layer="10" x="3204.1639913030667" y="1534.2333725937642" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Đống Đa"/>
+    </poi>
+    <poi id="school_194852647" type="school" color="50,150,255" layer="10" x="1728.0079356781207" y="3237.7374957380816" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Nguyễn Trường Tộ"/>
+    </poi>
+    <poi id="bank_199299468" type="bank" color="0,255,255" layer="10" x="1558.8939000978135" y="3419.5652970075607" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="hospital_218625367" type="hospital" color="255,50,50" layer="10" x="3710.4203672917793" y="1131.6898739906028" width="15" height="15">
+        <param key="name" value="Bệnh viện Bạch Mai"/>
+    </poi>
+    <poi id="university_219977469" type="university" color="0,100,255" layer="10" x="2630.7094127807068" y="1972.6144068310969" width="15" height="15">
+        <param key="name" value="Học viện Ngân hàng"/>
+    </poi>
+    <poi id="kindergarten_426733615" type="kindergarten" color="100,200,255" layer="10" x="1694.1547493988182" y="1632.9952775780112" width="15" height="15">
+        <param key="name" value="Trường Mầm non Thực nghiệm Hoa Hồng"/>
+    </poi>
+    <poi id="hospital_438373210" type="hospital" color="255,50,50" layer="10" x="2772.6623972514644" y="1162.2443931344897" width="15" height="15">
+        <param key="name" value="Bệnh viện Đại học Y Hà Nội"/>
+    </poi>
+    <poi id="school_500040428" type="school" color="50,150,255" layer="10" x="1327.5585478731664" y="2256.8048378336243" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Thái Thịnh"/>
+    </poi>
+    <poi id="school_500040429" type="school" color="50,150,255" layer="10" x="1278.5012154914439" y="2295.836029089056" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Thái Thịnh"/>
+    </poi>
+    <poi id="kindergarten_569806136" type="kindergarten" color="100,200,255" layer="10" x="3497.517078645993" y="1918.3494355427101" width="15" height="15">
+        <param key="name" value="Trường Mầm non Đống Đa"/>
+    </poi>
+    <poi id="school_570570399" type="school" color="50,150,255" layer="10" x="2046.559670682298" y="2402.9676771103404" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Quang Trung - Đống Đa"/>
+    </poi>
+    <poi id="fuel_570570880" type="fuel" color="255,150,0" layer="10" x="2449.407816097839" y="2448.4482254842296" width="15" height="15">
+        <param key="name" value="Petrolimex"/>
+    </poi>
+    <poi id="school_593642477" type="school" color="50,150,255" layer="10" x="3786.2542099085404" y="1586.4823584710248" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Phương Mai"/>
+    </poi>
+    <poi id="school_593642482" type="school" color="50,150,255" layer="10" x="3722.8629919744562" y="1509.444714995101" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Phương Mai"/>
+    </poi>
+    <poi id="school_691421444" type="school" color="50,150,255" layer="10" x="3560.376034846995" y="3194.3548303442076" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Văn Chương"/>
+    </poi>
+    <poi id="college_698722897" type="college" color="50,150,255" layer="10" x="1417.5015967264771" y="1642.9453703090549" width="15" height="15">
+        <param key="name" value="Trường Đào tạo Cán bộ Lê Hồng Phong"/>
+    </poi>
+    <poi id="fuel_709271919" type="fuel" color="255,150,0" layer="10" x="1226.1469878341304" y="2431.057220360264" width="15" height="15">
+        <param key="name" value="PV Oil Thái Thịnh"/>
+    </poi>
+    <poi id="fuel_710355837" type="fuel" color="255,150,0" layer="10" x="1397.1495065200143" y="1452.1768166534603" width="15" height="15">
+        <param key="name" value="Petrolimex"/>
+    </poi>
+    <poi id="fuel_711519580" type="fuel" color="255,150,0" layer="10" x="2970.697824944509" y="3059.4346287134103" width="15" height="15">
+        <param key="name" value="Total"/>
+    </poi>
+    <poi id="park_750651737" type="park" color="50,200,50" layer="10" x="2173.249875545851" y="2489.722544782795" width="15" height="15">
+        <param key="name" value="Vườn hoa Trần Quang Diệu"/>
+    </poi>
+    <poi id="school_802431699" type="school" color="50,150,255" layer="10" x="1517.9931087516015" y="1503.4994870680384" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Thịnh Quang"/>
+    </poi>
+    <poi id="school_802431700" type="school" color="50,150,255" layer="10" x="1479.110641857842" y="1477.1125874649733" width="15" height="15">
+        <param key="name" value="Trờng Tiểu học Thịnh Quang"/>
+    </poi>
+    <poi id="school_802433054" type="school" color="50,150,255" layer="10" x="1449.712480411632" y="1551.242292414885" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Quang Trung - Đống Đa"/>
+    </poi>
+    <poi id="school_810475989" type="school" color="50,150,255" layer="10" x="2806.592648829799" y="1737.260609193705" width="15" height="15">
+        <param key="name" value="Trường Phổ thông Liên cấp TH School"/>
+    </poi>
+    <poi id="school_812556568" type="school" color="50,150,255" layer="10" x="3370.3354822356487" y="1772.9300291528925" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Kim Liên"/>
+    </poi>
+    <poi id="kindergarten_812557719" type="kindergarten" color="100,200,255" layer="10" x="3312.902716551209" y="1722.9432857376523" width="15" height="15">
+        <param key="name" value="Trường Mầm non Kim Liên"/>
+    </poi>
+    <poi id="kindergarten_814968070" type="kindergarten" color="100,200,255" layer="10" x="3348.532728334074" y="1524.018977213651" width="15" height="15">
+        <param key="name" value="Trường Mầm non Hoa Sữa"/>
+    </poi>
+    <poi id="school_814971615" type="school" color="50,150,255" layer="10" x="3188.854013249511" y="1713.4403845602646" width="15" height="15">
+        <param key="name" value="Hanoi Adelaide School"/>
+    </poi>
+    <poi id="clinic_817570463" type="clinic" color="255,100,100" layer="10" x="3173.5175185601693" y="1617.0425625625066" width="15" height="15">
+        <param key="name" value="Phòng khám Đa khoa Kim Liên"/>
+    </poi>
+    <poi id="school_817572203" type="school" color="50,150,255" layer="10" x="3106.9196893160697" y="1715.8906030999497" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Lê Quý Đôn - Đống Đa"/>
+    </poi>
+    <poi id="school_821395351" type="school" color="50,150,255" layer="10" x="2757.5684558441862" y="1498.8238693661988" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Khương Thượng"/>
+    </poi>
+    <poi id="school_821395352" type="school" color="50,150,255" layer="10" x="2733.491845090757" y="1431.7347105932422" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Khương Thượng"/>
+    </poi>
+    <poi id="university_821395356" type="university" color="0,100,255" layer="10" x="2291.2127552569145" y="1664.6813525655307" width="15" height="15">
+        <param key="name" value="Trường Đại học Thủy lợi"/>
+    </poi>
+    <poi id="restaurant_826025418" type="restaurant" color="255,200,50" layer="10" x="2592.888421807438" y="2076.771583424881" width="15" height="15">
+        <param key="name" value="Nhà Ăn HVNH"/>
+    </poi>
+    <poi id="kindergarten_826029900" type="kindergarten" color="100,200,255" layer="10" x="1229.3474461648148" y="2103.359867707826" width="15" height="15">
+        <param key="name" value="Trường mầm non Hoa Hồng"/>
+    </poi>
+    <poi id="restaurant_826041747" type="restaurant" color="255,200,50" layer="10" x="2465.1038475441746" y="1964.2848555389792" width="15" height="15">
+        <param key="name" value="Nhà ăn sinh viên"/>
+    </poi>
+    <poi id="school_838059689" type="school" color="50,150,255" layer="10" x="3468.1374187134206" y="2076.607507497072" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Phương Liên"/>
+    </poi>
+    <poi id="school_839655655" type="school" color="50,150,255" layer="10" x="2871.641267071478" y="2672.872688378673" width="15" height="15">
+        <param key="name" value="Trường PTCS Xã Đàn"/>
+    </poi>
+    <poi id="kindergarten_839655656" type="kindergarten" color="100,200,255" layer="10" x="2787.9321347355144" y="2683.793495160993" width="15" height="15">
+        <param key="name" value="Trường PTCS Xã Đàn"/>
+    </poi>
+    <poi id="school_839675219" type="school" color="50,150,255" layer="10" x="3010.5182036433835" y="1999.4822002900764" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Trung Tự"/>
+    </poi>
+    <poi id="kindergarten_839675221" type="kindergarten" color="100,200,255" layer="10" x="3204.474776574876" y="2012.0937975416891" width="15" height="15">
+        <param key="name" value="Trường Mẫu giáo Việt Triều Hữu nghị"/>
+    </poi>
+    <poi id="park_839675222" type="park" color="50,200,50" layer="10" x="3055.612233314314" y="2077.7167078657076" width="15" height="15">
+        <param key="name" value="Công viên Con Voi"/>
+    </poi>
+    <poi id="school_839675223" type="school" color="50,150,255" layer="10" x="3076.761321621947" y="2040.0835286281072" width="15" height="15">
+        <param key="name" value="Trung tâm Giáo dục nghề nghiệp - Giáo dục thường xuyên Đống Đa"/>
+    </poi>
+    <poi id="park_839899602" type="park" color="50,200,50" layer="10" x="3718.2321937938686" y="1831.0592618435621" width="15" height="15">
+        <param key="name" value="Vườn hoa Kim Liên"/>
+    </poi>
+    <poi id="kindergarten_840063164" type="kindergarten" color="100,200,255" layer="10" x="3004.7717925206525" y="1861.6388538233005" width="15" height="15">
+        <param key="name" value="Trường Mầm non Trung Tự"/>
+    </poi>
+    <poi id="school_840066506" type="school" color="50,150,255" layer="10" x="2610.8882191041484" y="2359.520034733694" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Bế Văn Đàn"/>
+    </poi>
+    <poi id="school_840066509" type="school" color="50,150,255" layer="10" x="2632.3726691490738" y="2465.290989796631" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Bế Văn Đàn"/>
+    </poi>
+    <poi id="bank_840074805" type="bank" color="0,255,255" layer="10" x="2480.9278359928867" y="2462.878711940255" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="bank_840249312" type="bank" color="0,255,255" layer="10" x="2954.0435068720253" y="2673.4456294495612" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="school_840439575" type="school" color="50,150,255" layer="10" x="2589.095203247736" y="2990.3865870726295" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Thịnh Hào"/>
+    </poi>
+    <poi id="mall_840467994" type="mall" color="150,50,200" layer="10" x="2566.0554940609727" y="907.1960472487845" width="15" height="15">
+        <param key="name" value="Trung tâm thương mại Artemis"/>
+    </poi>
+    <poi id="marketplace_840803809" type="marketplace" color="150,50,200" layer="10" x="1526.403616162599" y="1214.8340373397805" width="15" height="15">
+        <param key="name" value="Chợ Ngã Tư Sở"/>
+    </poi>
+    <poi id="marketplace_840867180" type="marketplace" color="150,50,200" layer="10" x="3307.274227333721" y="1598.7699477784336" width="15" height="15">
+        <param key="name" value="Chợ Kim Liên"/>
+    </poi>
+    <poi id="bank_841374795" type="bank" color="0,255,255" layer="10" x="1524.341736085713" y="3232.508685389068" width="15" height="15">
+        <param key="name" value="SHB"/>
+    </poi>
+    <poi id="restaurant_841374806" type="restaurant" color="255,200,50" layer="10" x="1622.7635368069168" y="3393.616403435357" width="15" height="15">
+        <param key="name" value="Món Huế"/>
+    </poi>
+    <poi id="bank_841374807" type="bank" color="0,255,255" layer="10" x="1618.7298000926385" y="3387.829049914144" width="15" height="15">
+        <param key="name" value="Dong A Bank"/>
+    </poi>
+    <poi id="bank_841374808" type="bank" color="0,255,255" layer="10" x="1615.5356649867026" y="3380.4410810903646" width="15" height="15">
+        <param key="name" value="PVcomBank"/>
+    </poi>
+    <poi id="bank_841374810" type="bank" color="0,255,255" layer="10" x="1590.9375990126282" y="3353.9498790521175" width="15" height="15">
+        <param key="name" value="Ngân hàng Kiên Long"/>
+    </poi>
+    <poi id="hospital_857438584" type="hospital" color="255,50,50" layer="10" x="3559.3707063493785" y="1963.4345884430222" width="15" height="15">
+        <param key="name" value="Bệnh viện Đông Đô"/>
+    </poi>
+    <poi id="police_858242834" type="police" color="0,0,200" layer="10" x="2944.3286823173985" y="1904.6127757900394" width="15" height="15">
+        <param key="name" value="Công an phường Kim Liên"/>
+    </poi>
+    <poi id="supermarket_858242836" type="supermarket" color="150,50,200" layer="10" x="3074.250523437164" y="1756.219724486582" width="15" height="15">
+        <param key="name" value="BRG Mart"/>
+    </poi>
+    <poi id="clothes_858242837" type="clothes" color="200,200,200" layer="10" x="3107.3049733793596" y="1799.437358804047" width="15" height="15">
+        <param key="name" value="Viet Brothers"/>
+    </poi>
+    <poi id="bank_858242838" type="bank" color="0,255,255" layer="10" x="3034.946062957286" y="1737.5747743314132" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="school_860294716" type="school" color="50,150,255" layer="10" x="2674.9203115639975" y="3362.1237830971368" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Đống Đa"/>
+    </poi>
+    <poi id="school_860294717" type="school" color="50,150,255" layer="10" x="2753.788468145998" y="3306.184039730113" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Tô Vĩnh Diện"/>
+    </poi>
+    <poi id="police_860294718" type="police" color="0,0,200" layer="10" x="2827.8923753591953" y="3099.400883117225" width="15" height="15">
+        <param key="name" value="Phòng Cảnh sát điều tra tội phạm về tham nhũng, kinh tế, buôn lậu, môi trường"/>
+    </poi>
+    <poi id="school_860294719" type="school" color="50,150,255" layer="10" x="3231.6199261641596" y="3444.330387688242" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Huy Văn"/>
+    </poi>
+    <poi id="school_860294721" type="school" color="50,150,255" layer="10" x="3231.2909540791297" y="2829.2863802067004" width="15" height="15">
+        <param key="name" value="Trường Tiểu học La Thành"/>
+    </poi>
+    <poi id="police_860294722" type="police" color="0,0,200" layer="10" x="3408.949974374613" y="3395.915070960298" width="15" height="15">
+        <param key="name" value="Công an phường Văn Miếu - Quốc Tử Giám"/>
+    </poi>
+    <poi id="clinic_860294723" type="clinic" color="255,100,100" layer="10" x="3394.1042139444035" y="3410.8240424985997" width="15" height="15">
+        <param key="name" value="Trạm Y tế phường Văn Chương"/>
+    </poi>
+    <poi id="police_860295271" type="police" color="0,0,200" layer="10" x="3344.479853762663" y="1645.1200005272403" width="15" height="15">
+        <param key="name" value="Công an phường Kim Liên"/>
+    </poi>
+    <poi id="university_862095210" type="university" color="0,100,255" layer="10" x="2079.5003311530454" y="3516.346630689688" width="15" height="15">
+        <param key="name" value="Trường Đại học Mỹ thuật Công nghiệp"/>
+    </poi>
+    <poi id="university_862095212" type="university" color="0,100,255" layer="10" x="2300.855634874897" y="3464.405665613245" width="15" height="15">
+        <param key="name" value="Học viện Âm nhạc Quốc gia Việt Nam"/>
+    </poi>
+    <poi id="bank_863472428" type="bank" color="0,255,255" layer="10" x="3088.2998788893456" y="1768.6785950935446" width="15" height="15">
+        <param key="name" value="MB"/>
+    </poi>
+    <poi id="restaurant_863472429" type="restaurant" color="255,200,50" layer="10" x="3092.541235273704" y="1780.4775575064123" width="15" height="15">
+        <param key="name" value="Cơm gà Hải Nam"/>
+    </poi>
+    <poi id="clothes_863472430" type="clothes" color="200,200,200" layer="10" x="3099.6704939727206" y="1786.5802579615265" width="15" height="15">
+        <param key="name" value="M2"/>
+    </poi>
+    <poi id="school_875680716" type="school" color="50,150,255" layer="10" x="1277.3018628320424" y="3218.2391607235186" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Thành Công B"/>
+    </poi>
+    <poi id="school_884063651" type="school" color="50,150,255" layer="10" x="2512.8350067775464" y="2905.9261704059318" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Vietkids"/>
+    </poi>
+    <poi id="marketplace_888367936" type="marketplace" color="150,50,200" layer="10" x="2875.772666515899" y="1541.2549217874184" width="15" height="15">
+        <param key="name" value="Chợ Khương Thượng"/>
+    </poi>
+    <poi id="college_888629818" type="college" color="50,150,255" layer="10" x="1179.204368163133" y="2357.223756757565" width="15" height="15">
+        <param key="name" value="Trường Cao đẳng nghề Công nghiệp Hà Nội"/>
+    </poi>
+    <poi id="clothes_892577119" type="clothes" color="200,200,200" layer="10" x="1297.1549644588958" y="1113.8138312273659" width="15" height="15">
+        <param key="name" value="Charles &amp; Keith"/>
+    </poi>
+    <poi id="clothes_892577120" type="clothes" color="200,200,200" layer="10" x="1273.176987859304" y="1119.8122511566617" width="15" height="15">
+        <param key="name" value="Miana"/>
+    </poi>
+    <poi id="fast_food_892577121" type="fast_food" color="255,170,0" layer="10" x="1199.3972213176312" y="1261.3106157048605" width="15" height="15">
+        <param key="name" value="KOI Thé"/>
+    </poi>
+    <poi id="restaurant_892577129" type="restaurant" color="255,200,50" layer="10" x="1266.1107752968092" y="1257.976291355677" width="15" height="15">
+        <param key="name" value="Gogi"/>
+    </poi>
+    <poi id="restaurant_892577131" type="restaurant" color="255,200,50" layer="10" x="1327.333904254483" y="1078.1063097370788" width="15" height="15">
+        <param key="name" value="Nét Huế"/>
+    </poi>
+    <poi id="clothes_892577132" type="clothes" color="200,200,200" layer="10" x="1165.5307975711767" y="1192.713057721965" width="15" height="15">
+        <param key="name" value="The Blues"/>
+    </poi>
+    <poi id="fast_food_892577134" type="fast_food" color="255,170,0" layer="10" x="1240.6474533779547" y="1292.346560748294" width="15" height="15">
+        <param key="name" value="KFC"/>
+    </poi>
+    <poi id="restaurant_892577135" type="restaurant" color="255,200,50" layer="10" x="1202.7310487716459" y="1265.8878018241376" width="15" height="15">
+        <param key="name" value="Cơm gà Hải Nam"/>
+    </poi>
+    <poi id="restaurant_892577138" type="restaurant" color="255,200,50" layer="10" x="1297.2774469489232" y="1248.605503540486" width="15" height="15">
+        <param key="name" value="Hotto"/>
+    </poi>
+    <poi id="clothes_892577139" type="clothes" color="200,200,200" layer="10" x="1283.3076081706677" y="1144.9006959539838" width="15" height="15">
+        <param key="name" value="BOO"/>
+    </poi>
+    <poi id="clothes_892577140" type="clothes" color="200,200,200" layer="10" x="1234.6445415862836" y="1142.726441444829" width="15" height="15">
+        <param key="name" value="Lemino"/>
+    </poi>
+    <poi id="clothes_892577142" type="clothes" color="200,200,200" layer="10" x="1354.0797265613219" y="1036.9356435346417" width="15" height="15">
+        <param key="name" value="Super Sports"/>
+    </poi>
+    <poi id="restaurant_892577146" type="restaurant" color="255,200,50" layer="10" x="1329.9258341663517" y="1097.699557713233" width="15" height="15">
+        <param key="name" value="Shabu Shabu"/>
+    </poi>
+    <poi id="restaurant_892577148" type="restaurant" color="255,200,50" layer="10" x="1271.387100628228" y="1250.5541863660328" width="15" height="15">
+        <param key="name" value="Thai Express"/>
+    </poi>
+    <poi id="clothes_892577152" type="clothes" color="200,200,200" layer="10" x="1232.1416606182465" y="1203.446004955098" width="15" height="15">
+        <param key="name" value="Li-Ning"/>
+    </poi>
+    <poi id="fast_food_892577159" type="fast_food" color="255,170,0" layer="10" x="1212.65269831568" y="1232.102296878118" width="15" height="15">
+        <param key="name" value="Skyline"/>
+    </poi>
+    <poi id="restaurant_892577165" type="restaurant" color="255,200,50" layer="10" x="1359.2290758014424" y="1105.2429502373561" width="15" height="15">
+        <param key="name" value="Meat Plus"/>
+    </poi>
+    <poi id="cafe_892577166" type="cafe" color="139,69,19" layer="10" x="1202.2048766702646" y="1246.7810523835942" width="15" height="15">
+        <param key="name" value="Highlands Coffee"/>
+    </poi>
+    <poi id="fast_food_892577169" type="fast_food" color="255,170,0" layer="10" x="1171.877351643634" y="1299.5112322187051" width="15" height="15">
+        <param key="name" value="The Pizza Company"/>
+    </poi>
+    <poi id="clothes_892577171" type="clothes" color="200,200,200" layer="10" x="1213.16899482999" y="1236.842207514681" width="15" height="15">
+        <param key="name" value="Reebok"/>
+    </poi>
+    <poi id="clothes_892577174" type="clothes" color="200,200,200" layer="10" x="1289.0640732103493" y="1057.6889174934477" width="15" height="15">
+        <param key="name" value="Elise"/>
+    </poi>
+    <poi id="clothes_892577178" type="clothes" color="200,200,200" layer="10" x="1310.5513467486016" y="1034.6767289312556" width="15" height="15">
+        <param key="name" value="V-SIXTYFOUR"/>
+    </poi>
+    <poi id="restaurant_892577186" type="restaurant" color="255,200,50" layer="10" x="1330.6476433279458" y="1210.7448796387762" width="15" height="15">
+        <param key="name" value="Buffet lẩu nướng không khói"/>
+    </poi>
+    <poi id="clothes_892577190" type="clothes" color="200,200,200" layer="10" x="1198.4393455602694" y="1200.4959195749834" width="15" height="15">
+        <param key="name" value="Lacoste"/>
+    </poi>
+    <poi id="fast_food_892577192" type="fast_food" color="255,170,0" layer="10" x="1207.7751851659268" y="1238.7738022692502" width="15" height="15">
+        <param key="name" value="Bread Talk"/>
+    </poi>
+    <poi id="restaurant_892577193" type="restaurant" color="255,200,50" layer="10" x="1305.3765429969644" y="1252.2108870227821" width="15" height="15">
+        <param key="name" value="Viet Street"/>
+    </poi>
+    <poi id="clothes_892577195" type="clothes" color="200,200,200" layer="10" x="1177.1183119443012" y="1290.8603260111995" width="15" height="15">
+        <param key="name" value="Oxgn"/>
+    </poi>
+    <poi id="restaurant_892577199" type="restaurant" color="255,200,50" layer="10" x="1245.966085840715" y="1217.5623491555452" width="15" height="15">
+        <param key="name" value="Mr.Dakgalbi"/>
+    </poi>
+    <poi id="restaurant_892577204" type="restaurant" color="255,200,50" layer="10" x="1361.1344725427916" y="1116.7970341118053" width="15" height="15">
+        <param key="name" value="Deli Deli BBQ"/>
+    </poi>
+    <poi id="restaurant_892577210" type="restaurant" color="255,200,50" layer="10" x="1259.1324691275368" y="1268.9648063313216" width="15" height="15">
+        <param key="name" value="Gogi"/>
+    </poi>
+    <poi id="clothes_892577212" type="clothes" color="200,200,200" layer="10" x="1333.6257959299255" y="1118.0953917042352" width="15" height="15">
+        <param key="name" value="Robins"/>
+    </poi>
+    <poi id="clothes_892577214" type="clothes" color="200,200,200" layer="10" x="1270.4262701971456" y="1096.698451093398" width="15" height="15">
+        <param key="name" value="Chlo.D"/>
+    </poi>
+    <poi id="clothes_892577216" type="clothes" color="200,200,200" layer="10" x="1300.0144335035002" y="1038.2644321536645" width="15" height="15">
+        <param key="name" value="HLA"/>
+    </poi>
+    <poi id="clothes_892577217" type="clothes" color="200,200,200" layer="10" x="1180.0461849985877" y="1222.1736736777239" width="15" height="15">
+        <param key="name" value="Calvin Klein"/>
+    </poi>
+    <poi id="restaurant_892577219" type="restaurant" color="255,200,50" layer="10" x="1366.61855676095" y="1087.0399737427942" width="15" height="15">
+        <param key="name" value="Hải sản Biển Đông"/>
+    </poi>
+    <poi id="school_892577220" type="school" color="50,150,255" layer="10" x="1335.0040801723953" y="1153.4881270625629" width="15" height="15">
+        <param key="name" value="Trường Quốc tế Anh Việt Hà Nội"/>
+    </poi>
+    <poi id="clothes_892577221" type="clothes" color="200,200,200" layer="10" x="1190.2078373747645" y="1206.5415627760813" width="15" height="15">
+        <param key="name" value="San Kelloff"/>
+    </poi>
+    <poi id="clothes_892577223" type="clothes" color="200,200,200" layer="10" x="1238.8031993955374" y="1193.429882348515" width="15" height="15">
+        <param key="name" value="361"/>
+    </poi>
+    <poi id="cafe_892577224" type="cafe" color="139,69,19" layer="10" x="1305.7938800429692" y="1209.1569160991348" width="15" height="15">
+        <param key="name" value="Ding Tea"/>
+    </poi>
+    <poi id="clothes_892577226" type="clothes" color="200,200,200" layer="10" x="1195.0147426077165" y="1199.449092949275" width="15" height="15">
+        <param key="name" value="Lare Boss"/>
+    </poi>
+    <poi id="clothes_892577235" type="clothes" color="200,200,200" layer="10" x="1248.6790690304479" y="1123.8268075347878" width="15" height="15">
+        <param key="name" value="Pedro"/>
+    </poi>
+    <poi id="clothes_892577237" type="clothes" color="200,200,200" layer="10" x="1257.4117291633738" y="1103.0959767983295" width="15" height="15">
+        <param key="name" value="EmSpo"/>
+    </poi>
+    <poi id="clothes_892577241" type="clothes" color="200,200,200" layer="10" x="1253.4627174168127" y="1186.4762506000698" width="15" height="15">
+        <param key="name" value="Nike"/>
+    </poi>
+    <poi id="restaurant_892577246" type="restaurant" color="255,200,50" layer="10" x="1347.8338827566477" y="1075.4217868880369" width="15" height="15">
+        <param key="name" value="3 Cá Bống"/>
+    </poi>
+    <poi id="clothes_892577248" type="clothes" color="200,200,200" layer="10" x="1243.5139900147915" y="1186.846081866417" width="15" height="15">
+        <param key="name" value="Delta"/>
+    </poi>
+    <poi id="clothes_892577249" type="clothes" color="200,200,200" layer="10" x="1181.464461726835" y="1251.8220899705775" width="15" height="15">
+        <param key="name" value="VicLuxy"/>
+    </poi>
+    <poi id="supermarket_892577254" type="supermarket" color="150,50,200" layer="10" x="1300.935022125952" y="1295.6206361553632" width="15" height="15">
+        <param key="name" value="WinMart"/>
+    </poi>
+    <poi id="restaurant_892577259" type="restaurant" color="255,200,50" layer="10" x="1345.335604470456" y="1059.8800507886335" width="15" height="15">
+        <param key="name" value="Pizza - Pasta"/>
+    </poi>
+    <poi id="clothes_892577260" type="clothes" color="200,200,200" layer="10" x="1261.2843448637286" y="1110.0445613497868" width="15" height="15">
+        <param key="name" value="Tommy &amp; Hilfiger"/>
+    </poi>
+    <poi id="restaurant_892577261" type="restaurant" color="255,200,50" layer="10" x="1334.287215384189" y="1126.9756319597363" width="15" height="15">
+        <param key="name" value="Hotpot Story"/>
+    </poi>
+    <poi id="clothes_892577262" type="clothes" color="200,200,200" layer="10" x="1229.0854265267262" y="1213.7240283312276" width="15" height="15">
+        <param key="name" value="MUJOSH"/>
+    </poi>
+    <poi id="clothes_892577265" type="clothes" color="200,200,200" layer="10" x="1322.4173858893337" y="1067.975745529402" width="15" height="15">
+        <param key="name" value="Kelly Bui"/>
+    </poi>
+    <poi id="clothes_892577272" type="clothes" color="200,200,200" layer="10" x="1306.0733980364166" y="1121.8507574079558" width="15" height="15">
+        <param key="name" value="XTEP Sports"/>
+    </poi>
+    <poi id="restaurant_892577281" type="restaurant" color="255,200,50" layer="10" x="1363.4079373402055" y="1145.8189456262626" width="15" height="15">
+        <param key="name" value="Pizza Hut"/>
+    </poi>
+    <poi id="restaurant_892577282" type="restaurant" color="255,200,50" layer="10" x="1356.3033665828407" y="1179.4638074832037" width="15" height="15">
+        <param key="name" value="Quán ăn ngon"/>
+    </poi>
+    <poi id="restaurant_892577283" type="restaurant" color="255,200,50" layer="10" x="1360.2576652094722" y="1129.7315216497518" width="15" height="15">
+        <param key="name" value="Love Thai"/>
+    </poi>
+    <poi id="clothes_892577291" type="clothes" color="200,200,200" layer="10" x="1185.3301007036353" y="1213.2573469844647" width="15" height="15">
+        <param key="name" value="Duoyi"/>
+    </poi>
+    <poi id="clothes_892577293" type="clothes" color="200,200,200" layer="10" x="1173.4312331842957" y="1231.216036322061" width="15" height="15">
+        <param key="name" value="Adore Dress"/>
+    </poi>
+    <poi id="clothes_892577297" type="clothes" color="200,200,200" layer="10" x="1334.4942433508113" y="1021.3287579198368" width="15" height="15">
+        <param key="name" value="Condotti"/>
+    </poi>
+    <poi id="restaurant_892577299" type="restaurant" color="255,200,50" layer="10" x="1225.5995559644653" y="1285.8058331161737" width="15" height="15">
+        <param key="name" value="Dookki"/>
+    </poi>
+    <poi id="clothes_892577303" type="clothes" color="200,200,200" layer="10" x="1242.025743420585" y="1132.2269817283377" width="15" height="15">
+        <param key="name" value="Aokang"/>
+    </poi>
+    <poi id="clothes_892577304" type="clothes" color="200,200,200" layer="10" x="1245.294790038257" y="1129.1334407161921" width="15" height="15">
+        <param key="name" value="G2000"/>
+    </poi>
+    <poi id="restaurant_892577307" type="restaurant" color="255,200,50" layer="10" x="1290.7690868198406" y="1230.6525227515958" width="15" height="15">
+        <param key="name" value="King BBQ"/>
+    </poi>
+    <poi id="fast_food_892577308" type="fast_food" color="255,170,0" layer="10" x="1318.1731090622488" y="1264.0530237755738" width="15" height="15">
+        <param key="name" value="Toco Toco"/>
+    </poi>
+    <poi id="restaurant_892577314" type="restaurant" color="255,200,50" layer="10" x="1283.472970037139" y="1269.2772164610215" width="15" height="15">
+        <param key="name" value="Sắc Huế"/>
+    </poi>
+    <poi id="clothes_892577319" type="clothes" color="200,200,200" layer="10" x="1300.6718116524862" y="1045.90498754289" width="15" height="15">
+        <param key="name" value="Labella"/>
+    </poi>
+    <poi id="clothes_892577322" type="clothes" color="200,200,200" layer="10" x="1263.5466265064897" y="1157.5838358355686" width="15" height="15">
+        <param key="name" value="Giordano"/>
+    </poi>
+    <poi id="clothes_892577325" type="clothes" color="200,200,200" layer="10" x="1274.0896731091198" y="1079.4725760999136" width="15" height="15">
+        <param key="name" value="IVY Moda"/>
+    </poi>
+    <poi id="clothes_892577326" type="clothes" color="200,200,200" layer="10" x="1217.9148397085955" y="1229.494859274011" width="15" height="15">
+        <param key="name" value="Puma"/>
+    </poi>
+    <poi id="restaurant_892577330" type="restaurant" color="255,200,50" layer="10" x="1332.7365596174495" y="1161.9549439107068" width="15" height="15">
+        <param key="name" value="Kichi - Kichi"/>
+    </poi>
+    <poi id="clothes_892577331" type="clothes" color="200,200,200" layer="10" x="1254.36282518995" y="1170.996145913843" width="15" height="15">
+        <param key="name" value="House of Samsonite"/>
+    </poi>
+    <poi id="fast_food_892577332" type="fast_food" color="255,170,0" layer="10" x="1188.6920970920473" y="1310.1451624543406" width="15" height="15">
+        <param key="name" value="Pepper Lunch"/>
+    </poi>
+    <poi id="clothes_892577333" type="clothes" color="200,200,200" layer="10" x="1288.9209172941046" y="1069.4428320052102" width="15" height="15">
+        <param key="name" value="Shiseido"/>
+    </poi>
+    <poi id="fast_food_892577336" type="fast_food" color="255,170,0" layer="10" x="1217.364935980644" y="1225.2307184305973" width="15" height="15">
+        <param key="name" value="Hokaido Bake Cheese Tart"/>
+    </poi>
+    <poi id="fast_food_892577337" type="fast_food" color="255,170,0" layer="10" x="1237.711011166335" y="1222.1136143836193" width="15" height="15">
+        <param key="name" value="Surf &apos;N&apos; Fries"/>
+    </poi>
+    <poi id="clothes_892577338" type="clothes" color="200,200,200" layer="10" x="1172.6822404691484" y="1245.6122101983055" width="15" height="15">
+        <param key="name" value="Hoàng Phúc"/>
+    </poi>
+    <poi id="fast_food_892577339" type="fast_food" color="255,170,0" layer="10" x="1324.7261604613159" y="1173.5358556145802" width="15" height="15">
+        <param key="name" value="Asia Snacks"/>
+    </poi>
+    <poi id="clothes_892577340" type="clothes" color="200,200,200" layer="10" x="1248.5521226766286" y="1179.2567282132804" width="15" height="15">
+        <param key="name" value="Gumac"/>
+    </poi>
+    <poi id="clothes_892577342" type="clothes" color="200,200,200" layer="10" x="1257.2953209568514" y="1211.4439948326908" width="15" height="15">
+        <param key="name" value="Mango"/>
+    </poi>
+    <poi id="clothes_892577345" type="clothes" color="200,200,200" layer="10" x="1292.5845367313595" y="1131.5774234416895" width="15" height="15">
+        <param key="name" value="Anta Sports"/>
+    </poi>
+    <poi id="clothes_892577347" type="clothes" color="200,200,200" layer="10" x="1317.2047008158406" y="1075.1325193597004" width="15" height="15">
+        <param key="name" value="Nam &amp; co."/>
+    </poi>
+    <poi id="restaurant_892577356" type="restaurant" color="255,200,50" layer="10" x="1226.4228878641734" y="1315.9271648209542" width="15" height="15">
+        <param key="name" value="Kpup"/>
+    </poi>
+    <poi id="fast_food_892577357" type="fast_food" color="255,170,0" layer="10" x="1314.969869843917" y="1052.773996946402" width="15" height="15">
+        <param key="name" value="Yo-Tea"/>
+    </poi>
+    <poi id="clothes_892577361" type="clothes" color="200,200,200" layer="10" x="1331.2633547787555" y="1063.7485209871083" width="15" height="15">
+        <param key="name" value="Rylko"/>
+    </poi>
+    <poi id="fast_food_892577365" type="fast_food" color="255,170,0" layer="10" x="1209.6410110016586" y="1270.3282719436102" width="15" height="15">
+        <param key="name" value="Dairy Queen"/>
+    </poi>
+    <poi id="clothes_892577366" type="clothes" color="200,200,200" layer="10" x="1279.159414440277" y="1084.0254314737394" width="15" height="15">
+        <param key="name" value="LYN"/>
+    </poi>
+    <poi id="clothes_892577369" type="clothes" color="200,200,200" layer="10" x="1220.112215250032" y="1155.3034884962253" width="15" height="15">
+        <param key="name" value="Valention Creations"/>
+    </poi>
+    <poi id="clothes_892577372" type="clothes" color="200,200,200" layer="10" x="1280.8884346128907" y="1069.0587065746076" width="15" height="15">
+        <param key="name" value="JM Dress Design"/>
+    </poi>
+    <poi id="fast_food_892577374" type="fast_food" color="255,170,0" layer="10" x="1330.9034967344487" y="1058.9097898146138" width="15" height="15">
+        <param key="name" value="Soya Garden"/>
+    </poi>
+    <poi id="fast_food_892577376" type="fast_food" color="255,170,0" layer="10" x="1235.7088332663989" y="1304.8840013155714" width="15" height="15">
+        <param key="name" value="Lotteria"/>
+    </poi>
+    <poi id="fast_food_892577379" type="fast_food" color="255,170,0" layer="10" x="1276.1767538422719" y="1279.4229027619585" width="15" height="15">
+        <param key="name" value="Bread Papa&apos;s"/>
+    </poi>
+    <poi id="electronics_892577380" type="electronics" color="200,200,200" layer="10" x="1260.2957988095004" y="1275.2243931740522" width="15" height="15">
+        <param key="name" value="Sony"/>
+    </poi>
+    <poi id="clothes_892577381" type="clothes" color="200,200,200" layer="10" x="1192.3166350862011" y="1147.6573440860957" width="15" height="15">
+        <param key="name" value="H&amp;M"/>
+    </poi>
+    <poi id="clothes_892577385" type="clothes" color="200,200,200" layer="10" x="1345.4010556305293" y="1028.7560287551023" width="15" height="15">
+        <param key="name" value="vascara"/>
+    </poi>
+    <poi id="fast_food_892577387" type="fast_food" color="255,170,0" layer="10" x="1301.3759525778005" y="1215.376937827561" width="15" height="15">
+        <param key="name" value="YoYo"/>
+    </poi>
+    <poi id="restaurant_892577388" type="restaurant" color="255,200,50" layer="10" x="1251.8462096559815" y="1279.1991007886827" width="15" height="15">
+        <param key="name" value="King BBQ"/>
+    </poi>
+    <poi id="fast_food_892577392" type="fast_food" color="255,170,0" layer="10" x="1222.8737448126776" y="1217.057133196853" width="15" height="15">
+        <param key="name" value="Pozaa"/>
+    </poi>
+    <poi id="restaurant_892577396" type="restaurant" color="255,200,50" layer="10" x="1339.3787091432605" y="1147.611012950074" width="15" height="15">
+        <param key="name" value="Sumo BBQ"/>
+    </poi>
+    <poi id="clothes_892577397" type="clothes" color="200,200,200" layer="10" x="1281.4168799381005" y="1108.0664611104876" width="15" height="15">
+        <param key="name" value="Robins"/>
+    </poi>
+    <poi id="clothes_892577398" type="clothes" color="200,200,200" layer="10" x="1178.415763889323" y="1246.3608900974505" width="15" height="15">
+        <param key="name" value="Hallyu"/>
+    </poi>
+    <poi id="clothes_892577400" type="clothes" color="200,200,200" layer="10" x="1254.0959073144477" y="1113.3173290449195" width="15" height="15">
+        <param key="name" value="Pantio"/>
+    </poi>
+    <poi id="clothes_892577403" type="clothes" color="200,200,200" layer="10" x="1311.203530215891" y="1098.2901821755804" width="15" height="15">
+        <param key="name" value="Canifa"/>
+    </poi>
+    <poi id="clothes_892577408" type="clothes" color="200,200,200" layer="10" x="1245.1585991418688" y="1127.3064591432922" width="15" height="15">
+        <param key="name" value="Top&amp;Top"/>
+    </poi>
+    <poi id="restaurant_892577409" type="restaurant" color="255,200,50" layer="10" x="1199.5888335083146" y="1317.4837462287396" width="15" height="15">
+        <param key="name" value="Don Chicken"/>
+    </poi>
+    <poi id="clothes_892577414" type="clothes" color="200,200,200" layer="10" x="1328.0161324283108" y="1068.6684443741105" width="15" height="15">
+        <param key="name" value="Aqua Mineral"/>
+    </poi>
+    <poi id="restaurant_892577415" type="restaurant" color="255,200,50" layer="10" x="1217.9807450033259" y="1328.6348985992372" width="15" height="15">
+        <param key="name" value="Hutong"/>
+    </poi>
+    <poi id="clothes_892577416" type="clothes" color="200,200,200" layer="10" x="1185.2909146266757" y="1216.8654466480948" width="15" height="15">
+        <param key="name" value="Levi&apos;s"/>
+    </poi>
+    <poi id="fast_food_892577421" type="fast_food" color="255,170,0" layer="10" x="1290.0406270339154" y="1263.4002183019184" width="15" height="15">
+        <param key="name" value="Limone"/>
+    </poi>
+    <poi id="clothes_892577424" type="clothes" color="200,200,200" layer="10" x="1265.5269494432723" y="1099.4848199253902" width="15" height="15">
+        <param key="name" value="Leka"/>
+    </poi>
+    <poi id="clothes_892577426" type="clothes" color="200,200,200" layer="10" x="1179.268240344245" y="1280.9761353060603" width="15" height="15">
+        <param key="name" value="Penshoppe"/>
+    </poi>
+    <poi id="restaurant_892577430" type="restaurant" color="255,200,50" layer="10" x="1210.6864255103283" y="1348.6093654497527" width="15" height="15">
+        <param key="name" value="Meiwei"/>
+    </poi>
+    <poi id="clothes_892577436" type="clothes" color="200,200,200" layer="10" x="1191.5536144340876" y="1262.6320272893645" width="15" height="15">
+        <param key="name" value="Maxx Sport"/>
+    </poi>
+    <poi id="restaurant_892577439" type="restaurant" color="255,200,50" layer="10" x="1192.6207354925573" y="1336.6740271938033" width="15" height="15">
+        <param key="name" value="Cheong Hak Gol"/>
+    </poi>
+    <poi id="clothes_892577442" type="clothes" color="200,200,200" layer="10" x="1314.843399439007" y="1087.7163058202714" width="15" height="15">
+        <param key="name" value="Efora"/>
+    </poi>
+    <poi id="hospital_900842178" type="hospital" color="255,50,50" layer="10" x="2798.9501352588413" y="989.8792561800219" width="15" height="15">
+        <param key="name" value="Bệnh viện Thẩm mỹ Kangnam Hàn Quốc"/>
+    </poi>
+    <poi id="hospital_903697302" type="hospital" color="255,50,50" layer="10" x="2293.200686065713" y="947.9109081304632" width="15" height="15">
+        <param key="name" value="Viện Y học Phòng không - Không quân"/>
+    </poi>
+    <poi id="supermarket_904135117" type="supermarket" color="150,50,200" layer="10" x="2982.928120866418" y="2355.7761626364663" width="15" height="15">
+        <param key="name" value="Tôm Mart"/>
+    </poi>
+    <poi id="cafe_904135121" type="cafe" color="139,69,19" layer="10" x="2964.399452713784" y="2329.41416833736" width="15" height="15">
+        <param key="name" value="Aha Cafe"/>
+    </poi>
+    <poi id="police_904135123" type="police" color="0,0,200" layer="10" x="3364.0273815824185" y="2106.5117934709415" width="15" height="15">
+        <param key="name" value="Phòng Quản lý Xuất nhập cảnh"/>
+    </poi>
+    <poi id="park_916528084" type="park" color="50,200,50" layer="10" x="2105.4486828414956" y="1761.6450014817528" width="15" height="15">
+        <param key="name" value="Vườn hoa Thuỷ lợi"/>
+    </poi>
+    <poi id="school_916879500" type="school" color="50,150,255" layer="10" x="2265.8726245437283" y="1298.5836964929476" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Tam Khương"/>
+    </poi>
+    <poi id="school_916879506" type="school" color="50,150,255" layer="10" x="2221.608679673169" y="1346.3368090204895" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Tam Khương"/>
+    </poi>
+    <poi id="school_939606845" type="school" color="50,150,255" layer="10" x="3402.430680902209" y="1216.8079428635538" width="15" height="15">
+        <param key="name" value="Trường Trung học phổ thông Phùng Khắc Khoan"/>
+    </poi>
+    <poi id="school_939977304" type="school" color="50,150,255" layer="10" x="3424.4482420595596" y="2653.3341276599094" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Trung Phụng"/>
+    </poi>
+    <poi id="school_939977306" type="school" color="50,150,255" layer="10" x="3372.588766336674" y="2657.080449914094" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Trung Phụng"/>
+    </poi>
+    <poi id="kindergarten_939977308" type="kindergarten" color="100,200,255" layer="10" x="2613.0445360314334" y="3297.88211206533" width="15" height="15">
+        <param key="name" value="Trường Mầm non Sơn Ca"/>
+    </poi>
+    <poi id="marketplace_943911446" type="marketplace" color="150,50,200" layer="10" x="1970.4985409005312" y="2470.5249809194356" width="15" height="15">
+        <param key="name" value="Chợ Thái Hà"/>
+    </poi>
+    <poi id="police_956996491" type="police" color="0,0,200" layer="10" x="1220.190364168142" y="1897.7948289904743" width="15" height="15">
+        <param key="name" value="Công an phường Đống Đa"/>
+    </poi>
+    <poi id="police_956996505" type="police" color="0,0,200" layer="10" x="1837.2298386098118" y="1309.7793688531965" width="15" height="15">
+        <param key="name" value="Công an phường Kim Liên"/>
+    </poi>
+    <poi id="clinic_956996522" type="clinic" color="255,100,100" layer="10" x="3308.95785447862" y="1211.0837101945654" width="15" height="15">
+        <param key="name" value="Điểm Y tế Phương Mai"/>
+    </poi>
+    <poi id="clinic_956996523" type="clinic" color="255,100,100" layer="10" x="1550.397061683936" y="1461.516896710731" width="15" height="15">
+        <param key="name" value="Trạm Y tế phường Thịnh Quang"/>
+    </poi>
+    <poi id="police_956996530" type="police" color="0,0,200" layer="10" x="3495.1174084811937" y="1362.666438344866" width="15" height="15">
+        <param key="name" value="Công an phường Kim Liên"/>
+    </poi>
+    <poi id="college_958652600" type="college" color="50,150,255" layer="10" x="2793.6107432259014" y="1957.3114754999988" width="15" height="15">
+        <param key="name" value="Trường Trung cấp Kỹ thuật Tin học Hà Nội (cơ sở 2)"/>
+    </poi>
+    <poi id="bank_958652616" type="bank" color="0,255,255" layer="10" x="2634.4391680667177" y="1762.5435112910345" width="15" height="15">
+        <param key="name" value="Agribank"/>
+    </poi>
+    <poi id="park_977375279" type="park" color="50,200,50" layer="10" x="3586.983974375413" y="1932.0895986869" width="15" height="15">
+        <param key="name" value="Vườn hoa Đào Duy Anh"/>
+    </poi>
+    <poi id="electronics_977795572" type="electronics" color="200,200,200" layer="10" x="2740.344977945555" y="924.6141729699448" width="15" height="15">
+        <param key="name" value="FPT Shop"/>
+    </poi>
+    <poi id="clothes_977795573" type="clothes" color="200,200,200" layer="10" x="2752.152171311318" y="922.6831620396115" width="15" height="15">
+        <param key="name" value="Viet Brothers"/>
+    </poi>
+    <poi id="restaurant_977795576" type="restaurant" color="255,200,50" layer="10" x="2769.3738190174336" y="916.9063256555237" width="15" height="15">
+        <param key="name" value="Nhà hàng Cảnh Hồ"/>
+    </poi>
+    <poi id="bank_1021332437" type="bank" color="0,255,255" layer="10" x="3307.774928550236" y="1548.7209685994312" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="police_1040721470" type="police" color="0,0,200" layer="10" x="3462.484001253848" y="2259.0306473392993" width="15" height="15">
+        <param key="name" value="Công an phường Văn Miếu - Quốc Tử Giám"/>
+    </poi>
+    <poi id="restaurant_1040765169" type="restaurant" color="255,200,50" layer="10" x="3691.340249907691" y="1786.3231174279936" width="15" height="15">
+        <param key="name" value="Nhà hàng Hoa Sen 3"/>
+    </poi>
+    <poi id="cafe_1040770336" type="cafe" color="139,69,19" layer="10" x="2988.0657446156256" y="2127.7150973789394" width="15" height="15">
+        <param key="name" value="Trang Cafe Sầu Bá Đạo"/>
+    </poi>
+    <poi id="police_1040776479" type="police" color="0,0,200" layer="10" x="2377.0748920062324" y="3199.0795092196204" width="15" height="15">
+        <param key="name" value="Công an phường Ô Chợ Dừa"/>
+    </poi>
+    <poi id="kindergarten_1041128115" type="kindergarten" color="100,200,255" layer="10" x="1363.2566444253316" y="3604.5684650838375" width="15" height="15">
+        <param key="name" value="Trường Mẫu giáo số 7"/>
+    </poi>
+    <poi id="electronics_1046133524" type="electronics" color="200,200,200" layer="10" x="1196.2001702010166" y="999.6040675812401" width="15" height="15">
+        <param key="name" value="Pico"/>
+    </poi>
+    <poi id="school_1066700497" type="school" color="50,150,255" layer="10" x="3616.0554416729137" y="3066.4628779925406" width="15" height="15">
+        <param key="name" value="Trường Trung cấp nghề Nấu ăn - Nghiệp vụ Du lịch và Thời trang Hà Nội"/>
+    </poi>
+    <poi id="school_1066700505" type="school" color="50,150,255" layer="10" x="3342.081312284572" y="2991.543087023776" width="15" height="15">
+        <param key="name" value="Trường Trung cấp nghề Kỹ thuật Nấu ăn - Nghiệp vụ Du lịch và Thời trang Hà Nội (cơ sở 2)"/>
+    </poi>
+    <poi id="sports_centre_1082814013" type="sports_centre" color="0,180,0" layer="10" x="1597.1518520658137" y="2626.508838237729" width="15" height="15">
+        <param key="name" value="Trung tâm Văn hóa - Thông tin và Thể thao Đống Đa"/>
+    </poi>
+    <poi id="kindergarten_1089001005" type="kindergarten" color="100,200,255" layer="10" x="2992.5969371168176" y="2115.7958343508653" width="15" height="15">
+        <param key="name" value="Trường Mầm non Chích Bông"/>
+    </poi>
+    <poi id="restaurant_1089001007" type="restaurant" color="255,200,50" layer="10" x="2959.5672787997173" y="2153.699283834081" width="15" height="15">
+        <param key="name" value="Bún cá chấm 101"/>
+    </poi>
+    <poi id="electronics_1089514013" type="electronics" color="200,200,200" layer="10" x="2813.777205651393" y="3277.5851672166027" width="15" height="15">
+        <param key="name" value="Pico"/>
+    </poi>
+    <poi id="park_1112643378" type="park" color="50,200,50" layer="10" x="1807.510704289074" y="2786.9189316602424" width="15" height="15">
+        <param key="name" value="Vườn hoa Hoàng Cầu"/>
+    </poi>
+    <poi id="restaurant_1115091181" type="restaurant" color="255,200,50" layer="10" x="2838.272841612925" y="2854.0558775048703" width="15" height="15">
+        <param key="name" value="Cơm tấm Huy"/>
+    </poi>
+    <poi id="electronics_1115091183" type="electronics" color="200,200,200" layer="10" x="2850.1307339747436" y="2854.106506803073" width="15" height="15">
+        <param key="name" value="TopZone by thegioididong"/>
+    </poi>
+    <poi id="hospital_1158639496" type="hospital" color="255,50,50" layer="10" x="3817.8588371141814" y="1333.9109177864157" width="15" height="15">
+        <param key="name" value="Bệnh viện Việt Pháp"/>
+    </poi>
+    <poi id="school_1185863352" type="school" color="50,150,255" layer="10" x="3416.1246050421614" y="1811.5108471307904" width="15" height="15">
+        <param key="name" value="Trường Tiểu học Đống Đa"/>
+    </poi>
+    <poi id="hospital_1192868591" type="hospital" color="255,50,50" layer="10" x="3729.7533132036915" y="1333.4700314407237" width="15" height="15">
+        <param key="name" value="Bệnh viện Lão khoa Trung ương"/>
+    </poi>
+    <poi id="hospital_1192868592" type="hospital" color="255,50,50" layer="10" x="3643.025810815161" y="1351.687217018567" width="15" height="15">
+        <param key="name" value="Bệnh viện Da liễu Trung ương"/>
+    </poi>
+    <poi id="college_1192929296" type="college" color="50,150,255" layer="10" x="3464.317821785924" y="1162.7635975885205" width="15" height="15">
+        <param key="name" value="Trường Cao đẳng Y tế và Thiết bị Việt Đức"/>
+    </poi>
+    <poi id="school_1198548273" type="school" color="50,150,255" layer="10" x="1175.3615584773943" y="1089.085454614833" width="15" height="15">
+        <param key="name" value="Trường Trung học BVIS Secondary"/>
+    </poi>
+    <poi id="kindergarten_1198548274" type="kindergarten" color="100,200,255" layer="10" x="1246.61367908807" y="1049.9125386364758" width="15" height="15">
+        <param key="name" value="Trường Mầm non BVIS Early Years Centre"/>
+    </poi>
+    <poi id="bank_1207347218" type="bank" color="0,255,255" layer="10" x="2906.022010374232" y="2722.5719733973965" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="kindergarten_1208800256" type="kindergarten" color="100,200,255" layer="10" x="3510.16010980343" y="2022.5589709547348" width="15" height="15">
+        <param key="name" value="Trường Mầm non Phương Liên"/>
+    </poi>
+    <poi id="pharmacy_1210089645" type="pharmacy" color="255,150,150" layer="10" x="2603.9880820530234" y="2954.3031931631267" width="15" height="15">
+        <param key="name" value="Nhà thuốc Ngọc Hân"/>
+    </poi>
+    <poi id="restaurant_1210228263" type="restaurant" color="255,200,50" layer="10" x="2885.849635146442" y="2425.0240979082882" width="15" height="15">
+        <param key="name" value="Giang Dung 2"/>
+    </poi>
+    <poi id="cafe_1210228284" type="cafe" color="139,69,19" layer="10" x="2952.663177589653" y="2349.840764574241" width="15" height="15">
+        <param key="name" value="The Nammin House"/>
+    </poi>
+    <poi id="park_1210984005" type="park" color="50,200,50" layer="10" x="2445.6735331279924" y="2746.0928062228486" width="15" height="15">
+        <param key="name" value="Vườn hoa 1-6"/>
+    </poi>
+    <poi id="park_1211556646" type="park" color="50,200,50" layer="10" x="2817.13549415092" y="2334.1930146631785" width="15" height="15">
+        <param key="name" value="Công viên Hồ Xã Đàn"/>
+    </poi>
+    <poi id="hospital_1215063381" type="hospital" color="255,50,50" layer="10" x="1873.846574086463" y="2265.8923957739025" width="15" height="15">
+        <param key="name" value="Viện Y học dự phòng Quân đội"/>
+    </poi>
+    <poi id="college_1216451393" type="college" color="50,150,255" layer="10" x="1961.9799148457823" y="1732.947048685979" width="15" height="15">
+        <param key="name" value="Trường Trung cấp Nghiệp vụ và Dạy nghề Công đoàn Hà Nội"/>
+    </poi>
+    <poi id="restaurant_1216770939" type="restaurant" color="255,200,50" layer="10" x="2929.379892567289" y="2687.6619021673687" width="15" height="15">
+        <param key="name" value="Bao Bao Quán"/>
+    </poi>
+    <poi id="fast_food_1216804034" type="fast_food" color="255,170,0" layer="10" x="2886.3004655034747" y="2623.948887206614" width="15" height="15">
+        <param key="name" value="Mr. Eco Salad Healthy"/>
+    </poi>
+    <poi id="sports_centre_1217754305" type="sports_centre" color="0,180,0" layer="10" x="1128.1211223563878" y="3144.182466837112" width="15" height="15">
+        <param key="name" value="Trung tâm Văn hóa - Thông tin và Thể thao phường Giảng Võ"/>
+    </poi>
+    <poi id="convenience_1218063976" type="convenience" color="180,100,220" layer="10" x="2866.889106079703" y="2865.0850890967995" width="15" height="15">
+        <param key="name" value="WinMart+"/>
+    </poi>
+    <poi id="restaurant_1219036302" type="restaurant" color="255,200,50" layer="10" x="2959.130623215693" y="2766.24803531589" width="15" height="15">
+        <param key="name" value="Miền Tây Tửu Quán"/>
+    </poi>
+    <poi id="clothes_1219334456" type="clothes" color="200,200,200" layer="10" x="2965.6766694366233" y="2758.545280103106" width="15" height="15">
+        <param key="name" value="Bee Bridal"/>
+    </poi>
+    <poi id="restaurant_1219438153" type="restaurant" color="255,200,50" layer="10" x="3064.089743336779" y="2654.306308093015" width="15" height="15">
+        <param key="name" value="Ba Ba Sơn Đông"/>
+    </poi>
+    <poi id="clinic_1219690228" type="clinic" color="255,100,100" layer="10" x="3132.4735162851866" y="2580.9360350663774" width="15" height="15">
+        <param key="name" value="Phòng khám Đa khoa Hưng Thịnh"/>
+    </poi>
+    <poi id="clothes_1229709566" type="clothes" color="200,200,200" layer="10" x="2842.685702398652" y="1645.9896334889345" width="15" height="15">
+        <param key="name" value="Torano"/>
+    </poi>
+    <poi id="police_1245995568" type="police" color="0,0,200" layer="10" x="2541.0010902988724" y="2320.2077330201864" width="15" height="15">
+        <param key="name" value="Công an phường Kim Liên"/>
+    </poi>
+    <poi id="hospital_1245995569" type="hospital" color="255,50,50" layer="10" x="3062.352924817358" y="2803.9761911900714" width="15" height="15">
+        <param key="name" value="Nhà hộ sinh Đống Đa"/>
+    </poi>
+    <poi id="police_1246015335" type="police" color="0,0,200" layer="10" x="3172.6309167018626" y="3076.6038798261434" width="15" height="15">
+        <param key="name" value="Công an phường Văn Miếu - Quốc Tử Giám"/>
+    </poi>
+    <poi id="police_1246762482" type="police" color="0,0,200" layer="10" x="1694.6808424417395" y="2314.2706582201645" width="15" height="15">
+        <param key="name" value="Công an phường Đống Đa"/>
+    </poi>
+    <poi id="police_1246769489" type="police" color="0,0,200" layer="10" x="2971.8651586654596" y="3623.0807389700785" width="15" height="15">
+        <param key="name" value="Công an phường Hàng Bột"/>
+    </poi>
+    <poi id="police_1246769491" type="police" color="0,0,200" layer="10" x="1227.9323767921887" y="3377.9700516667217" width="15" height="15">
+        <param key="name" value="Công an phường Thành Công"/>
+    </poi>
+    <poi id="police_1271711436" type="police" color="0,0,200" layer="10" x="1873.836570232641" y="1186.4328619730659" width="15" height="15">
+        <param key="name" value="Công an phường Khương Đình"/>
+    </poi>
+    <poi id="park_1289605166" type="park" color="50,200,50" layer="10" x="2229.67236570979" y="2039.1518983645365" width="15" height="15">
+        <param key="name" value="Vườn hoa Công đoàn"/>
+    </poi>
+    <poi id="park_1292544276" type="park" color="50,200,50" layer="10" x="3778.243696448626" y="2317.4138641408645" width="15" height="15">
+        <param key="name" value="Công viên Ba Mẫu"/>
+    </poi>
+    <poi id="kindergarten_1303224796" type="kindergarten" color="100,200,255" layer="10" x="2189.5842699260684" y="1503.7196017866954" width="15" height="15">
+        <param key="name" value="Trường Mầm non Ngã Tư Sở"/>
+    </poi>
+    <poi id="kindergarten_1314119672" type="kindergarten" color="100,200,255" layer="10" x="3443.655944993021" y="993.7838885402307" width="15" height="15">
+        <param key="name" value="Trường Mầm non Phương Mai"/>
+    </poi>
+    <poi id="school_1317395355" type="school" color="50,150,255" layer="10" x="2555.5043832685333" y="3329.3500578072853" width="15" height="15">
+        <param key="name" value="Trường Trung học cơ sở Tô Vĩnh Diện"/>
+    </poi>
+    <poi id="restaurant_1320937043" type="restaurant" color="255,200,50" layer="10" x="3620.424539384898" y="1711.2607858390547" width="15" height="15">
+        <param key="name" value="Nhà hàng Hoa Sen"/>
+    </poi>
+    <poi id="restaurant_1320937044" type="restaurant" color="255,200,50" layer="10" x="3553.815919971792" y="1708.6313167498447" width="15" height="15">
+        <param key="name" value="Nhà hàng Hoa Sen 2"/>
+    </poi>
+    <poi id="bank_1321540588" type="bank" color="0,255,255" layer="10" x="2808.5546558796195" y="2105.5736538697965" width="15" height="15">
+        <param key="name" value="VietinBank"/>
+    </poi>
+    <poi id="police_1350645039" type="police" color="0,0,200" layer="10" x="2117.2597941488493" y="2792.509793682955" width="15" height="15">
+        <param key="name" value="Công an phường Đống Đa"/>
+    </poi>
+    <poi id="park_1444241100" type="park" color="50,200,50" layer="10" x="2609.9308093650034" y="1930.9888620884158" width="15" height="15">
+        <param key="name" value="Vườn hoa Học viện Ngân Hàng"/>
+    </poi>
+    <poi id="hospital_1468500882" type="hospital" color="255,50,50" layer="10" x="1625.773519650451" y="1830.0941278659739" width="15" height="15">
+        <param key="name" value="Bệnh viện Châm Cứu Trung Ương"/>
+    </poi>
+</additional>
