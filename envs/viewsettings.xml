@@ -1,0 +1,9 @@
+<viewsettings>
+    <scheme name="real world">
+        
+        <edges streetName="1" streetNameColor="255,255,255" streetNameSize="20.0" />
+        
+        <polygons showName="1" nameColor="255,255,0" nameSize="20.0" />
+        
+    </scheme>
+</viewsettings>
