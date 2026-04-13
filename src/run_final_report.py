@@ -2,13 +2,14 @@ import os
 import re
 import torch
 import numpy as np
+import pandas as pd  # Import thêm thư viện pandas để xuất Excel/CSV
 import traci  
 import matplotlib.pyplot as plt
 from environment import GreenVeinEnv
 from agent import DQNAgent
 
 def run_full_evaluation():
-    print("🌟 BẮT ĐẦU CHIẾN DỊCH TỔNG LỰC: MÔ PHỎNG TRỰC QUAN & XUẤT BIỂU ĐỒ")
+    print(" BẮT ĐẦU CHIẾN DỊCH TỔNG LỰC: MÔ PHỎNG TRỰC QUAN & XUẤT BIỂU ĐỒ")
     print("=" * 65)
 
     env = GreenVeinEnv()
@@ -27,18 +28,18 @@ def run_full_evaluation():
         
     env.frame_skip = 10 
 
-    state_size = 4
+    state_size = 5
     action_size = 3
     agents = {t: DQNAgent(state_size=state_size, action_size=action_size, seed=42) for t in env.truck_ids}
 
     # Tự động load Bằng lái
     if not os.path.exists('models') or not os.listdir('models'):
-        print("❌ LỖI: Không tìm thấy thư mục 'models'.")
+        print(" LỖI: Không tìm thấy thư mục 'models'.")
         return
         
     episodes = [int(re.search(r'ep(\d+)', f).group(1)) for f in os.listdir('models') if re.search(r'ep(\d+)', f)]
     latest_episode = max(episodes) if episodes else 0
-    print(f"🔍 Đang nạp Bằng lái xuất sắc nhất: Epoch {latest_episode}")
+    print(f" Đang nạp Bằng lái xuất sắc nhất: Epoch {latest_episode}")
 
     for truck_id in env.truck_ids:
         model_path = f'models/checkpoint_{truck_id}_ep{latest_episode}.pth'
@@ -54,9 +55,9 @@ def run_full_evaluation():
     success_counts = {t: 0 for t in env.truck_ids}
     total_co2 = {t: [] for t in env.truck_ids}
 
-    # 🌟 2. CHẠY MÔ PHỎNG TRỰC QUAN
+    #  2. CHẠY MÔ PHỎNG TRỰC QUAN
     for ep in range(1, num_eval_episodes + 1):
-        print(f"\n🚀 ĐANG CHẠY BÀI TEST SỐ {ep}/{num_eval_episodes}...")
+        print(f"\n ĐANG CHẠY BÀI TEST SỐ {ep}/{num_eval_episodes}...")
         states, _ = env.reset()
         
         try:
@@ -96,12 +97,12 @@ def run_full_evaluation():
             final_co2_km = (env.trip_co2[t] / final_dist) if final_dist > 0.001 else 0.0
             total_co2[t].append(final_co2_km)
             
-            status = "Hoàn thành 🟢" if env.is_done.get(t, False) else "Bỏ cuộc/Kẹt xe 🔴"
+            status = "Hoàn thành " if env.is_done.get(t, False) else "Bỏ cuộc/Kẹt xe "
             print(f"   [{t}] Điểm: {scores[t]:>7.2f} | {status}")
 
     env.close()
 
-    # 🌟 3. BÁO CÁO TERMINAL
+    #  3. BÁO CÁO TERMINAL
     print("\n" + "=" * 18 + " BÁO CÁO ĐÁNH GIÁ CHUYÊN SÂU (5 VÒNG) " + "=" * 18)
     print(f"{'Tài xế AI':<15} | {'Điểm TB':<10} | {'Tỷ lệ Hoàn thành':<18} | {'CO2 TB (g/km)':<12}")
     print("-" * 70)
@@ -109,8 +110,8 @@ def run_full_evaluation():
         print(f"{t:<15} | {np.mean(total_scores[t]):>10.2f} | {(success_counts[t]/num_eval_episodes)*100:>17.1f}% | {np.mean(total_co2[t]):>12.1f}")
     print("=" * 70)
 
-    # 🌟 4. VẼ BIỂU ĐỒ BÁO CÁO MATPLOTLIB
-    print("\n🎨 ĐANG KẾT XUẤT BIỂU ĐỒ TỔNG HỢP...")
+    #  4. VẼ BIỂU ĐỒ BÁO CÁO MATPLOTLIB
+    print("\n ĐANG KẾT XUẤT BIỂU ĐỒ TỔNG HỢP...")
     plt.style.use('ggplot')
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 6))
     fig.suptitle('BÁO CÁO HIỆU NĂNG AI - DỰ ÁN GREENVEIN', fontsize=18, fontweight='bold', y=1.05)
@@ -151,8 +152,22 @@ def run_full_evaluation():
     plt.tight_layout()
     output_img = 'BaoCao_AI_GreenVein_Final.png'
     plt.savefig(output_img, dpi=300, bbox_inches='tight')
-    print(f"✅ Đã lưu ảnh siêu nét: '{output_img}' tại thư mục gốc.")
-    plt.show()
+    print(f" Đã lưu ảnh siêu nét: '{output_img}' tại thư mục gốc.")
 
+    # 🌟 5. XUẤT DỮ LIỆU THÔ (RAW DATA) RA FILE CSV
+    print("\n ĐANG LƯU DỮ LIỆU THÔ (RAW DATA) RA EXCEL/CSV...")
+    report_data = {
+        "Khu Vực": [labels[t] for t in env.truck_ids],
+        "Mã Xe AI": list(env.truck_ids),
+        "Điểm TB": [np.mean(total_scores[t]) for t in env.truck_ids],
+        "Tỷ lệ Hoàn thành (%)": [(success_counts[t] / num_eval_episodes) * 100 for t in env.truck_ids],
+        "Xả thải CO2 TB (g/km)": [np.mean(total_co2[t]) for t in env.truck_ids]
+    }
+    df = pd.DataFrame(report_data)
+    df = df.round({"Điểm TB": 2, "Xả thải CO2 TB (g/km)": 2})
+    csv_filename = "GreenVein_RawData_Report.csv"
+    df.to_csv(csv_filename, index=False, encoding='utf-8-sig')
+    print(f" Đã lưu Raw Data: '{csv_filename}' thành công!")
+    plt.show()
 if __name__ == "__main__":
     run_full_evaluation()

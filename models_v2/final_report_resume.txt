@@ -1,0 +1,17 @@
+BÁO CÁO TỔNG KẾT TU LUYỆN IoT (VÒNG 1001-1300)
+======================================================================
+🚛 [XeRac_AI_1] - Phụ trách: Cụm Tây
+   ↳ Kỷ lục cá nhân mới : 1264.36 điểm (Đạt được ở Episode 1269)
+   ↳ Điểm TB cuối khóa (50 Ep cuối):  197.73 điểm
+   ↳ Đánh giá: AI ĐÃ TIẾN HÓA THÀNH CHUYÊN GIA IOT!
+----------------------------------------------------------------------
+🚛 [XeRac_AI_2] - Phụ trách: Cụm Trung Tâm
+   ↳ Kỷ lục cá nhân mới :  496.17 điểm (Đạt được ở Episode 1073)
+   ↳ Điểm TB cuối khóa (50 Ep cuối): -270.16 điểm
+   ↳ Đánh giá: Vẫn còn khó khăn ở các điểm kẹt xe.
+----------------------------------------------------------------------
+🚛 [XeRac_AI_3] - Phụ trách: Cụm Đông
+   ↳ Kỷ lục cá nhân mới : 1059.37 điểm (Đạt được ở Episode 1284)
+   ↳ Điểm TB cuối khóa (50 Ep cuối): -159.64 điểm
+   ↳ Đánh giá: Vẫn còn khó khăn ở các điểm kẹt xe.
+----------------------------------------------------------------------

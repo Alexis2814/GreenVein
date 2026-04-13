@@ -20,7 +20,8 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class DQNAgent():
     """Tài xế AI (Agent) tương tác với môi trường và tự học hỏi."""
     
-    def __init__(self, state_size, action_size, seed):
+    # 🌟 CẬP NHẬT QUAN TRỌNG: Đã nâng state_size lên 5 để nhận diện % Bụng xe
+    def __init__(self, state_size=5, action_size=3, seed=0):
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)

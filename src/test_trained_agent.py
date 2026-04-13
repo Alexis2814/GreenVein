@@ -24,7 +24,7 @@ def evaluate_trained_model():
         
     env.frame_skip = 10 
 
-    state_size = 4
+    state_size = 5
     action_size = 3
     agents = {t: DQNAgent(state_size=state_size, action_size=action_size, seed=42) for t in env.truck_ids}
 

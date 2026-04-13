@@ -13,7 +13,7 @@ def train_marl():
     env = GreenVeinEnv()
 
     # 2. Khởi tạo 3 "Tài xế AI" độc lập với 3 seed khác nhau để chúng không suy nghĩ giống hệt nhau
-    state_size = 4
+    state_size = 5
     action_size = 3
     agents = {
         truck_id: DQNAgent(state_size=state_size, action_size=action_size, seed=i*10)
