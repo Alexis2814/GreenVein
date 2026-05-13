@@ -1,14 +1,14 @@
 BÁO CÁO TỔNG KẾT CHIẾN DỊCH GREENVEIN PRO (500 EPISODES)
 ======================================================================
 🚛 [XeRac_AI_1] - Phụ trách: Cụm Tây
-   ↳ Kỷ lục cá nhân :  577.40 điểm (Tại Episode 445)
-   ↳ Điểm TB (50 Ep cuối):   -0.67 điểm
+   ↳ Kỷ lục cá nhân : 5404.17 điểm (Tại Episode 342)
+   ↳ Điểm TB (50 Ep cuối): 1691.14 điểm
 ----------------------------------------------------------------------
 🚛 [XeRac_AI_2] - Phụ trách: Cụm Trung Tâm
-   ↳ Kỷ lục cá nhân :  500.15 điểm (Tại Episode 442)
-   ↳ Điểm TB (50 Ep cuối): -170.50 điểm
+   ↳ Kỷ lục cá nhân : 6496.05 điểm (Tại Episode 399)
+   ↳ Điểm TB (50 Ep cuối): 1674.32 điểm
 ----------------------------------------------------------------------
 🚛 [XeRac_AI_3] - Phụ trách: Cụm Đông
-   ↳ Kỷ lục cá nhân :  697.90 điểm (Tại Episode 264)
-   ↳ Điểm TB (50 Ep cuối):  -83.17 điểm
+   ↳ Kỷ lục cá nhân : 4812.56 điểm (Tại Episode 48)
+   ↳ Điểm TB (50 Ep cuối): 1481.62 điểm
 ----------------------------------------------------------------------

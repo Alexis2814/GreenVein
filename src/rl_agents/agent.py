@@ -4,7 +4,9 @@ from collections import namedtuple, deque
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
-from model import QNetwork
+
+# 🌟 Đã sửa lỗi đường dẫn ở đây:
+from rl_agents.model import QNetwork
 
 # --- CÁC SIÊU THAM SỐ TỐI ƯU HÓA (V2.0) ---
 BUFFER_SIZE = int(1e5)  # Sức chứa bộ nhớ: 100,000 hành động gần nhất
@@ -20,8 +22,8 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class DQNAgent():
     """Tài xế AI (Agent) tương tác với môi trường và tự học hỏi."""
     
-    # 🌟 CẬP NHẬT QUAN TRỌNG: Đã nâng state_size lên 5 để nhận diện % Bụng xe
-    def __init__(self, state_size=5, action_size=3, seed=0):
+    # 🌟 CẬP NHẬT QUAN TRỌNG: Đã nâng state_size lên 6 để nhận diện % Bụng xe và Xăng
+    def __init__(self, state_size=6, action_size=3, seed=0):
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)

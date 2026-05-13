@@ -25,7 +25,7 @@ class Config:
     
     # === 5. QUẢN LÝ ĐƯỜNG DẪN (PATHS) ===
     # Tự động nhận diện thư mục gốc của dự án để tránh lỗi đường dẫn khi chạy ở máy khác
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     SUMO_NET_FILE = os.path.join(BASE_DIR, 'envs', 'map.net.xml')
     MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'src', 'models')
 

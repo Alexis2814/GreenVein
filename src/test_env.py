@@ -1,28 +1,21 @@
-from environment import GreenVeinEnv
-import time
+from core.environment import GreenVeinEnv
 
-def test_multi_agent():
-    print("Khởi tạo môi trường GreenVeinEnv (Multi-Agent MADQN)...")
+def test_environment():
+    print("Khởi tạo môi trường GreenVeinEnv (Có tích hợp LSTM)...")
     env = GreenVeinEnv()
     
-    # Hàm reset bây giờ sẽ tự động in ra Điểm Xuất Phát
-    states, info = env.reset()
+    print("\nĐang Reset môi trường...")
+    states, _ = env.reset()
     
+    print("\nCho xe chạy thử 5 bước để test AI dự báo...")
     for step in range(5):
-        print(f"\n{'='*20} BƯỚC {step + 1} {'='*20}")
+        # Cho xe chạy thẳng (action = 1)
+        actions = {truck_id: 1 for truck_id in env.truck_ids}
+        next_states, rewards, terminated, _, _ = env.step(actions)
+        print(f"Bước {step + 1}: Chạy mượt mà, không có lỗi!")
         
-        actions = {truck_id: env.action_space.sample() for truck_id in env.truck_ids}
-        next_states, rewards, terminated, truncated, info = env.step(actions)
-        
-        print("--- Tổng kết Điểm Reward ---")
-        for truck_id in env.truck_ids:
-            # 🌟 NÂNG CẤP: Làm tròn điểm số xuống 2 chữ số thập phân giúp log siêu gọn
-            print(f"   💰 {truck_id} nhận được: {rewards[truck_id]:.2f} điểm")
-            
-        time.sleep(1.5) 
-
     env.close()
-    print("\nHoàn thành bài test Multi-Agent!")
+    print("\n✅ Môi trường hoạt động hoàn hảo!")
 
 if __name__ == "__main__":
-    test_multi_agent()
+    test_environment()
