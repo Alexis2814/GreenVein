@@ -6,9 +6,8 @@ import gymnasium as gym
 from gymnasium import spaces
 from collections import deque
 import torch
-import datetime
 
-# 🌟 CÔNG TẮC CHUYỂN ĐỔI
+# 🌟 CÔNG TẮC CHUYỂN ĐỔI HỆ THỐNG TRACI/LIBSUMO
 if os.environ.get("USE_GUI") == "1":
     import traci
     print("🖥️ [HỆ THỐNG] Đã ép dùng TraCI để hỗ trợ mở giao diện 3D (GUI).")
@@ -45,15 +44,18 @@ class GreenVeinEnv(gym.Env):
         self.sumo_cfg = os.path.join(Config.BASE_DIR, 'envs', 'greenvein.sumocfg')
         self.sumo_cmd = [
             "sumo", "-c", self.sumo_cfg, 
-            "--no-warnings", 
-            "--time-to-teleport", "-1",  # 🌟 TẮT XÓA XE: XE BẤT TỬ
-            "--error-log", "sumo_error.log", "--no-step-log", "--mesosim", "true"
+            "--no-warnings", "true",
+            "--time-to-teleport", "-1", 
+            "--error-log", os.devnull, "--no-step-log", "--mesosim", "true"
         ]
         
         self.truck_ids = ["XeRac_AI_1", "XeRac_AI_2", "XeRac_AI_3"]
         self.zone_names = {"XeRac_AI_1": "Cụm Tây", "XeRac_AI_2": "Cụm Trung Tâm", "XeRac_AI_3": "Cụm Đông"}
         self.color_map = {"XeRac_AI_1": (255, 100, 0), "XeRac_AI_2": (50, 150, 255), "XeRac_AI_3": (0, 255, 0)}
 
+        # =====================================================================
+        # 🌟 SỔ ĐỎ QUY HOẠCH PHÂN TUYẾN 54 ĐIỂM CỐ ĐỊNH
+        # =====================================================================
         self.CONFIG_QUY_HOACH = {
             "depots": {"XeRac_AI_1": "946030657", "XeRac_AI_2": "946030657", "XeRac_AI_3": "946030657"},
             "zones": {
@@ -77,6 +79,8 @@ class GreenVeinEnv(gym.Env):
         self.passenger_edges = [] 
         self.zone_bins = {t: [] for t in self.truck_ids}
         self.bin_levels = {}
+        self.bin_collected = {} 
+        self.generators = {} 
         self.route_cache_car = []
         self.blacklist = {t: {} for t in self.truck_ids}
         self.street_map = {}
@@ -92,7 +96,6 @@ class GreenVeinEnv(gym.Env):
         
         self.seq_length = 12
         self.history_buffer = {}
-        self.last_record_time = 0
         self.target_bins = {t: "" for t in self.truck_ids}
         self.episode_completed = False
         self.cached_predictions = {}
@@ -109,83 +112,114 @@ class GreenVeinEnv(gym.Env):
             random.seed() 
         return self.street_map[edge_id]
 
-    def _get_predicted_trash_level(self, b):
-        if b not in self.cached_predictions:
-            history = list(self.history_buffer[b])
-            while len(history) < self.seq_length: history.insert(0, history[0] if history else 0.0)
-            seq_tensor = torch.tensor(history, dtype=torch.float32).view(1, self.seq_length, 1) / 100.0
-            with torch.no_grad(): 
-                self.cached_predictions[b] = self.lstm_model(seq_tensor.to(self.device)).item() * 100.0
-        return self.cached_predictions[b]
-
     def assign_urgent_target(self, truck_id):
-        depot = self.depot_edges.get(truck_id, "684766065#0")
+        depot = self.depot_edges.get(truck_id, "946030657")
         try: current_edge = traci.vehicle.getRoadID(truck_id)
         except: current_edge = depot
         if not current_edge or current_edge.startswith(":"): current_edge = depot
 
-        total_trash_kg = sum((lvl / 100.0) * self.BIN_MAX_WEIGHT_KG for lvl in self.bin_levels.values())
+        for b in list(self.blacklist[truck_id].keys()):
+            self.blacklist[truck_id][b] -= 1
+            if self.blacklist[truck_id][b] <= 0: del self.blacklist[truck_id][b]
+
         load_percent = self.current_load[truck_id] / self.MAX_CAPACITY_KG
         
-        # 🌟 BÀN TAY SẮT: CHỈ VỀ TRẠM KHI ĐẦY > 90% HOẶC ĐÃ SẠCH BẢN ĐỒ
-        if load_percent >= 0.90 or (total_trash_kg < 50.0 and self.current_load[truck_id] > 0):
+        if load_percent >= 0.90:
             try:
-                traci.vehicle.setRoute(truck_id, [current_edge, depot])
-                self.target_bins[truck_id] = depot 
-                return True
-            except:
-                # Nếu lỗi đường về trạm, bay thẳng về trạm!
-                traci.vehicle.moveTo(truck_id, depot + "_0", 0)
-                traci.vehicle.setRoute(truck_id, [depot])
-                self.target_bins[truck_id] = depot
-                return True
-
-        curr_x, curr_y = self.edge_centers.get(current_edge, (0.0, 0.0))
-        candidates = []
-        active_targets = [tgt for tid, tgt in self.target_bins.items() if tid != truck_id]
-        
-        # Ưu tiên nhặt rác trong khu
-        for b in self.zone_bins[truck_id]:
-            lvl = self.bin_levels[b]
-            if lvl >= 5.0 and b not in active_targets:
-                dist = np.hypot(curr_x - self.edge_centers.get(b, (0.0, 0.0))[0], curr_y - self.edge_centers.get(b, (0.0, 0.0))[1])
-                score = lvl / (dist + 5.0) 
-                candidates.append((b, score))
-                
-        # Nếu khu mình sạch, đi nhặt phụ
-        if not candidates:
-            for b, lvl in self.bin_levels.items():
-                if lvl >= 5.0 and b not in active_targets:
-                    dist = np.hypot(curr_x - self.edge_centers.get(b, (0.0, 0.0))[0], curr_y - self.edge_centers.get(b, (0.0, 0.0))[1])
-                    score = lvl / (dist + 50.0)  
-                    candidates.append((b, score))
-
-        if candidates:
-            candidates.sort(key=lambda x: x[1], reverse=True)
-            best_bin = candidates[0][0]
-            
-            try:
-                r1 = traci.simulation.findRoute(current_edge, best_bin, vType="garbage_truck")
-                if r1 and len(r1.edges) > 0:
-                    traci.vehicle.setRoute(truck_id, r1.edges)
-                    self.target_bins[truck_id] = best_bin
+                r = traci.simulation.findRoute(current_edge, depot, vType="garbage_truck")
+                if r and len(r.edges) > 0:
+                    traci.vehicle.setRoute(truck_id, r.edges)
+                    self.target_bins[truck_id] = depot 
                     return True
             except: pass
+
+        curr_x, curr_y = self.edge_centers.get(current_edge, (0.0, 0.0))
+        active_targets = [tgt for tid, tgt in self.target_bins.items() if tid != truck_id and tgt != depot]
+        
+        def get_best_optimal_route(candidates_list, penalty_factor=1.0):
+            dists = []
+            for b in candidates_list:
+                tx, ty = self.edge_centers.get(b, (0.0, 0.0))
+                dists.append((b, np.hypot(curr_x - tx, curr_y - ty)))
+            dists.sort(key=lambda x: x[1])
             
-            # 🌟 NẾU KHÔNG CÓ ĐƯỜNG ĐI, BAY THẲNG ĐẾN ĐIỂM RÁC ĐÓ NHẶT (Không bao giờ bỏ cuộc)
+            best_bin, best_route, best_score = None, None, -float('inf')
+            # Quét rộng ra 15 thùng gần nhất để không bị Tunnel Vision
+            for b, d in dists[:15]:
+                try:
+                    r1 = traci.simulation.findRoute(current_edge, b, vType="garbage_truck")
+                    r2 = traci.simulation.findRoute(b, depot, vType="garbage_truck")
+                    if r1 and r2 and len(r1.edges) > 0 and len(r2.edges) > 0:
+                        real_travel_time = r1.travelTime if r1.travelTime > 0 else 1.0
+                        current_lvl = self.bin_levels.get(b, 0)
+                        fill_rate = self.generators[b].get_fill_rate(self.current_step)
+                        predicted_lvl = current_lvl + (fill_rate * real_travel_time)
+                        
+                        if predicted_lvl >= 95.0:
+                            score = 999999.0 / (real_travel_time + 1.0)
+                        else:
+                            score = predicted_lvl / ((real_travel_time * penalty_factor) + 10.0)
+                            
+                        if score > best_score:
+                            best_score = score
+                            best_bin = b
+                            best_route = list(r1.edges) + list(r2.edges)[1:]
+                except: continue
+            return best_bin, best_route
+
+        # LỚP 1: TÌM RÁC KHU VỰC NHÀ (CHƯA THU GOM)
+        my_pending_bins = [b for b in self.zone_bins[truck_id] if not self.bin_collected.get(b, False) and b not in active_targets and b not in self.blacklist[truck_id]]
+        best_b, best_r = get_best_optimal_route(my_pending_bins, penalty_factor=1.0)
+        
+        if best_b and best_r:
+            traci.vehicle.setRoute(truck_id, best_r)
+            self.target_bins[truck_id] = best_b
+            return True
+            
+        # LỚP 2: CỨU TRỢ HÀNG XÓM
+        if len(my_pending_bins) == 0:
+            help_bins = [b for b, is_collected in self.bin_collected.items() if not is_collected and b not in self.zone_bins[truck_id] and b not in active_targets and b not in self.blacklist[truck_id]]
+            if help_bins:
+                best_b, best_r = get_best_optimal_route(help_bins, penalty_factor=1.8) 
+                if best_b and best_r:
+                    traci.vehicle.setRoute(truck_id, best_r)
+                    self.target_bins[truck_id] = best_b
+                    return True
+
+        # LỚP 3: NẾU TOÀN THÀNH PHỐ ĐÃ THU GOM XONG 100% HOẶC CÒN RÁC TRONG BỤNG
+        if self.current_load[truck_id] > 0 or all(self.bin_collected.values()):
             try:
-                traci.vehicle.moveTo(truck_id, best_bin + "_0", 0)
-                traci.vehicle.setRoute(truck_id, [best_bin])
-                self.target_bins[truck_id] = best_bin
-                return True
+                r = traci.simulation.findRoute(current_edge, depot, vType="garbage_truck")
+                if r and len(r.edges) > 0:
+                    traci.vehicle.setRoute(truck_id, r.edges)
+                    self.target_bins[truck_id] = depot
+                    return True
             except: pass
 
-        # Nếu thực sự không còn rác nào và bụng chưa đầy thì đi lang thang
+        # LỚP 4: TUẦN TRA QUANH PHƯỜNG ĐỂ ĐỢI ĐƯỜNG THÔNG
+        if not all(self.bin_collected.values()):
+            try:
+                patrol_pool = [b for b in self.zone_bins[truck_id] if b != current_edge]
+                random.shuffle(patrol_pool)
+                for random_patrol in patrol_pool:
+                    r1 = traci.simulation.findRoute(current_edge, random_patrol, vType="garbage_truck")
+                    r2 = traci.simulation.findRoute(random_patrol, depot, vType="garbage_truck")
+                    if r1 and r2 and len(r1.edges) > 0 and len(r2.edges) > 0:
+                        full_r = list(r1.edges) + list(r2.edges)[1:]
+                        traci.vehicle.setRoute(truck_id, full_r)
+                        self.target_bins[truck_id] = "WANDERING"
+                        return True
+            except: pass
+
+        # NẾU CẢ TUẦN TRA CŨNG KHÔNG TÌM ĐƯỢC ĐƯỜNG, ĐI TẠM VỀ TRẠM
         try:
-            next_edge = random.choice(self.valid_edges_list)
-            traci.vehicle.changeTarget(truck_id, next_edge)
-            self.target_bins[truck_id] = next_edge
+            r = traci.simulation.findRoute(current_edge, depot, vType="garbage_truck")
+            if r and len(r.edges) > 0:
+                traci.vehicle.setRoute(truck_id, r.edges)
+                self.target_bins[truck_id] = depot
+                return True
         except: pass
+
         return False
 
     def get_target_traffic(self, hour, day_of_week):
@@ -247,6 +281,8 @@ class GreenVeinEnv(gym.Env):
 
         self.zone_bins = {t: [] for t in self.truck_ids}
         self.bin_levels = {}
+        self.bin_collected = {} 
+        self.generators = {}
         self.depot_edges = {}
 
         for truck_id in self.truck_ids:
@@ -263,15 +299,16 @@ class GreenVeinEnv(gym.Env):
                 
                 is_reachable = False
                 try:
-                    r_test = traci.simulation.findRoute(depot, b, vType="garbage_truck")
-                    if r_test and len(r_test.edges) > 0:
+                    r_test1 = traci.simulation.findRoute(depot, b, vType="garbage_truck")
+                    r_test2 = traci.simulation.findRoute(b, depot, vType="garbage_truck")
+                    if r_test1 and r_test2 and len(r_test1.edges) > 0 and len(r_test2.edges) > 0:
                         is_reachable = True
                 except: pass
                 
                 if is_reachable:
                     self.zone_bins[truck_id].append(b)
-                    lvl = random.uniform(60.0, 100.0) 
-                    self.bin_levels[b] = lvl
+                    self.bin_levels[b] = random.uniform(20.0, 80.0) 
+                    self.bin_collected[b] = False
                 else:
                     bx, by = self.edge_centers.get(b, (0.0, 0.0))
                     if bx == 0.0 and by == 0.0: continue
@@ -283,28 +320,29 @@ class GreenVeinEnv(gym.Env):
                         d = np.hypot(bx - vx, by - vy)
                         if d < min_dist:
                             try:
-                                r_check = traci.simulation.findRoute(depot, valid_e, vType="garbage_truck")
-                                if r_check and len(r_check.edges) > 0:
+                                r1 = traci.simulation.findRoute(depot, valid_e, vType="garbage_truck")
+                                r2 = traci.simulation.findRoute(valid_e, depot, vType="garbage_truck")
+                                if r1 and r2 and len(r1.edges) > 0 and len(r2.edges) > 0:
                                     min_dist = d
                                     best_fallback = valid_e
                             except: pass
                     
                     if best_fallback:
                         self.zone_bins[truck_id].append(best_fallback)
-                        lvl = random.uniform(60.0, 100.0)
-                        self.bin_levels[best_fallback] = max(lvl, self.bin_levels.get(best_fallback, 0.0))
+                        self.bin_levels[best_fallback] = max(random.uniform(20.0, 80.0), self.bin_levels.get(best_fallback, 0.0))
+                        self.bin_collected[best_fallback] = False
 
         self.street_map.clear() 
         self.blacklist = {t: {} for t in self.truck_ids}
         self.target_bins = {t: "" for t in self.truck_ids} 
         self.episode_completed = False
-        self.cached_predictions = {}
 
         for b in self.bin_levels.keys():
+            self.generators[b] = RealWasteGenerator(zone_type="commercial" if random.random() > 0.5 else "residential")
             self.history_buffer[b] = deque([self.bin_levels[b]]*self.seq_length, maxlen=self.seq_length)
 
         total_trash_kg = sum((lvl / 100.0) * self.BIN_MAX_WEIGHT_KG for lvl in self.bin_levels.values())
-        print(f"📦 [CHỐT HỒ SƠ QUY HOẠCH] Tổng lượng rác thực tế trên bản đồ: {total_trash_kg:.1f} kg.")
+        print(f"📦 [CHỐT HỒ SƠ QUY HOẠCH] Tổng lượng rác khởi điểm: {total_trash_kg:.1f} kg.")
 
         self.route_cache_car = []
         target_pool = self.passenger_edges if self.passenger_edges else self.valid_edges_list
@@ -318,16 +356,16 @@ class GreenVeinEnv(gym.Env):
             except: pass
 
         initial_traffic = self.get_target_traffic(20.0, self.day_of_week)
-        day_type = "Cuối tuần" if self.day_of_week >= 5 else "Ngày thường"
-        print(f"🚗 Khởi tạo giao thông ({day_type} - 20:00) với {initial_traffic} xe nền...")
+        print(f"🚗 Khởi tạo giao thông ({initial_traffic} xe nền)...")
         
         for i in range(initial_traffic):
             v_type = random.choice(["passenger_car", "passenger_car"])
             if self.route_cache_car:
                 vid = f"xe_dan_init_{i}_{random.randint(100, 9999)}"
                 try:
+                    depart_time = str(random.randint(0, 15))
                     traci.route.add(f"route_{vid}", random.choice(self.route_cache_car))
-                    traci.vehicle.add(vid, f"route_{vid}", typeID=v_type, depart=str(i))
+                    traci.vehicle.add(vid, f"route_{vid}", typeID=v_type, depart=depart_time)
                 except: pass
 
         if self.is_gui:
@@ -349,13 +387,16 @@ class GreenVeinEnv(gym.Env):
         self.has_departed = {t: False for t in self.truck_ids}
         self.working_time = {t: 0.0 for t in self.truck_ids}
 
+        # 🌟 VÁ LỖI XUẤT PHÁT: Cho 3 xe xuất phát cách nhau 10 giây để không giẫm lên nhau chết chùm tại Trạm!
+        spawn_delay = 0
         for truck_id in self.truck_ids:
             try:
                 depot_edge = self.depot_edges[truck_id]
                 route_id = f"route_init_{truck_id}"
                 traci.route.add(route_id, [depot_edge])
-                traci.vehicle.add(truck_id, route_id, typeID="garbage_truck", depart="now")
+                traci.vehicle.add(truck_id, route_id, typeID="garbage_truck", depart=str(spawn_delay))
                 traci.vehicle.setColor(truck_id, self.color_map[truck_id])
+                spawn_delay += 10
             except: pass                       
 
         for _ in range(5): traci.simulationStep()
@@ -370,8 +411,15 @@ class GreenVeinEnv(gym.Env):
         self.virtual_time_seconds += self.frame_skip
         hour = (self.virtual_time_seconds % 86400) / 3600.0
         time_str = f"{int(hour):02d}:{int((hour % 1) * 60):02d}"
-        
-        self.cached_predictions.clear()
+
+        if self.current_step >= 20000:
+            if not self.episode_completed:
+                self.episode_completed = True
+                print(f"\n⏰ [{time_str}] HẾT THỜI GIAN ĐỒ ÁN (Đạt mốc 20,000 nhịp). KẾT THÚC EPISODE!")
+            for tid in self.truck_ids:
+                self.is_done[tid] = True
+                terminated[tid] = True
+            return next_states, rewards, terminated, {t: False for t in self.truck_ids}, {}
 
         try: active_vehicles = traci.vehicle.getIDList()
         except:
@@ -402,14 +450,14 @@ class GreenVeinEnv(gym.Env):
                 if self.route_cache_car:
                     vid = f"xe_dan_{self.current_step}_{i}_{random.randint(100, 9999)}"
                     try:
-                        depart_time = str(int(self.current_step) + random.randint(1, 15))
+                        depart_time = str(int(traci.simulation.getTime()) + random.randint(1, 15))
                         traci.route.add(f"route_{vid}", random.choice(self.route_cache_car))
                         traci.vehicle.add(vid, f"route_{vid}", typeID=v_type, depart=depart_time)
                     except: pass
 
         dt = 1.0
         connection_closed = False
-        active_bins = {b: lvl for b, lvl in self.bin_levels.items() if lvl >= 5.0}
+        active_bins = {b: lvl for b, lvl in self.bin_levels.items() if not self.bin_collected.get(b, False)}
 
         for _ in range(self.frame_skip):
             try:
@@ -424,6 +472,12 @@ class GreenVeinEnv(gym.Env):
                             except: pass
                             co2 = max(0.0, traci.vehicle.getCO2Emission(t_id))
                             self.trip_co2[t_id] += (co2 * dt) / 1000.0
+                            
+                            if self.working_time[t_id] <= 0:
+                                try: traci.vehicle.setSpeed(t_id, -1.0)
+                                except: pass
+                                self.target_bins[t_id] = ""
+                                self.assign_urgent_target(t_id)
                             continue
                         
                         speed_m_s = max(0.0, traci.vehicle.getSpeed(t_id))
@@ -439,49 +493,49 @@ class GreenVeinEnv(gym.Env):
                         
                         is_heading_depot = (self.target_bins.get(t_id) == depot_e)
                         if is_heading_depot and (curr_e == depot_e or curr_e == "-" + depot_e):
-                            if self.current_load[t_id] > 0:
-                                print(f"⏰ [{time_str}] ♻️ [{t_id}] Đổ {self.current_load[t_id]:.1f}kg rác tại Trạm.")
-                                self.current_load[t_id] = 0.0
-                                self.working_time[t_id] = 120.0 # 2 phút đổ rác để đẩy nhanh tiến độ
-                                self.target_bins[t_id] = "" 
-                                self.assign_urgent_target(t_id) 
-                        
-                        # 🌟 LOGIC THU GOM RÁC CỰC MẠNH: CHỈ CẦN CÙNG TÊN ĐƯỜNG LÀ THU NGAY
-                        for b_e in list(active_bins.keys()):
-                            if self.current_load[t_id] >= self.MAX_CAPACITY_KG: break
-                            
-                            is_near = False
-                            # Sai số mạnh: Chung ID đường hoặc cách nhau 80m đều tính là tới nơi
-                            if curr_e == b_e or curr_e == "-" + b_e or curr_e.replace("-", "") == b_e.replace("-", ""):
-                                is_near = True
+                            load_pct = self.current_load[t_id] / self.MAX_CAPACITY_KG
+                            if load_pct >= 0.90 or all(self.bin_collected.values()):
+                                if self.current_load[t_id] > 0:
+                                    print(f"⏰ [{time_str}] ♻️ [{t_id}] Đã về Trạm. Bắt đầu xả {self.current_load[t_id]:.1f}kg rác (Mất 3 phút)...")
+                                    self.current_load[t_id] = 0.0
+                                    self.working_time[t_id] = 180.0 
+                                    self.target_bins[t_id] = "WORKING"
                             else:
-                                bx, by = self.edge_centers[b_e]
-                                if np.hypot(vx-bx, vy-by) < 80.0:
-                                    is_near = True
+                                self.target_bins[t_id] = ""
+                                self.assign_urgent_target(t_id)
+                        
+                        if self.target_bins.get(t_id) != "WORKING" and self.target_bins.get(t_id) != depot_e:
+                            for b_e in list(active_bins.keys()):
+                                if self.current_load[t_id] >= self.MAX_CAPACITY_KG: break
+                                
+                                is_near = False
+                                # 🌟 TĂNG BÁN KÍNH RADAR LÊN 80M ĐỂ XE KHÔNG BAO GIỜ BỎ LỠ RÁC KHI PHÓNG QUA
+                                if curr_e == b_e or curr_e == "-" + b_e or curr_e.replace("-", "") == b_e.replace("-", ""):
+                                    bx, by = self.edge_centers[b_e]
+                                    if np.hypot(vx-bx, vy-by) < 80.0: 
+                                        is_near = True
 
-                            if is_near:
-                                lvl = self.bin_levels[b_e]
-                                kg_in_bin = (lvl / 100.0) * self.BIN_MAX_WEIGHT_KG
-                                amt = min(kg_in_bin, self.MAX_CAPACITY_KG - self.current_load[t_id])
-                                self.current_load[t_id] += amt
-                                self.total_collected[t_id] += amt
-                                
-                                new_level = ((kg_in_bin - amt) / self.BIN_MAX_WEIGHT_KG) * 100.0
-                                self.bin_levels[b_e] = 0.0 if new_level < 1.0 else new_level
-                                
-                                if self.bin_levels[b_e] < 5.0:
+                                if is_near:
+                                    lvl = self.bin_levels[b_e]
+                                    kg_in_bin = (lvl / 100.0) * self.BIN_MAX_WEIGHT_KG
+                                    amt = min(kg_in_bin, self.MAX_CAPACITY_KG - self.current_load[t_id])
+                                    self.current_load[t_id] += amt
+                                    self.total_collected[t_id] += amt
+                                    
+                                    self.bin_collected[b_e] = True
+                                    self.bin_levels[b_e] = 0.0
                                     del active_bins[b_e]
+                                    
                                     if self.is_gui:
                                         try:
                                             traci.poi.setColor(f"BIN_{b_e}", (0, 255, 0, 255))
                                             traci.poi.setType(f"BIN_{b_e}", "Sạch ✅")
                                         except: pass
-                                
-                                print(f"⏰ [{time_str}] 🟡 [{t_id}] Thu {amt:.1f}kg tại {self.get_real_street_name(b_e)}.")
-                                self.working_time[t_id] = 60.0 # 1 phút cẩu rác
-                                self.target_bins[t_id] = ""
-                                self.assign_urgent_target(t_id)
-                                break 
+                                    
+                                    print(f"⏰ [{time_str}] 🛑 [{t_id}] ĐỖ XE THU GOM {amt:.1f}kg tại {self.get_real_street_name(b_e)} (Mất 2 phút)...")
+                                    self.working_time[t_id] = 120.0 
+                                    self.target_bins[t_id] = "WORKING"
+                                    break 
             except: 
                 connection_closed = True
                 break
@@ -511,12 +565,18 @@ class GreenVeinEnv(gym.Env):
                 continue
 
             act = action_dict.get(t, 1)
-            
+            try: curr_e = traci.vehicle.getRoadID(t)
+            except: curr_e = ""
+
             if self.working_time[t] > 0:
                 try: traci.vehicle.setSpeed(t, 0.0)
                 except: pass
             else:
-                try: traci.vehicle.setSpeed(t, [3.0, 0.0, 15.0][act])
+                # 🌟 TƯỚC QUYỀN ĐẠP PHANH BẬY CỦA AI NẾU ĐƯỜNG ĐANG VẮNG
+                if act == 1: act = 2 
+                try: 
+                    if act == 0: traci.vehicle.setSpeed(t, 5.0) # Ép đi chậm 5m/s nếu AI rà phanh
+                    else: traci.vehicle.setSpeed(t, -1.0) # Trả lại quyền tự động đi tối đa giới hạn đường cho SUMO
                 except: pass
 
             try: current_speed_kmh = traci.vehicle.getSpeed(t) * 3.6
@@ -531,30 +591,26 @@ class GreenVeinEnv(gym.Env):
             else: 
                 self.stuck_time[t] = 0
 
-            # NẾU KẸT QUÁ 150 GIÂY THÌ NHẢY THẲNG TỚI ĐIỂM RÁC LUÔN
-            if self.stuck_time[t] > 15:
-                tgt = self.target_bins.get(t)
-                if tgt and tgt not in ["", "WANDERING"]:
-                    try:
-                        traci.vehicle.moveTo(t, tgt + "_0", 0)
-                        traci.vehicle.setRoute(t, [tgt])
-                        self.stuck_time[t] = 0
-                    except: pass
-                else:
-                    self.assign_urgent_target(t)
+            if self.stuck_time[t] > 300:
+                print(f"🚁 [{t}] Bị kẹt cứng vật lý. Gọi trực thăng cẩu về Trạm!")
+                self.blacklist[t][curr_e] = 500
+                self.stuck_time[t] = 0
+                try: traci.vehicle.remove(t)
+                except: pass
 
             if self.target_bins.get(t) == "": self.assign_urgent_target(t)
             
             next_states[t] = np.array([current_speed_kmh, avg_co2_per_km, float(self.stuck_time[t]), current_distance_km, (self.current_load[t]/self.MAX_CAPACITY_KG)*100.0, 100.0], dtype=np.float32)
 
-        total_trash_kg = sum((lvl / 100.0) * self.BIN_MAX_WEIGHT_KG for lvl in self.bin_levels.values())
-        if total_trash_kg < 50.0:
+        if all(self.bin_collected.values()):
             if not self.episode_completed:
                 self.episode_completed = True
-                print(f"\n🎉 [{time_str}] NHIỆM VỤ HOÀN THÀNH: Toàn bộ rác đã được dọn sạch!")
+                print(f"\n🎉 [{time_str}] NHIỆM VỤ HOÀN THÀNH: Tất cả 54 điểm rác đô thị đã được thu gom xong!")
+            
             for tid in self.truck_ids:
-                self.is_done[tid] = True
-                terminated[tid] = True
+                if self.current_load[tid] <= 0 and self.target_bins.get(tid) != "WORKING":
+                    self.is_done[tid] = True
+                    terminated[tid] = True
 
         return next_states, {t: 0.0 for t in self.truck_ids}, terminated, {t: False for t in self.truck_ids}, {}
 
