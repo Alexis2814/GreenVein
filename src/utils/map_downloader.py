@@ -5,7 +5,7 @@ import sys
 
 # Khai báo đường dẫn gốc để gọi file config.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def download_dongda_map():
     # Định nghĩa nơi lưu file bản đồ thô

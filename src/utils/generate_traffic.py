@@ -3,7 +3,7 @@ import sys
 import subprocess
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def generate_mixed_traffic():
     net_path = os.path.join(Config.BASE_DIR, 'envs', 'map.net.xml')

@@ -11,7 +11,7 @@ else:
 
 import sumolib
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def extract_all_pois():
     net_path = os.path.join(Config.BASE_DIR, 'envs', 'map.net.xml')

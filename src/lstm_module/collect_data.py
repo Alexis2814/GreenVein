@@ -1,7 +1,7 @@
 import json
 import csv
 import os
-from waste_generator import RealWasteGenerator
+from core.waste_generator import RealWasteGenerator
 
 def generate_7_days_dataset():
     print("🌟 BẮT ĐẦU CÀY DỮ LIỆU SINH RÁC TRONG 7 NGÀY (GIẢ LẬP)...")

@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 # Khai báo đường dẫn gốc để gọi config
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def generate_pois():
     # Đường dẫn file đầu vào (bản đồ) và đầu ra (file chứa rác)

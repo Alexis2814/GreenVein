@@ -3,8 +3,8 @@ import re
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from environment import GreenVeinEnv
-from agent import DQNAgent
+from core.environment import GreenVeinEnv
+from rl_agents.agent import DQNAgent
 
 def evaluate_and_plot():
     print("🌟 KHỞI ĐỘNG TASK 17: KẾT XUẤT BIỂU ĐỒ BÁO CÁO TỐT NGHIỆP...")

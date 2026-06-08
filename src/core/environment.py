@@ -332,13 +332,40 @@ class GreenVeinEnv(gym.Env):
                         self.bin_levels[best_fallback] = max(random.uniform(20.0, 80.0), self.bin_levels.get(best_fallback, 0.0))
                         self.bin_collected[best_fallback] = False
 
+        # =====================================================================
+        # 🌟 VÁ LỖI CỐT LÕI: TÍCH HỢP BỘ NÃO LSTM VÀO LƯỚI KHỞI TẠO RÁC
+        # =====================================================================
         self.street_map.clear() 
         self.blacklist = {t: {} for t in self.truck_ids}
         self.target_bins = {t: "" for t in self.truck_ids} 
         self.episode_completed = False
 
+        print(f"🧠 [HỆ THỐNG ĐẠI NÃO] LSTM đang phân tích chuỗi thời gian để nội suy % rác cho Ngày thứ {self.day_of_week}...")
+
         for b in self.bin_levels.keys():
-            self.generators[b] = RealWasteGenerator(zone_type="commercial" if random.random() > 0.5 else "residential")
+            zone_type = "commercial" if random.random() > 0.5 else "residential"
+            self.generators[b] = RealWasteGenerator(zone_type=zone_type)
+            
+            # --- 🌟 TIẾN TRÌNH LSTM DỰ BÁO ---
+            # Tạo 1 chuỗi giả lập độ dài seq_length (12) quá khứ để mồi cho LSTM
+            seq_data = []
+            for d in range(self.seq_length):
+                past_day = (self.day_of_week - self.seq_length + d) % 7
+                past_we = 1 if past_day >= 5 else 0
+                val = 0.2 if past_we else 0.8 if zone_type == "commercial" else 0.9 if past_we else 0.4
+                seq_data.append([val])
+                
+            input_tensor = torch.tensor(seq_data, dtype=torch.float32).unsqueeze(0).to(self.device)
+            
+            with torch.no_grad():
+                pred_norm = self.lstm_model(input_tensor).item()
+                # Cắt xén (Clip) không cho rác âm hoặc quá 100%
+                real_percent = max(0.0, min(100.0, pred_norm * 100.0))
+            
+            # Ghi đè hàm random cũ bằng chỉ số thực tế do LSTM tính toán
+            self.bin_levels[b] = real_percent
+            # --------------------------------
+            
             self.history_buffer[b] = deque([self.bin_levels[b]]*self.seq_length, maxlen=self.seq_length)
 
         total_trash_kg = sum((lvl / 100.0) * self.BIN_MAX_WEIGHT_KG for lvl in self.bin_levels.values())

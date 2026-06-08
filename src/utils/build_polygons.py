@@ -5,7 +5,7 @@ import subprocess
 
 # Khai báo đường dẫn gốc
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def build_landscape():
     net_path = os.path.join(Config.BASE_DIR, 'envs', 'map.net.xml')

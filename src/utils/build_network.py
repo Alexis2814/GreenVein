@@ -6,7 +6,7 @@ import subprocess
 
 # Khai báo đường dẫn gốc
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from src.config import Config
+from core.config import Config
 
 def build_sumo_network():
     osm_path = os.path.join(Config.BASE_DIR, 'data', 'dongda_map.osm')

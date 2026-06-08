@@ -23,7 +23,7 @@ if SRC_DIR not in sys.path:
 import customtkinter as ctk
 from test_agent import test_and_compare
 
-# ============ ĐỒNG BỘ DPI CẤP OS ============
+# ============ ĐỒNG BỘ DPI & CẤY MÃ CHỐNG FLASH ============
 try:
     import win32gui
     import win32con
@@ -34,6 +34,36 @@ try:
     except:
         try: windll.user32.SetProcessDPIAware()
         except: pass
+        
+    # 💀 HACK CẤP ĐỘ HỆ ĐIỀU HÀNH: TÀNG HÌNH SUMO TỪ TRONG TRỨNG NƯỚC
+    import traci
+    
+    # 1. Ép tọa độ Spawn của SUMO ra ngoài không gian (-10000, -10000)
+    _orig_traci_start = traci.start
+    def _patched_traci_start(cmd, *args, **kwargs):
+        if isinstance(cmd, list) and any("sumo-gui" in str(c) for c in cmd):
+            if "--window-pos" not in cmd:
+                cmd.extend(["--window-pos", "-10000,-10000"])
+        return _orig_traci_start(cmd, *args, **kwargs)
+    traci.start = _patched_traci_start
+
+    # 2. Ép Windows OS khởi tạo tiến trình ở trạng thái Tàng hình (SW_HIDE)
+    _orig_popen = subprocess.Popen
+    class HiddenPopen(subprocess.Popen):
+        def __init__(self, *args, **kwargs):
+            cmd = args[0] if args else kwargs.get("args", [])
+            is_gui = False
+            if isinstance(cmd, str) and "sumo-gui" in cmd: is_gui = True
+            elif isinstance(cmd, list) and len(cmd) > 0 and "sumo-gui" in cmd[0]: is_gui = True
+            
+            if is_gui and sys.platform == "win32":
+                si = kwargs.get("startupinfo", subprocess.STARTUPINFO())
+                si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+                si.wShowWindow = win32con.SW_HIDE # 💀 Khởi tạo tàng hình
+                kwargs["startupinfo"] = si
+            super().__init__(*args, **kwargs)
+    subprocess.Popen = HiddenPopen
+
 except ImportError:
     HAS_WIN32 = False
 
@@ -147,69 +177,53 @@ class GreenVeinDashboard(ctk.CTk):
         except Exception as e: pass
 
     # ==========================================================
-    # 🔥 BẢN VÁ V98: HACK LÕI TRACI (GIẢI QUYẾT LỖI CONNECTION ACTIVE)
+    # 🔥 KHỞI CHẠY HỆ THỐNG
     # ==========================================================
     def start_simulation(self):
         if not self.is_running:
             self.console_text.delete("1.0", ctk.END)
             self.tabview.set("🖥️ Mô Phỏng SUMO") 
             self.is_running = True
-            
-            # Khởi chạy luồng dọn dẹp riêng biệt để Main GUI không bị đứng hình
             threading.Thread(target=self._async_cleanup, daemon=True).start()
 
     def _async_cleanup(self):
         print("🔄 Đang dọn dẹp tàn dư của kịch bản cũ...")
-        
-        # 1. TIÊU DIỆT SUMO TRƯỚC TIÊN (Giết chết tiến trình để cắt đứt socket)
         if HAS_WIN32:
             subprocess.run(["taskkill", "/f", "/im", "sumo-gui.exe"], capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
             subprocess.run(["taskkill", "/f", "/im", "sumo.exe"], capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
         
         time.sleep(0.5) 
-        
-        # 2. XÓA BỘ NHỚ TRACI (Sát thủ diệt lỗi 'Connection default is already active')
         try:
             import traci
-            # Cố gắng đóng nhẹ nhàng (lúc này socket đã đứt nên có thể văng lỗi)
             traci.close()
-        except Exception: 
-            pass
+        except: pass
             
         try:
             import traci
-            # Can thiệp sâu vào lõi của traci để xóa sạch bóng ma 'default'
             if "default" in traci.getConnectionLabels():
                 del traci._connections["default"]
-        except Exception:
-            pass
+        except: pass
             
         time.sleep(0.5) 
-        
-        # Báo cho giao diện chính tiến hành chạy tiếp
         self.after(0, self._start_sim_processes)
 
     def _start_sim_processes(self):
-        # 1. Xóa bỏ khung cũ chứa "xác" của SUMO
         if hasattr(self, 'sumo_frame') and self.sumo_frame.winfo_exists():
             self.sumo_frame.destroy()
             
-        # 2. Xây khung mới tinh
         self.sumo_frame = tk.Frame(self.tab_sumo, bg="black")
         self.sumo_frame.pack(fill=tk.BOTH, expand=True)
         self.sumo_hwnd = None
         self.sumo_frame.bind("<Configure>", self.on_frame_resize)
         
-        self.sumo_text_waiting = tk.Label(self.sumo_frame, text="Đang chuẩn bị dữ liệu AI (Chờ đồ họa SUMO 1.5s)...\n", bg="black", fg="gray", font=("Arial", 14))
+        self.sumo_text_waiting = tk.Label(self.sumo_frame, text="Đang đồng bộ đồ họa 3D vô hình...", bg="black", fg="gray", font=("Arial", 14))
         self.sumo_text_waiting.place(relx=0.5, rely=0.5, anchor="center")
         
         print("🚀 Khởi chạy hệ thống AI GreenVein...")
-        
         self.update_idletasks()
         self.update()
         tk_hwnd = int(self.sumo_frame.winfo_id()) 
         
-        # 3. Phân phát 2 luồng công việc chính
         threading.Thread(target=self.run_test_in_background, daemon=True).start()
         if HAS_WIN32:
             threading.Thread(target=self.capture_sumo_window, args=(tk_hwnd,), daemon=True).start()
@@ -227,34 +241,39 @@ class GreenVeinDashboard(ctk.CTk):
         except: pass
 
     # ==========================================================
-    # 🔥 BẮT CÓC SUMO HOÀN TOÀN TÁCH BIỆT KHỎI TKINTER
+    # 🔥 CÔNG NGHỆ CHỐNG FLASH: BẮT CỬA SỔ TÀNG HÌNH & HIỆN HÌNH TRONG KHUNG
     # ==========================================================
     def capture_sumo_window(self, safe_tk_hwnd):
-        print("🔍 Đang đồng bộ hóa đồ họa 3D...")
-        for _ in range(15000): 
-            time.sleep(0.02)
+        print("🔍 Đang nhúng luồng video 3D...")
+        
+        for _ in range(20000): 
+            time.sleep(0.01) # Quét siêu tốc
             if not self.is_running: break 
             
             hwnds = []
             def callback(hwnd, hwnds_list):
-                if win32gui.IsWindowVisible(hwnd):
-                    title = win32gui.GetWindowText(hwnd)
-                    if "SUMO" in title.upper() and ".SUMOCFG" in title.upper() and "TRẠM ĐIỀU KHIỂN" not in title.upper():
-                        hwnds_list.append(hwnd)
+                # 🌟 QUAN TRỌNG: Xóa lệnh IsWindowVisible vì SUMO đang tàng hình!
+                title = win32gui.GetWindowText(hwnd)
+                if "SUMO" in title.upper() and ".SUMOCFG" in title.upper() and "TRẠM ĐIỀU KHIỂN" not in title.upper():
+                    hwnds_list.append(hwnd)
             win32gui.EnumWindows(callback, hwnds)
             
             if hwnds:
                 self.sumo_hwnd = hwnds[0]
-                time.sleep(1.5) 
+                
+                # Để SUMO tĩnh tâm load dữ liệu đồ họa (người dùng sẽ không thấy gì vì nó bị OS ẩn hoàn toàn)
+                time.sleep(1.0) 
                 
                 try:
                     if safe_tk_hwnd == 0 or not win32gui.IsWindow(safe_tk_hwnd): break
 
+                    # Cắt viền, đổi style
                     style = win32gui.GetWindowLong(self.sumo_hwnd, win32con.GWL_STYLE)
                     style = style & ~(win32con.WS_POPUP | win32con.WS_CAPTION | win32con.WS_THICKFRAME | win32con.WS_MINIMIZEBOX | win32con.WS_MAXIMIZEBOX)
                     style = style | win32con.WS_CHILD   
                     win32gui.SetWindowLong(self.sumo_hwnd, win32con.GWL_STYLE, style)
                     
+                    # Cấy ghép vào Frame của Tkinter
                     win32gui.SetParent(self.sumo_hwnd, safe_tk_hwnd)
                     
                     self.after(0, self._destroy_waiting_label)
@@ -269,11 +288,15 @@ class GreenVeinDashboard(ctk.CTk):
                             if real_width > 10 and real_height > 10:
                                 win32gui.MoveWindow(self.sumo_hwnd, 0, 0, real_width, real_height, True)
                             
-                            win32gui.ShowWindow(self.sumo_hwnd, win32con.SW_SHOWMAXIMIZED)
+                            # 🌟 HIỆN NGUYÊN HÌNH TỪ BÓNG TỐI: Sau khi đã ép chặt vào khung, gỡ bỏ SW_HIDE
+                            try:
+                                win32gui.ShowWindow(self.sumo_hwnd, win32con.SW_SHOWMAXIMIZED)
+                            except: pass
+                            
                             time.sleep(0.05) 
                     
                     threading.Thread(target=aggressive_snap_thread, daemon=True).start()
-                    print(f"🎉 Đã nhúng SUMO thành công vào giao diện!")
+                    print(f"🎉 Đã nhúng hệ thống 3D thành công vào bảng điều khiển!")
                 except Exception as e:
                     print(f"⚠️ LỖI NHÚNG: {e}")
                 break
@@ -298,7 +321,6 @@ class GreenVeinDashboard(ctk.CTk):
             except: pass
 
     def stop_simulation(self):
-        # Dọn dẹp mạnh tay y hệt như lúc Start
         if HAS_WIN32:
             subprocess.run(["taskkill", "/f", "/im", "sumo-gui.exe"], capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
             subprocess.run(["taskkill", "/f", "/im", "sumo.exe"], capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
